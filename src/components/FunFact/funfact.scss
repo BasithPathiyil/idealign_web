@@ -27,7 +27,7 @@
   }
   .cs-funfact_right {
     flex: 1;
-    padding-left: 80px;
+    // padding-left: 80px;
     position: relative;
     z-index: 2;
   }
@@ -66,13 +66,14 @@
 .cs-funfacts {
   display: grid;
   grid-gap: 36px 40px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .cs-funfact.cs-style1 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   .cs-funfact_number {
-    margin: 0 13px 0 0;
+    margin: 0 0 0 0;
     font-size: 50px;
     line-height: 1.3em;
   }

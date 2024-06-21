@@ -9,6 +9,8 @@ import SectionHeading from "../SectionHeading";
 import TestimonialSlider from "../Slider/TestimonialSlider";
 import Spacing from "../Spacing";
 import Hero3 from "../Hero/Hero3";
+import ServiceCard from "../ServiceList/ServiceCard";
+import { services } from "../ServiceList/servicedata";
 
 export default function ServicesPage() {
   pageTitle("Service");
@@ -17,11 +19,6 @@ export default function ServicesPage() {
   }, []);
   return (
     <>
-      {/* <PageHeading 
-        title='Services'
-        bgSrc='images/service_hero_bg.jpeg'
-        pageLinkText='Services'
-      /> */}
       <Hero3
         title={`Services`}
         btnLink="contact"
@@ -29,12 +26,22 @@ export default function ServicesPage() {
         socialLinksHeading="Follow Us"
         bgImageUrl="./images/servicesbg.jpg"
       />
-      <Spacing lg="150" md="80" />
+
+      <Spacing lg="90" md="60" />
       <Div className="cs-shape_wrap_4">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>
         <Div className="container">
           <Div className="row">
+            <h2 className="cs-accordian_title">
+              Idealign specializes in delivering tailor-made, end-to-end
+              holistic project management solutions designed for the entire life
+              cycle of real estate and construction projects. Our commitment is
+              to empower clients with innovative solutions, ensuring timely
+              project delivery, adherence to budget constraints, and the highest
+              quality standards.
+            </h2>
+            <Spacing lg="150" md="80" />
             <Div className="col-xl-4">
               <SectionHeading
                 title="Services we can help you with"
@@ -42,68 +49,23 @@ export default function ServicesPage() {
               />
               <Spacing lg="90" md="45" />
             </Div>
+
             <Div className="col-xl-8">
               <Div className="row">
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
-                  <Card
-                    title="UI/UX design"
-                    link="/service/ui-ux-design"
-                    src="/images/service_1.jpeg"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
-                  <Card
-                    title="React.js Development"
-                    link="/service/reactjs-development"
-                    src="/images/service_2.jpeg"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6">
-                  <Card
-                    title="Digital Marketing"
-                    link="/service/digital-marketing"
-                    src="/images/service_3.jpeg"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
-                  <Card
-                    title="Technology"
-                    link="/service/technology"
-                    src="/images/service_4.jpeg"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
-                  <Card
-                    title="Consultancy"
-                    link="/service/consultancy"
-                    src="/images/service_5.jpeg"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
-                  <Card
-                    title="Creative Design"
-                    link="/service/creative-design"
-                    src="/images/service_6.jpeg"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
-                </Div>
+                {services.map((service, index) => (
+                  <React.Fragment key={service.link}>
+                    {(index % 4 === 0 || index % 4 === 1) && (
+                      <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                    )}
+                    <Div className="col-lg-3 col-sm-6">
+                      <ServiceCard data={service} />
+                      <Spacing lg="0" md="30" />
+                    </Div>
+                    {(index % 4 === 2 || index % 4 === 3) && (
+                      <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                    )}
+                  </React.Fragment>
+                ))}
               </Div>
             </Div>
           </Div>

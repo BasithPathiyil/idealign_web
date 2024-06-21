@@ -18,7 +18,7 @@ export default function AboutUsTeamCard({
       </Div>
       <Div className="cs-member_info">
         <h2 className="cs-member_name  cs-white_color">
-          <Link to="/team/team-details">{memberName}</Link>
+          <Link to="#">{memberName}</Link>
         </h2>
         <Div className="cs-member_designation  cs-white_color">
           {memberDesignation}

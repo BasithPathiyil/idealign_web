@@ -34,34 +34,24 @@ const heroSocialLinks = [
 // FunFact Data
 const funfaceData = [
   {
-    title: "Global Happy Clients",
-    factNumber: "40",
-    suffix: "K",
+    title: "Years",
+    factNumber: "20",
+    suffix: "",
   },
   {
-    title: "Project Completed",
-    factNumber: "50",
-    suffix: "K",
+    title: "Client",
+    factNumber: "500",
+    suffix: "+",
   },
   {
     title: "Team Members",
-    factNumber: "245",
-    suffix: "",
+    factNumber: "30",
+    suffix: "+",
   },
   {
-    title: "Digital products",
-    factNumber: "550",
-    suffix: "",
-  },
-  {
-    title: "Global Happy Clients",
-    factNumber: "40",
-    suffix: "K",
-  },
-  {
-    title: "Project Completed",
-    factNumber: "50",
-    suffix: "K",
+    title: "SF Developed",
+    factNumber: "600",
+    suffix: "M",
   },
 ];
 const portfolioData = [
@@ -134,7 +124,7 @@ export default function Home() {
 
       {/* Start Services Section */}
       <Spacing lg="145" md="80" />
-      <Div className="container">
+      {/* <Div className="container">
         <SectionHeading
           title="Our core services"
           subtitle="Services"
@@ -142,13 +132,13 @@ export default function Home() {
         />
         <Spacing lg="70" md="45" />
         <HomeServiceList />
-      </Div>
+      </Div> */}
       {/* End Services Section */}
 
       {/* Start Service Section */}
-      {/* <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" /> */}
       <Div id="service">
-        <Div className="container">
+        {/* <Div className="container">
           <Div className="row">
             <Div className="col-xl-4">
               <SectionHeading
@@ -204,8 +194,9 @@ export default function Home() {
               </Div>
             </Div>
           </Div>
-        </Div>
-      </Div> */}
+        </Div> */}
+        <HomeServiceList />
+      </Div>
       {/* End Service Section */}
 
       {/* Start Portfolio Section */}
@@ -224,7 +215,7 @@ export default function Home() {
       {/* End Portfolio Section */}
 
       {/* Start Awards Section */}
-      {/* <Spacing lg="150" md="80" />
+      <Spacing lg="150" md="80" />
       <Div className="cs-shape_wrap_2">
         <Div className="cs-shape_2">
           <Div />
@@ -244,12 +235,12 @@ export default function Home() {
             </Div>
           </Div>
         </Div>
-      </Div> */}
+      </Div>
       {/* End Awards Section */}
 
       {/* Start Video Block Section */}
-      {/* <Spacing lg="130" md="70" /> */}
-      {/* <Div className="container">
+      <Spacing lg="130" md="70" />
+      <Div className="container">
         <h2 className="cs-font_50 cs-m0 text-center cs-line_height_4">
           Our agile process is ability to adapt and respond to change. Agile
           organizations view change as an opportunity, not a threat.
@@ -259,7 +250,7 @@ export default function Home() {
           videoSrc="https://www.youtube.com/watch?v=VcaAVWtP48A"
           bgUrl="/images/video_bg.jpeg"
         />
-      </Div> */}
+      </Div>
       {/* End Video Block Section */}
 
       {/* Start Team Section */}
@@ -277,10 +268,10 @@ export default function Home() {
       {/* End Team Section */}
 
       {/* Start Testimonial Section */}
-      {/* <TestimonialSlider /> */}
+      <TestimonialSlider />
       {/* End Testimonial Section */}
 
-      {/* <Spacing lg="90" md="70" /> */}
+      <Spacing lg="90" md="70" />
       <Div className="container">
         <SectionHeading
           title="News & Events"
@@ -319,16 +310,16 @@ export default function Home() {
       {/* End Blog Section */}
 
       {/* Start MovingText Section */}
-      {/* <Spacing lg="125" md="70" />
+      <Spacing lg="125" md="70" />
       <MovingText text="Our reputed world wide partners" />
-      <Spacing lg="105" md="70" /> */}
+      <Spacing lg="105" md="70" />
       {/* End MovingText Section */}
 
       {/* Start LogoList Section */}
-      {/* <Div className="container">
+      <Div className="container">
         <LogoList />
-      </Div> */}
-      {/* <Spacing lg="150" md="80" /> */}
+      </Div>
+      <Spacing lg="150" md="80" />
       {/* End LogoList Section */}
 
       {/* Start CTA Section */}

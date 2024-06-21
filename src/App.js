@@ -28,6 +28,7 @@ import VideoShowcaseHome from "./components/Pages/VideoShowcaseHome";
 import ProjectDetailsPage from "./components/Pages/ProjectDetailsPage";
 import ProjectsListPage from "./components/Pages/ProjectsListPage";
 import ProjectsPage from "./components/Pages/ProjectsPage";
+import ServiceDetailed from "./components/ServiceList/ServiceDetailed";
 
 function App() {
   return (
@@ -55,7 +56,7 @@ function App() {
           <Route path="service" element={<ServicesPage />} />
           <Route
             path="service/:serviceDetailsId"
-            element={<ServiceDetailsPage />}
+            element={<ServiceDetailed />}
           />
           <Route path="portfolio" element={<PortfolioPage />} />
           <Route path="projects" element={<ProjectsPage />} />
