@@ -4,6 +4,8 @@ import "./team.scss";
 import { Icon } from "@iconify/react";
 import Div from "../Div";
 
+import parse from "html-react-parser";
+
 export default function TeamMemberModal({ member, isOpen, onClose }) {
   if (!isOpen) return null;
 
@@ -40,7 +42,7 @@ export default function TeamMemberModal({ member, isOpen, onClose }) {
             <Div className="col-lg-8">
               <p>
                 {member?.description
-                  ? member?.description
+                  ? parse(member?.description)
                   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"}
               </p>
             </Div>
