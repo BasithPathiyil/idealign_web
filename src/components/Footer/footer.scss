@@ -14,7 +14,10 @@
   font-size: 18px;
   margin-bottom: 35px;
 }
-
+.cs-text_widget_img {
+  height: 140px;
+  max-width: 80%;
+}
 .cs-menu_widget.cs-style1 {
   padding: 0;
   margin: 0;
@@ -51,7 +54,7 @@
     margin: 0;
   }
   img + p {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -162,13 +165,11 @@
   .cs-widget_title {
     margin-bottom: 20px;
 }
-.cs-text_widget img + p {
+.cs-text_widget img {
   margin-top: 20px;
 }
 
-.cs-text_widget_img {
-  height: 140px;
-}
+
 
 @media screen and (max-width: 575px) {
   .cs-text_widget {

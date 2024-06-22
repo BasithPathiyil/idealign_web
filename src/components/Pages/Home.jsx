@@ -18,6 +18,7 @@ import { pageTitle } from "../../helper";
 import HomeAboutUs from "../AboutUs/HomeAboutUs";
 import HomeServiceList from "../ServiceList/HomeServiceList";
 import PortfolioSlider2 from "../Slider/PortfolioSlider2";
+import PortfolioSlider3 from "../Slider/PorfolioSlider3";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -34,24 +35,24 @@ const heroSocialLinks = [
 // FunFact Data
 const funfaceData = [
   {
-    title: "Years",
-    factNumber: "20",
+    title: "Work Hours",
+    factNumber: "5796648",
     suffix: "",
   },
   {
-    title: "Client",
-    factNumber: "500",
-    suffix: "+",
+    title: "Efficiency optimizing",
+    factNumber: "53.61",
+    suffix: "%",
   },
   {
-    title: "Team Members",
-    factNumber: "30",
-    suffix: "+",
+    title: "Cost Saved",
+    factNumber: "27700000",
+    suffix: "₹",
   },
   {
-    title: "SF Developed",
-    factNumber: "600",
-    suffix: "M",
+    title: "Projects",
+    factNumber: "838",
+    suffix: "Crores+",
   },
 ];
 const portfolioData = [
@@ -211,6 +212,7 @@ export default function Home() {
           <Spacing lg="90" md="45" />
         </Div>
         <PortfolioSlider data={portfolioData} />
+        {/* <PortfolioSlider3 /> */}
       </Div>
       {/* End Portfolio Section */}
 
@@ -254,7 +256,7 @@ export default function Home() {
       {/* End Video Block Section */}
 
       {/* Start Team Section */}
-      {/* <Spacing lg="145" md="80" />
+      <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading
           title="Awesome team <br/>members"
@@ -263,7 +265,7 @@ export default function Home() {
         />
         <Spacing lg="85" md="45" />
         <TeamSlider />
-      </Div> */}
+      </Div>
       <Spacing lg="150" md="80" />
       {/* End Team Section */}
 

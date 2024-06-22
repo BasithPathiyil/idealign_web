@@ -23,7 +23,16 @@ export default function TeamMemberModal({ member, isOpen, onClose }) {
         <Div className="modal-body">
           <Div className="row">
             <Div className="col-lg-4">
-              <img src={member.memberImage} alt={member.memberName} />
+              <img
+                src={member.memberImage}
+                alt={member.memberName}
+                style={{
+                  width: "100%",
+                  height: "340px",
+                  objectFit: "cover",
+                  objectPosition: "0px -30px",
+                }}
+              />
               <p>
                 <strong>Role:</strong> {member.memberDesignation}
               </p>

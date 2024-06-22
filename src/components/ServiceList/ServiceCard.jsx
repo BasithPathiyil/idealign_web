@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Div from "../Div";
 import "./servicecard.scss";
+import CustomDelayAnimation from "../framer/CustomDelayAnimation";
 
 export default function ServiceCard({ data }) {
   return (

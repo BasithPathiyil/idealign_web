@@ -6,6 +6,7 @@ import SectionHeading from "../SectionHeading";
 import Spacing from "../Spacing";
 import ServiceCard from "./ServiceCard";
 import { services } from "./servicedata";
+import CustomDelayAnimation from "../framer/CustomDelayAnimation";
 
 export default function HomeServiceList({ variant }) {
   const [active, setActive] = useState(0);
@@ -35,7 +36,9 @@ export default function HomeServiceList({ variant }) {
                       <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                     )}
                     <Div className="col-lg-3 col-sm-6">
-                      <ServiceCard data={service} />
+                      <CustomDelayAnimation delayInSec={0.5} durInSec={1.5}>
+                        <ServiceCard data={service} />
+                      </CustomDelayAnimation>
                       <Spacing lg="0" md="30" />
                     </Div>
                     {(index % 4 === 2 || index % 4 === 3) && (

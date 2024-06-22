@@ -20,11 +20,11 @@ export default function FunFact({ variant, title, subtitle, data }) {
         <Div className="cs-funfacts">
           {data.map((item, index) => (
             <Div className="cs-funfact cs-style1" key={index}>
-              <Div className="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
+              <Div className="cs-funfact_number cs-primary_font cs-bold cs-primary_color">
                 <span />
                 <Counter num={item.factNumber} suffix={item.suffix} />
               </Div>
-              <Div className="cs-funfact_text cs-white_color">
+              <Div className="cs-funfact_text cs-bold cs-white_color">
                 <p>{item.title}</p>
               </Div>
             </Div>

@@ -158,6 +158,10 @@
   }
 }
 
+.pointer{
+  cursor: pointer;
+}
+
 .cs-gap-24 {
   .slick-slide {
     padding-left: 12px;
@@ -232,7 +236,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
-    background-color: transparedrent;
+    background-color: $black;
     outline: none;
     position: absolute;
     bottom: 6px;
