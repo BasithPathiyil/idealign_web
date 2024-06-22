@@ -21,10 +21,12 @@ export default function HomeServiceList({ variant }) {
         <Div className="container">
           <Div className="row">
             <Div className="col-xl-4">
-              <SectionHeading
-                title="Services we can help you with"
-                subtitle="What Can We Do"
-              />
+              <CustomDelayAnimation delayInSec={0.2} durInSec={1}>
+                <SectionHeading
+                  title="Services we can help you with"
+                  subtitle="What Can We Do"
+                />
+              </CustomDelayAnimation>
               <Spacing lg="90" md="45" />
             </Div>
 
@@ -36,7 +38,7 @@ export default function HomeServiceList({ variant }) {
                       <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                     )}
                     <Div className="col-lg-3 col-sm-6">
-                      <CustomDelayAnimation delayInSec={0.5} durInSec={1.5}>
+                      <CustomDelayAnimation delayInSec={0.2} durInSec={1}>
                         <ServiceCard data={service} />
                       </CustomDelayAnimation>
                       <Spacing lg="0" md="30" />
