@@ -19,6 +19,7 @@ import HomeAboutUs from "../AboutUs/HomeAboutUs";
 import HomeServiceList from "../ServiceList/HomeServiceList";
 import PortfolioSlider2 from "../Slider/PortfolioSlider2";
 import PortfolioSlider3 from "../Slider/PorfolioSlider3";
+import SectionHeading2 from "../SectionHeading/SectionHeading2";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -292,7 +293,7 @@ export default function Home() {
         <Div className="container">
           <Div className="row">
             <Div className="col-xl-4">
-              <SectionHeading
+              <SectionHeading2
                 title="Explore recent publication"
                 subtitle="Our Blog"
                 btnText="View More Blog"
