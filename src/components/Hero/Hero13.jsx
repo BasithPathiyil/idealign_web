@@ -22,7 +22,7 @@ export default function Hero({
       //   style={{ backgroundImage: `url(${bgImageUrl})` }}
     >
       <Div className="cs-hero cs-style5 cs_type_1">
-        <video autoPlay loop muted playsInline>
+        <video autoPlay loop muted playsinline>
           <source src={"video/video-3.mp4"} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

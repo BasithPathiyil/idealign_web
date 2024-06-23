@@ -314,7 +314,7 @@ export default function Home() {
 
       {/* Start MovingText Section */}
       <Spacing lg="125" md="70" />
-      <MovingText text="Our reputed world wide partners" />
+      <MovingText text="Our reputed world wide clients " />
       <Spacing lg="105" md="70" />
       {/* End MovingText Section */}
 
