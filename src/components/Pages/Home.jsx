@@ -120,7 +120,7 @@ export default function Home() {
       {/* Start Hero Section */}
       <Hero13
         title="Let's Align <br/> Your Ideas"
-        subtitle="We ensure the successful planning, execution & completion of construction projects while maximizing efficiency, minimizing risks and delivering the desired outcomes within scope, time and budget constraints."
+        subtitle="Our efficient team of consultants, designers, architectures, engineers and project managers help to achieve your goals. Together we can align your ideas."
         btnText="Get a Quote"
         btnLink="/contact"
         scrollDownId="#service"

@@ -318,6 +318,7 @@
 }
 .cs-hero.cs-style4,
 .cs-hero.cs-style5 {
+  // height: calc(100vh + 180px);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -745,6 +746,7 @@
     }
   }
   .cs-hero.cs-style5 {
+    height: calc(100vh + 180px);
     padding: 80px 15px 80px 100px;
   }
 }

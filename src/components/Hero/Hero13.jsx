@@ -18,7 +18,7 @@ export default function Hero({
 }) {
   return (
     <Div
-      className="cs-hero_7_wrap"
+      // className="cs-hero_7_wrap"
       //   style={{ backgroundImage: `url(${bgImageUrl})` }}
     >
       <Div className="cs-hero cs-style5 cs_type_1">
