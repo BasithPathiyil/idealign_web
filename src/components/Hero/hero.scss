@@ -415,6 +415,12 @@
         font-size: 42px;
       }
     }
+    .cs-hero_subtitle {
+     
+      @media (max-width: 575px) {
+        font-size: 16px;
+      }
+    }
     .cs-hero_btn {
       color: #999696;
       transition: all 0.5s ease;
@@ -833,6 +839,7 @@
     }
   }
 }
+
 
 .cs-hero.cs-style6 {
   padding: 150px 0 70px;

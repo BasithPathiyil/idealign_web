@@ -19,19 +19,27 @@ const copyrightLinks = [
 
 const serviceMenu = [
   {
-    title: 'UI/UX design',
+    title: 'Desgin Engineering Mangement',
     href: '/service/service-details',
   },
   {
-    title: 'WP development',
+    title: 'Project Control',
     href: '/service/service-details',
   },
   {
-    title: 'Digital marketing',
+    title: 'Cost Mangement',
     href: '/service/service-details',
   },
   {
-    title: 'React development',
+    title: 'Contract & Claim Management',
+    href: '/service/service-details',
+  },
+  {
+    title: 'Time Management',
+    href: '/service/service-details',
+  },
+  {
+    title: 'Construction Management',
     href: '/service/service-details',
   },
 ];
@@ -47,7 +55,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
                 <TextWidget
                   logoSrc="/images/idealignlogo.png"
                   logoAlt="Logo"
-                  text="Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium."
+                  text="Our efficient team of consultants, designers, architectures, engineers and project managers help to achieve your goals. Together we can align your ideas."
                 />
                 <SocialWidget />
               </Div>
@@ -66,7 +74,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
               <Div className="cs-footer_item">
                 <Newsletter
                   title="Subscribe"
-                  subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
+                  subtitle="Subscribe to our newsletters."
                   placeholder="example@gmail.com"
                 />
               </Div>

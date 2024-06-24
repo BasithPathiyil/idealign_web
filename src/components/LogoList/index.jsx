@@ -30,7 +30,7 @@ export default function LogoList() {
       {partnerLogos.map((partnerLogo, index) => (
         <div className="cs-partner_logo" key={index}>
           <img
-            style={{ width: "126px", height: "89px" }}
+            // style={{ width: "126px", height: "89px" }}
             src={partnerLogo.src}
             alt={partnerLogo.alt}
           />
