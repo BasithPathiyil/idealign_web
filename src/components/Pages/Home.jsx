@@ -53,7 +53,7 @@ const funfaceData = [
   {
     title: "Projects",
     factNumber: "838",
-    suffix: "Crores+",
+    suffix: "Cr+",
   },
 ];
 // const portfolioData = [

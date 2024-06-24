@@ -321,7 +321,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  padding: 80px 115px;
+  padding: 80px 215px;
 }
 .cs-hero.cs-style4 {
   .cs-hero_text {
@@ -363,7 +363,7 @@
   }
   .cs-hero_subtitle {
     margin: 0 0 60px 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 30px;
     position: relative;
     color: #fff;
@@ -416,9 +416,10 @@
       }
     }
     .cs-hero_subtitle {
-     
+      line-height: 2.6rem;
       @media (max-width: 575px) {
         font-size: 16px;
+        line-height: 1.6rem;
       }
     }
     .cs-hero_btn {

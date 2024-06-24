@@ -1,6 +1,11 @@
 @import "../../scss/default/color_variable";
+
+.cs-fooer {
+  background-color: #e6f1fd;
+}
 .cs-fooer_main {
   padding: 95px 0 35px;
+  background-color: #e6f1fd;
 }
 
 .cs-footer_item {
@@ -137,7 +142,9 @@
     margin-top: 25px;
   }
 }
-
+.cs-bottom_footer_main{
+  background-color: #e6f1fd;
+}
 
 .cs-bottom_footer {
   display: flex;
@@ -145,6 +152,7 @@
   justify-content: space-between;
   padding: 20px 0;
   border-top: 1px solid $border;
+  
   >* {
     padding: 4px 0;
   }
