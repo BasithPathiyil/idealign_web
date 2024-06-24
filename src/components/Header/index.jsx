@@ -350,7 +350,7 @@ export default function Header({ variant }) {
                       </DropDown>
                     </li> */}
                   </ul>
-                  {/* <span
+                  <span
                     className={
                       mobileToggle
                         ? "cs-munu_toggle cs-toggle_active"
@@ -359,7 +359,7 @@ export default function Header({ variant }) {
                     onClick={() => setMobileToggle(!mobileToggle)}
                   >
                     <span></span>
-                  </span> */}
+                  </span>
                 </Div>
               </Div>
               {/* <Div className="cs-main_header_right">

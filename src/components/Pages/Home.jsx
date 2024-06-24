@@ -56,33 +56,58 @@ const funfaceData = [
     suffix: "Crores+",
   },
 ];
+// const portfolioData = [
+//   {
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_1.jpeg",
+//   },
+//   {
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_2.jpeg",
+//   },
+//   {
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_0.jpg",
+//   },
+//   {
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_3.jpeg",
+//   },
+// ];
 const portfolioData = [
   {
-    title: "Colorful Art Work",
+    title: "Lulu Tirur",
     subtitle: "See Details",
     href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_1.jpeg",
+    src: "/images/projects/1 lulu tirur.jpg",
   },
   {
-    title: "Colorful Art Work",
+    title: "Gokulam Grand Hotel",
     subtitle: "See Details",
     href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_2.jpeg",
+    src: "/images/projects/gokulam.jpg",
   },
   {
-    title: "Colorful Art Work",
+    title: "Lulu Tirur",
     subtitle: "See Details",
     href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_0.jpg",
+    src: "/images/projects/1 lulu tirur.jpg",
   },
   {
-    title: "Colorful Art Work",
+    title: "Gokulam Grand Hotel",
     subtitle: "See Details",
     href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_3.jpeg",
+    src: "/images/projects/gokulam.jpg",
   },
 ];
-
 export default function Home() {
   pageTitle("Home");
 
@@ -94,8 +119,8 @@ export default function Home() {
     <>
       {/* Start Hero Section */}
       <Hero13
-        title="Creativity In <br/>Our Blood Line"
-        subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
+        title="Let’s Align <br/> Your Ideas"
+        subtitle="We ensure the successful planning, execution & completion of construction projects while maximizing efficiency, minimizing risks and delivering the desired outcomes within scope, time and budget constraints."
         btnText="Get a Quote"
         btnLink="/contact"
         scrollDownId="#service"

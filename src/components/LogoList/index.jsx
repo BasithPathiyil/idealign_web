@@ -1,26 +1,26 @@
-import React from 'react';
-import Div from '../Div';
-import './logolist.scss';
+import React from "react";
+import Div from "../Div";
+import "./logolist.scss";
 const partnerLogos = [
   {
-    src: '/images/partner_1.svg',
-    alt: 'Partner',
+    src: "/images/clientlogos/lulu.gif",
+    alt: "Partner",
   },
   {
-    src: '/images/partner_2.svg',
-    alt: 'Partner',
+    src: "/images/clientlogos/aak.png",
+    alt: "Partner",
   },
   {
-    src: '/images/partner_3.svg',
-    alt: 'Partner',
+    src: "/images/clientlogos/focuzayur.png",
+    alt: "Partner",
   },
   {
-    src: '/images/partner_4.svg',
-    alt: 'Partner',
+    src: "/images/clientlogos/gokulam.png",
+    alt: "Partner",
   },
   {
-    src: '/images/partner_5.svg',
-    alt: 'Partner',
+    src: "/images/clientlogos/aak.png",
+    alt: "Partner",
   },
 ];
 
@@ -29,7 +29,11 @@ export default function LogoList() {
     <Div className="cs-partner_logo_wrap">
       {partnerLogos.map((partnerLogo, index) => (
         <div className="cs-partner_logo" key={index}>
-          <img src={partnerLogo.src} alt={partnerLogo.alt} />
+          <img
+            style={{ width: "126px", height: "89px" }}
+            src={partnerLogo.src}
+            alt={partnerLogo.alt}
+          />
         </div>
       ))}
     </Div>
