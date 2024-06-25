@@ -107,7 +107,7 @@ export default function PortfolioSlider2() {
         breakpoint: 500,
         settings: {
           slidesToShow: 1,
-          dots: true,
+          dots: false,
           arrows: false,
         },
       },

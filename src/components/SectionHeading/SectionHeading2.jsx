@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 import Button from "../Button";
 import Spacing from "../Spacing";
 import Div from "../Div";
+import Button2 from "../Button/Button2";
 
 export default function SectionHeading2({
   title,
@@ -26,7 +27,7 @@ export default function SectionHeading2({
       {btnText && (
         <Div style={{ marginLeft: "120px" }}>
           <Spacing lg="25" md="10" />
-          <Button btnLink={btnLink} btnText={btnText} />
+          <Button2 btnLink={btnLink} btnText={btnText} />
         </Div>
       )}
     </Div>

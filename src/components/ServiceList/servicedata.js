@@ -149,7 +149,7 @@
 export const services = [
   {
     id: "costmanagement",
-    title: "Desgin Engineering Mangement",
+    title: "Design Engineering Mangement",
     link: "/service/costmanagement",
     src: "/images/services/designengineering.jpg",
     content:
