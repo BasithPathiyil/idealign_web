@@ -904,6 +904,28 @@ label {
     }
   }
 }
+.cs-shape_wrap_41 {
+  position: relative;
+  .cs-shape_4 {
+    position: absolute;
+    background-color: #000;
+    border-radius: 50%;
+    &:nth-child(1) {
+      left: 5%;
+      top: 50%;
+      height: 100px;
+      width: 100px;
+      animation: animo-y 8s infinite;
+    }
+    &:nth-child(2) {
+      left: 15%;
+      top: 62%;
+      height: 180px;
+      width: 180px;
+      // animation: animo-y 8s infinite;
+    }
+  }
+}
 .cs-shape_wrap_5 {
   position: relative;
   .cs-section_heading {
