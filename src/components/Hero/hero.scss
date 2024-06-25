@@ -150,6 +150,7 @@
   left: 50%;
   margin-left: -10px;
   color: transparent;
+  z-index: 10;
   &:hover {
     color: transparent;
   }
@@ -842,7 +843,14 @@
     }
   }
 }
-
+@media only screen and  (max-width: 575px) {
+  
+   
+    .cs-down_btn {
+      bottom: 220px;
+      display: none;
+    }
+}
 
 .cs-hero.cs-style6 {
   padding: 150px 0 70px;

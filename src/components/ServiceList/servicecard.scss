@@ -9,6 +9,12 @@
     img {
       width: 100%;
       border-radius: inherit;
+      height: 195px;
+      @media screen and (max-width: 426px) {
+        height: 320px;
+        object-fit: cover;
+      }
+
     }
     .cs-card_overlay {
       position: absolute;

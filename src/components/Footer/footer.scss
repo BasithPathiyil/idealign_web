@@ -74,9 +74,9 @@
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    border: 2px solid $white;
+    border: 2px solid $black;
     margin: 7px;
-    color: $white;
+    color: $black;
     &:hover {
       border-color: $accent;
       transform: scale(1.08);
@@ -186,6 +186,9 @@
   .cs-text_widget {
     margin-top: 20px;
     text-align: center;
+  }
+  .cs-social_btns.cs-style1 {
+    justify-content: center;
   }
 }
 .cs-menu_widget.cs-style1 li:not(:last-child) {

@@ -151,7 +151,7 @@ export const services = [
     id: "costmanagement",
     title: "Desgin Engineering Mangement",
     link: "/service/costmanagement",
-    src: "/images/service_1.jpeg",
+    src: "/images/services/designengineering.jpg",
     content:
       "We excel in planning, precise estimation, and stringent cost-control process. Our expertise in this area guarantees that all our projects not only adhere to budgetary constraints but also attains its financial goals with utmost efficiency.",
     lists: [
@@ -171,7 +171,7 @@ export const services = [
     id: "timemanagement",
     title: "Project Control",
     link: "/service/timemanagement",
-    src: "/images/service_2.jpeg",
+    src: "/images/services/projectcontrol.jpg",
     content:
       "Our proficiency in the art of time management empowers every client to achieve their goals punctually and with unwavering precision. Time management, in our hands, becomes the catalyst for productivity optimization and guaranteed project success.",
     lists: [
@@ -196,7 +196,7 @@ export const services = [
     id: "procurement",
     title: "Cost Mangement",
     link: "/service/procurement",
-    src: "/images/service_3.jpeg",
+    src: "/images/services/costmanagement.jpg",
     content:
       "We have industry's top-notch procurement specialists on our team. Our unwavering commitment to our client is evident in every aspect of our procurement process, where we place paramount importance on valuing and prioritizing our clients' assets.",
     lists: [
@@ -216,7 +216,7 @@ export const services = [
     id: "construction",
     title: "Contract & Claim Management",
     link: "/service/construction",
-    src: "/images/service_4.jpeg",
+    src: "/images/services/claimmanagement.jpg",
     content:
       "At our company, we take pride in offering the construction management services that every client truly needs. Our approach to construction management goes beyond ordinary oversight; it encompasses a holistic and unparalleled commitment to excellence. With our expertise, construction projects receive the finest, most comprehensive management, meeting and exceeding the expectations of every client.",
     lists: [
@@ -241,7 +241,7 @@ export const services = [
     id: "contract",
     title: "Time Management",
     link: "/service/contract",
-    src: "/images/service_5.jpeg",
+    src: "/images/services/time.jpg",
     content:
       "We excel in planning, precise estimation, and stringent cost-control process. Our expertise in this area guarantees that all our projects not only adhere to budgetary constraints but also attains its financial goals with utmost efficiency.",
     lists: [
@@ -271,7 +271,7 @@ export const services = [
     id: "closeout",
     title: "Construction Management",
     link: "/service/closeout",
-    src: "/images/service_6.jpeg",
+    src: "/images/services/construction.jpg",
     content:
       "We excel in planning, precise estimation, and stringent cost-control process. Our expertise in this area guarantees that all our projects not only adhere to budgetary constraints but also attains its financial goals with utmost efficiency.",
     lists: [

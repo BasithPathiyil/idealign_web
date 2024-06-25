@@ -170,7 +170,9 @@ export default function TeamSlider() {
         breakpoint: 991,
         settings: {
           slidesToShow: 2,
-          dots: true,
+          // dots: true,
+          // arrows: false,
+          dots: false,
           arrows: false,
         },
       },
@@ -178,7 +180,9 @@ export default function TeamSlider() {
         breakpoint: 500,
         settings: {
           slidesToShow: 1,
-          dots: true,
+          // dots: true,
+          // arrows: false,
+          dots: false,
           arrows: false,
         },
       },
