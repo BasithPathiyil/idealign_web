@@ -103,7 +103,7 @@ export default function ProjectsListPage() {
       {/* End Hero Section */}
 
       {/* Start Portfolio Section */}
-      <Spacing lg="150" md="80" />
+      <Spacing lg="90" md="60" />
       {portfolioData?.map((item, index) =>
         index % 2 === 0 ? (
           <Div key={index}>

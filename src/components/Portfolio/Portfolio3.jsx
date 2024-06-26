@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import Button from '../Button'
 import Div from '../Div'
 import Spacing from '../Spacing'
+import Button2 from '../Button/Button2';
 
 export default function Portfolio3({title, subtitle, btnText, btnLink, imageUrl, category}) {
   const [hovered, setHovered] = useState(false);
   return (
     <Div className="cs-portfolio cs-style2 cs-type1">
-      <Div className="cs-gradient_shape" />
+      {/* <Div className="cs-gradient_shape" /> */}
       <Div className="container">
         <Div className="row align-items-center cs-column_reverse_lg">
           <Div className="col-xl-5 col-lg-6">
@@ -20,7 +21,7 @@ export default function Portfolio3({title, subtitle, btnText, btnLink, imageUrl,
                 onMouseEnter={()=>setHovered(true)} 
                 onMouseLeave={()=>setHovered(false)} 
               >
-                <Button 
+                <Button2
                   btnLink={btnLink} 
                   btnText={btnText} 
                 />
