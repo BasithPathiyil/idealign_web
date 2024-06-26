@@ -1,6 +1,8 @@
 import { useInView } from "framer-motion";
 import React, { useRef } from "react";
 import CountUp from "react-countup";
+import "odometer/themes/odometer-theme-default.css";
+import Odometer from 'react-odometerjs';
 
 const Counter = ({ num, suffix }) => {
   const ref = useRef(null);
@@ -15,7 +17,8 @@ const Counter = ({ num, suffix }) => {
         color: "white",
       }}
     >
-      <CountUp end={num} enableScrollSpy scrollSpyOnce />
+      <CountUp start={0} end={num} duration={3} enableScrollSpy scrollSpyOnce />
+      {/* <Odometer value={"100"}  /> */}
       {suffix}
     </h2>
   );
