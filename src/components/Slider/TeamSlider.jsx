@@ -150,7 +150,7 @@ export default function TeamSlider() {
     </div>
   );
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,

@@ -20,6 +20,7 @@ import HomeServiceList from "../ServiceList/HomeServiceList";
 import PortfolioSlider2 from "../Slider/PortfolioSlider2";
 import PortfolioSlider3 from "../Slider/PorfolioSlider3";
 import SectionHeading2 from "../SectionHeading/SectionHeading2";
+import Hero from "../Hero";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -118,7 +119,7 @@ export default function Home() {
   return (
     <>
       {/* Start Hero Section */}
-      <Hero13
+      {/* <Hero13
         title="Let's Align <br/> Your Ideas"
         subtitle="Our efficient team of consultants, designers, architectures, engineers and project managers help to achieve your goals. Together we can align your ideas."
         btnText="Get a Quote"
@@ -128,6 +129,16 @@ export default function Home() {
         heroSocialLinks={heroSocialLinks}
         // bgImageUrl="/images/slide_1_3-200x140.jpg"
         bgImageUrl="/images/bgImageideal2.jpg"
+      /> */}
+      <Hero
+        title="Let's Align <br/> Your Ideas"
+        subtitle="Our efficient team of consultants, designers, architects, engineers and project managers help to achieve your goals. Together we can align your ideas."
+        btnText="Get a Quote"
+        btnLink="/contact"
+        scrollDownId="#service"
+        socialLinksHeading="Follow Us"
+        heroSocialLinks={heroSocialLinks}
+        bgImageUrl="/images/hero_bg.jpeg"
       />
       {/* End Hero Section */}
 

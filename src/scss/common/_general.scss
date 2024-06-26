@@ -886,7 +886,7 @@ label {
   position: relative;
   .cs-shape_4 {
     position: absolute;
-    background-color: #000;
+    background-color: $logo1;
     border-radius: 50%;
     &:nth-child(1) {
       left: 5%;
@@ -908,7 +908,7 @@ label {
   position: relative;
   .cs-shape_4 {
     position: absolute;
-    background-color: #000;
+    background-color: $logo1;
     border-radius: 50%;
     &:nth-child(1) {
       left: 5%;
