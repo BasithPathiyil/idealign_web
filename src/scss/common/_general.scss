@@ -135,9 +135,12 @@ hr {
 }
 
 .cs-bg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  @media (min-width: 575px) {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+ 
 }
 
 .cs-vertical_middle {

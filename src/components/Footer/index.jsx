@@ -55,7 +55,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
                 <TextWidget
                   logoSrc="/images/idealignlogo.png"
                   logoAlt="Logo"
-                  text="Our efficient team of consultants, designers, architectures, engineers and project managers help to achieve your goals. Together we can align your ideas."
+                  text="Our efficient team of consultants, designers, architects, engineers and project managers help to achieve your goals. Together we can align your ideas."
                 />
                 <SocialWidget />
               </Div>
