@@ -370,7 +370,7 @@
     font-weight: 700;
     font-size: 120px;
     position: relative;
-    color: white;
+    color: $white;
     z-index: 10;
   }
   .cs-hero_subtitle {
@@ -379,7 +379,7 @@
     font-size: 18px;
     line-height: 1.25rem;
     position: relative;
-    color: #fff;
+    color: $white;
     z-index: 10;
   }
   .cs-hero_text {

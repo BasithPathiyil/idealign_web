@@ -42,6 +42,7 @@ export default function ProjectsPage() {
 
   return (
     <>
+      <Spacing lg="90" md="60" />
       <Hero3
         title={`Projects`}
         btnLink="contact"

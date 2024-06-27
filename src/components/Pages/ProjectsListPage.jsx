@@ -92,6 +92,7 @@ export default function ProjectsListPage() {
   return (
     <>
       {/* Start Hero Section */}
+      <Spacing lg="150" md="80" />
       <Hero3
         title={`${capitalizeFirstLetter(category)} Projects`}
         btnLink="contact"
