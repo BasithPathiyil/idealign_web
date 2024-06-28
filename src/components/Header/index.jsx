@@ -254,7 +254,7 @@ export default function Header({ variant }) {
                       </DropDown>
                     </li>
                     <li className="">
-                      <NavLink to="blog" onClick={() => setMobileToggle(false)}>
+                      <NavLink to="newsevents" onClick={() => setMobileToggle(false)}>
                         News & Events
                       </NavLink>
                     
