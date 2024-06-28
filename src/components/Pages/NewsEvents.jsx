@@ -11,6 +11,7 @@ import Hero3 from "../Hero/Hero3.jsx";
 import Pagination2 from "../Pagination/Pagination2.jsx";
 import useAxiosFetch from "../../hooks/useAxiosFetch.js";
 import { Constants } from "../../utils/constants.js";
+import { formatDate } from "../../utils/utilities.js";
 const postData = [
   {
     thumb: "/images/post_4.jpeg",
@@ -56,7 +57,7 @@ export default function NewsEventsPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const newsEventsData = data?.arrList
+  const newsEventsData = data?.arrList;
   return (
     <>
       <Hero3
@@ -76,7 +77,7 @@ export default function NewsEventsPage() {
                   thumb={`${Constants.imagebase}${item.mainImage}`}
                   title={item.title}
                   subtitle={item.shortDesc}
-                  date={item.eventDate}
+                  date={formatDate(item.eventDate)}
                   category={"Tech"}
                   categoryHref={"/newsevents"}
                   href={`/newsevents/${item._id}`}

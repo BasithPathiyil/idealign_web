@@ -10,6 +10,7 @@ import Spacing from "../Spacing";
 import useAxiosFetch from "../../hooks/useAxiosFetch";
 import api from "../../utils/api";
 import { Constants } from "../../utils/constants";
+import parse from "html-react-parser";
 
 const FormattedText = ({ text }) => {
   const containsNewlines = (str) => /\r?\n/.test(str);
@@ -93,24 +94,11 @@ export default function ProjectDetailsPage() {
               title={`${projectData?.projectName}`}
               subtitle={capitalizeFirstLetter(projectData?.categoryId)}
             >
-              {/* <Spacing lg="40" md="20" />
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium voltire doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt.
-              </p>
-              <Spacing lg="10" md="10" />
-              <p>
-                Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-                quis nostrum exercitationem ullam corporis suscipit.
-              </p> */}
-              <FormattedText text={projectData?.description} />
+              {/* <FormattedText text={projectData?.description} /> */}
+
+              {projectData && projectData.description
+                ? parse(projectData?.description)
+                : ""}
             </SectionHeading>
           </Div>
           <Div className="col-lg-5 offset-lg-1">
