@@ -57,7 +57,7 @@ export default function NewsEventsDetailedPage() {
                   </Link>
                 </Div>
                 <h2 className="cs-post_title">{projectData?.title}</h2>
-                {projectData?.content ? parse(projectData?.content) : ""}
+                {projectData && projectData?.content ? parse(projectData?.content) : ""}
 
                 <Div className="row">
                   <Div className="col-md-6">
