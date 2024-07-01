@@ -10,7 +10,9 @@
 .cs-cursor_lg {
   width: 40px;
   height: 40px;
-  border: 1px solid $logo1;
+  // border: 1px solid $logo1;
+  border: 1px solid #38bfc9;
+  
   left: 0;
   top: 0;
   pointer-events: none;
@@ -19,7 +21,8 @@
 .cs-cursor_sm {
   width: 8px;
   height: 8px;
-  background-color: $logo1;
+  // background-color: $logo1;
+  background-color: #38bfc9;
   left: 15px;
   top: 15px;
   pointer-events: none;

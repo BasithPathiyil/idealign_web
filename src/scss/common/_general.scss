@@ -813,7 +813,8 @@ label {
   height: 0px;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 14px solid $accent;
+  // border-left: 14px solid $accent;
+  border-left: 14px solid #38bfc9;
   z-index: 10;
 }
 
