@@ -381,7 +381,7 @@ hr {
   transition: all 0.3s ease;
   border: 2px solid #999696;
   background-color: transparent;
-  color: #fff;
+  color: #000000;
   &:focus {
     border-color: $accent;
   }
@@ -1702,4 +1702,7 @@ label {
       }
     }
   }
+}
+.form_err_msg{
+  color: red;
 }

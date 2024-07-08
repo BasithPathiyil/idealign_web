@@ -1,17 +1,81 @@
-import { Icon } from '@iconify/react';
-import React, { useEffect } from 'react';
-import { pageTitle } from '../../helper';
-import Div from '../Div';
-import PageHeading from '../PageHeading';
-import SectionHeading from '../SectionHeading';
-import Spacing from '../Spacing';
-import ContactInfoWidget from '../Widget/ContactInfoWidget';
+import { Icon } from "@iconify/react";
+import React, { useEffect, useState } from "react";
+import { pageTitle } from "../../helper";
+import Div from "../Div";
+import PageHeading from "../PageHeading";
+import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
+import ContactInfoWidget from "../Widget/ContactInfoWidget";
+import api from "../../utils/api";
 
 export default function ContactPage() {
-  pageTitle('Contact Us');
+  pageTitle("Contact Us");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  ////////////////////////////usestates
+  const [errors, setErrors] = useState({});
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [project, setProject] = useState("");
+  const [mobile, setMobile] = useState();
+  const [message, setMessage] = useState("");
+
+  ///functions
+  //form validation function
+  const validateForm = () => {
+    let errors = {};
+    if (!fullName?.trim()) {
+      errors.fullName = "Full Name is required";
+    }
+    if (!email?.trim()) {
+      errors.email = "Email is required";
+    }
+    if (!project?.trim()) {
+      errors.project = "Project type is required";
+    }
+    if (!mobile?.trim()) {
+      errors.mobile = "Mobile is required";
+    }
+    if (!message?.trim()) {
+      errors.message = "Message is required";
+    }
+    setErrors(errors);
+    return errors;
+  };
+
+  //clearform
+  const clearForm = () => {
+    setFullName("");
+    setEmail("");
+    setProject("");
+    setMobile("");
+    setMessage("");
+  };
+
+  //sendmessage
+  const handleClickSend = async (e) => {
+    e.preventDefault();
+    let data = {
+      fullName,
+      email,
+      project,
+      mobile,
+      message,
+    };
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      return;
+    }
+    try {
+      console.log("api call");
+      await api.post("/contactform", data);
+      clearForm();
+    } catch (error) {
+      console.log("error", error);
+    }
+  };
+
   return (
     <>
       <PageHeading
@@ -34,36 +98,93 @@ export default function ContactPage() {
           <Div className="col-lg-6">
             <form action="#" className="row">
               <Div className="col-sm-6">
-                <label className="cs-primary_color">Full Name*</label>
-                <input type="text" className="cs-form_field" />
+                <label className="cs-black_color">Full Name*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, fullName: "" });
+                    setFullName(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.fullName ? (
+                  <p className="form_err_msg">{errors.fullName}</p>
+                ) : (
+                  ""
+                )}
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
-                <label className="cs-primary_color">Email*</label>
-                <input type="text" className="cs-form_field" />
+                <label className="cs-black_color">Email*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, email: "" });
+                    setEmail(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.email ? (
+                  <p className="form_err_msg">{errors.email}</p>
+                ) : (
+                  ""
+                )}
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
-                <label className="cs-primary_color">Project Type*</label>
-                <input type="text" className="cs-form_field" />
+                <label className="cs-black_color">Project Type*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, project: "" });
+                    setProject(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.project ? (
+                  <p className="form_err_msg">{errors.project}</p>
+                ) : (
+                  ""
+                )}
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
-                <label className="cs-primary_color">Mobile*</label>
-                <input type="text" className="cs-form_field" />
+                <label className="cs-black_color">Mobile*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, mobile: "" });
+                    setMobile(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.mobile ? (
+                  <p className="form_err_msg">{errors.mobile}</p>
+                ) : (
+                  ""
+                )}
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-12">
-                <label className="cs-primary_color">Mobile*</label>
+                <label className="cs-black_color">Message*</label>
                 <textarea
+                  onChange={(e) => {
+                    setErrors({ ...errors, message: "" });
+                    setMessage(e.target.value);
+                  }}
                   cols="30"
                   rows="7"
                   className="cs-form_field"
                 ></textarea>
+                {errors.message ? (
+                  <p className="form_err_msg">{errors.message}</p>
+                ) : (
+                  ""
+                )}
                 <Spacing lg="25" md="25" />
               </Div>
               <Div className="col-sm-12">
-                <button className="cs-btn cs-style1">
+                <button onClick={handleClickSend} className="cs-btn cs-style1">
                   <span>Send Message</span>
                   <Icon icon="bi:arrow-right" />
                 </button>

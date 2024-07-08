@@ -1,65 +1,69 @@
-import React from 'react';
-import Portfolio from '../Portfolio';
-import Div from '../Div';
-import Slider from 'react-slick';
-import { Icon } from '@iconify/react';
+import React from "react";
+import Portfolio from "../Portfolio";
+import Div from "../Div";
+import Slider from "react-slick";
+import { Icon } from "@iconify/react";
+import useAxiosFetch from "../../hooks/useAxiosFetch";
+import { Constants } from "../../utils/constants";
 const portfolioData = [
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_31.jpeg',
+    title: "Colorful Art Work",
+    subtitle: "See Details",
+    href: "/portfolio/portfolio-details",
+    src: "/images/portfolio_31.jpeg",
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_32.jpeg',
+    title: "Colorful Art Work",
+    subtitle: "See Details",
+    href: "/portfolio/portfolio-details",
+    src: "/images/portfolio_32.jpeg",
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_33.jpeg',
+    title: "Colorful Art Work",
+    subtitle: "See Details",
+    href: "/portfolio/portfolio-details",
+    src: "/images/portfolio_33.jpeg",
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_34.jpeg',
+    title: "Colorful Art Work",
+    subtitle: "See Details",
+    href: "/portfolio/portfolio-details",
+    src: "/images/portfolio_34.jpeg",
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_31.jpeg',
+    title: "Colorful Art Work",
+    subtitle: "See Details",
+    href: "/portfolio/portfolio-details",
+    src: "/images/portfolio_31.jpeg",
   },
-  {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_32.jpeg',
-  },
-  {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_33.jpeg',
-  },
-  {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_34.jpeg',
-  },
+  // {
+  //   title: 'Colorful Art Work',
+  //   subtitle: 'See Details',
+  //   href: '/portfolio/portfolio-details',
+  //   src: '/images/portfolio_32.jpeg',
+  // },
+  // {
+  //   title: 'Colorful Art Work',
+  //   subtitle: 'See Details',
+  //   href: '/portfolio/portfolio-details',
+  //   src: '/images/portfolio_33.jpeg',
+  // },
+  // {
+  //   title: 'Colorful Art Work',
+  //   subtitle: 'See Details',
+  //   href: '/portfolio/portfolio-details',
+  //   src: '/images/portfolio_34.jpeg',
+  // },
 ];
 export default function PortfolioSlider2() {
+  const { data, loading, error } = useAxiosFetch("/newsevents/get", {});
+  const portfolios = data?.arrList;
   /** Slider Settings **/
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <div
       {...props}
       className={
-        'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
@@ -71,8 +75,8 @@ export default function PortfolioSlider2() {
     <div
       {...props}
       className={
-        'slick-next slick-arrow' +
-        (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
+        "slick-next slick-arrow" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
@@ -84,7 +88,7 @@ export default function PortfolioSlider2() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: portfolios?.length ? portfolios?.length > 4 ? 4 : portfolios?.length : 1,
     slidesToScroll: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
@@ -92,13 +96,13 @@ export default function PortfolioSlider2() {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: portfolios?.length ? portfolios?.length > 3 ? 3 : portfolios?.length : 1,
         },
       },
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow:portfolios?.length ? portfolios?.length > 2 ? 2 : portfolios?.length : 1,
           dots: true,
           arrows: false,
         },
@@ -116,13 +120,13 @@ export default function PortfolioSlider2() {
 
   return (
     <Slider {...settings} className="cs-gap-12 cs-arrow_style4">
-      {portfolioData.map((item, index) => (
+      {portfolios?.map((item, index) => (
         <Div key={index}>
           <Portfolio
             title={item.title}
             subtitle={item.subtitle}
             href={item.href}
-            src={item.src}
+            src={`${Constants.imagebase}${item.mainImage}`}
             variant="cs-style1 cs-type2 cs-size3"
           />
         </Div>

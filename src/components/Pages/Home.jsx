@@ -21,6 +21,7 @@ import PortfolioSlider2 from "../Slider/PortfolioSlider2";
 import PortfolioSlider3 from "../Slider/PorfolioSlider3";
 import SectionHeading2 from "../SectionHeading/SectionHeading2";
 import Hero from "../Hero";
+import useAxiosFetch from "../../hooks/useAxiosFetch";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -115,6 +116,9 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const { data, loading, error } = useAxiosFetch("/stats", {});
+  console.log("data",data)
 
   return (
     <>

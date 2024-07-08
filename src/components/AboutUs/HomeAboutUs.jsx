@@ -39,6 +39,9 @@ const HomeAboutUs = () => {
           />
           <Spacing lg="25" md="25" />
         </Div>
+        <Div>
+          <img src="images/aboutusapproach.png" alt="nn" />
+        </Div>
       </Div>
     </Div>
   );
