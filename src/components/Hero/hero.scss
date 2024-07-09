@@ -97,6 +97,14 @@
       flex: none;
     }
   }
+  .cs-hero_info2 {
+    display: flex;
+    align-items: center;
+    > div {
+      width: 70%;
+      flex: none;
+    }
+  }
   .cs-hero_text {
     position: relative;
     z-index: 3;
@@ -722,6 +730,10 @@
       flex-direction: column-reverse;
       align-items: flex-start;
     }
+    .cs-hero_info2 {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
     .cs-hero_title {
       font-size: 56px;
       margin-bottom: 20px;
@@ -731,6 +743,9 @@
       max-width: 500px;
     }
     .cs-hero_info > div {
+      width: 100%;
+    }
+    .cs-hero_info2 > div {
       width: 100%;
     }
     .cs-down_btn {

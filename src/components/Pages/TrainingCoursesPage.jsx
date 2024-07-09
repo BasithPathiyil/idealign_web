@@ -8,8 +8,12 @@ import Spacing from "../Spacing";
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import api from "../../utils/api";
 import Hero from "../Hero";
+import Hero4 from "../Hero/Hero4";
+import Hero6 from "../Hero/Hero6";
+import CoursesCard from "../TrainingCourses/CoursesCard";
+import Hero41 from "../Hero/Hero41";
 
-export default function ContactPage() {
+export default function TrainingCoursesPage() {
   pageTitle("Contact Us");
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -86,15 +90,87 @@ export default function ContactPage() {
       links: "/",
     },
   ];
-  
+  const showcaseData = [
+    {
+      title: "IACM",
+      subtitle: "Idealign Academy For Construction Mangement",
+      imgUrl: "/images/slider_1.jpeg",
+      href: "/case-study/case-study-details",
+    },
+    {
+      title: "Construction Project <br/>Management Program",
+      subtitle: "Construction Management Training",
+      imgUrl: "/images/slider_2.jpeg",
+      href: "/case-study/case-study-details",
+    },
+    // {
+    //   title: "Think reality <br/>do positive",
+    //   imgUrl: "/images/slider_3.jpeg",
+    //   href: "/case-study/case-study-details",
+    // },
+    // {
+    //   title: "Think reality <br/>do positive",
+    //   imgUrl: "/images/slider_4.jpeg",
+    //   href: "/case-study/case-study-details",
+    // },
+  ];
+  const teamData = [
+    {
+      memberImage: "/images/services/designengineering.jpg",
+      memberName: "Introduction To Construction Management",
+      memberDesignation: "Introduction To Construction Management content",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/",
+      },
+    },
+    {
+      memberImage: "/images/services/projectcontrol.jpg",
+      memberName: "Quantity Surveying",
+      memberDesignation:
+        "Quantity Surveying is primarily centered on management of costs and budgets of construction projects.",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/",
+      },
+    },
+    {
+      memberImage: "/images/services/costmanagement.jpg",
+      memberName: "Project Engineering",
+      memberDesignation:
+        "This program is aimed to train the emerging graduates with the latest and best tools, techniques",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/",
+      },
+    },
+    {
+      memberImage: "/images/services/claimmanagement.jpg",
+      memberName: "Planning and Scheduling",
+      memberDesignation:
+        "Planning a project is 20% software application & 80% implementing proper planning & scheduling techniques.",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/",
+      },
+    },
+  ];
 
   return (
     <>
-      <PageHeading
+      {/* <PageHeading
         title="Contact Us"
         bgSrc="/images/contact_hero_bg.jpeg"
         pageLinkText="Contact"
-      />
+      /> */}
       {/* <Hero
         title="Let's Align <br/> Your Ideas"
         subtitle="Our efficient team of consultants, designers, architects, engineers and project managers help to achieve your goals. Together we can align your ideas."
@@ -105,6 +181,99 @@ export default function ContactPage() {
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/bgImg1.jpeg"
       /> */}
+      {/* <Hero4
+        title="IACM"
+        subtitle="Idealign Academy For Construction Mangement"
+        scrollDownId="#service"
+        socialLinksHeading="Follow Us"
+        heroSocialLinks={heroSocialLinks}
+        phoneNumber="+044 546664"
+        email="info@arino.com"
+      /> */}
+      <Hero6
+        heroSocialLinks={heroSocialLinks}
+        socialLinksHeading="Follow Us"
+        showcaseData={showcaseData}
+      />
+      <Spacing lg="150" md="80" />
+      <Div className="container">
+        <Div className="row">
+          <Div className="col-xl-5 col-lg-7">
+            <SectionHeading title="Why IACM?" subtitle="">
+              <Spacing lg="30" md="20" />
+              <p className="cs-m0">
+                When you complete this program, you will have acquired a unique
+                combination of construction and project management skills along
+                with necessary tools to stay ahead the curve in the industry.
+              </p>
+              <Spacing lg="30" md="30" />
+              <p className="cs-m0">
+                This 3- part program will cover major facets of construction
+                management including project engineering, planning & scheduling
+                and cost estimating & control.
+              </p>
+              <Spacing lg="30" md="30" />
+              <Div className="cs-separator cs-accent_bg"></Div>
+              <Spacing lg="25" md="40" />
+            </SectionHeading>
+          </Div>
+          <Div className="col-lg-5 offset-xl-2">
+            <img
+              src="/images/about_img_1.jpeg"
+              alt="About"
+              className="w-100 cs-radius_15"
+            />
+            <Spacing lg="25" md="25" />
+          </Div>
+          <Div className="col-lg-7">
+            <img
+              src="/images/about_img_2.jpeg"
+              alt="About"
+              className="w-100 cs-radius_15"
+            />
+            <Spacing lg="25" md="25" />
+          </Div>
+          <Div className="col-lg-5">
+            <img
+              src="/images/about_img_3.jpeg"
+              alt="About"
+              className="w-100 cs-radius_15"
+            />
+            <Spacing lg="25" md="25" />
+          </Div>
+        </Div>
+      </Div>
+      <Spacing lg="150" md="80" />
+      <Div className="container">
+        <SectionHeading
+          title="OUR COURSES"
+          subtitle=""
+          variant="cs-style1 text-center"
+        />
+        <Spacing lg="55" md="30" />
+        <Div className="row">
+          {teamData.map((item, index) => (
+            <Div className="col-lg-3" key={index}>
+              <CoursesCard
+                memberImage={item.memberImage}
+                memberName={item.memberName}
+                memberDesignation={item.memberDesignation}
+                // memberSocial={item.memberSocial}
+                memberSocial={{}}
+              />
+            </Div>
+          ))}
+        </Div>
+      </Div>
+      <Hero41
+        title="Course Deliverables"
+        subtitle="Idealign Academy For Construction Mangement"
+        scrollDownId="#service"
+        socialLinksHeading="Follow Us"
+        heroSocialLinks={heroSocialLinks}
+        phoneNumber="+044 546664"
+        email="info@arino.com"
+      />
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Div className="row">

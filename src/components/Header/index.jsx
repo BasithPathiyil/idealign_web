@@ -294,7 +294,7 @@ export default function Header({ variant }) {
                     </li>
                     <li>
                       <Link
-                        to="/contact"
+                        to="/trainingcourses"
                         onClick={() => setMobileToggle(false)}
                       >
                         Training & Courses

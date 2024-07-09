@@ -31,6 +31,7 @@ import ProjectsPage from "./components/Pages/ProjectsPage";
 import ServiceDetailed from "./components/ServiceList/ServiceDetailed";
 import NewsEventsPage from "./components/Pages/NewsEvents";
 import NewsEventsDetailedPage from "./components/Pages/NewsEventsDetailedPage";
+import TrainingCoursesPage from "./components/Pages/TrainingCoursesPage";
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
           <Route path="newsevents" element={<NewsEventsPage />} />
           <Route path="newsevents/:id" element={<NewsEventsDetailedPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="trainingcourses" element={<TrainingCoursesPage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="team/:teamDetails" element={<TeamDetails />} />
           <Route

@@ -19,7 +19,7 @@ export default function Hero4({
     >
       <Div className="container">
         <Div className="cs-hero_text">
-          <h1 className="cs-hero_title">{parse(title)}</h1>
+          <h1 className="cs-hero_title cs-white_color">{parse(title)}</h1>
           <Div className="cs-hero_info justify-content-center">
             <Div className="cs-hero_subtitle">{subtitle}</Div>
           </Div>
