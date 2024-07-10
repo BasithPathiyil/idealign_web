@@ -525,6 +525,13 @@ label {
   height: 100%;
 }
 
+.cs-abouttitle {
+  font-size: 48px;
+}
+.cs-aboutsubtitle {
+  font-size: 16px;
+}
+
 @media screen and (max-width: 1399px) {
   .cs-right_space_150 {
     padding-right: 50px;
@@ -537,6 +544,12 @@ label {
   }
 }
 @media screen and (max-width: 991px) {
+  .cs-abouttitle {
+    font-size: 20px;
+  }
+  .cs-aboutsubtitle {
+    font-size: 12px;
+  }
   .cs-left_space_30 {
     padding-left: 0px;
   }

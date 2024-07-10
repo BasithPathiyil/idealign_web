@@ -12,7 +12,7 @@ export default function AboutUsTeamCard({
 }) {
   return (
     <Div className="cs-style1">
-      <Div className="cs-member_thumb">
+      <Div className="cs-member_thumb1">
         <img src={memberImage} alt={memberName} />
       </Div>
       <Div className="cs-member_info text-center">

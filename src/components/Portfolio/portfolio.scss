@@ -377,3 +377,11 @@
     border-radius: 0;
   }
 }
+
+.leadershipimg {
+  height: 600px;
+  width: 100%;
+  object-fit: scale-down;
+  background-color: $logo1;
+  transform: scale(1.5);
+}

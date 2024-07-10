@@ -9,6 +9,11 @@ import TeamSlider from "../Slider/TeamSlider";
 import Spacing from "../Spacing";
 import HomeAboutUs from "../AboutUs/HomeAboutUs";
 import AboutUsTeam from "../Team/AboutUsTeam";
+import About from "../AboutUs/About";
+import Hero41 from "../Hero/Hero41";
+import Hero42 from "../Hero/Hero42";
+import Leadership from "../AboutUs/Leadership";
+import Approach from "../AboutUs/Approach";
 const funfaceData = [
   {
     title: "Global Happy Clients",
@@ -49,6 +54,27 @@ export default function AboutPage() {
       {/* End Page Heading Section */}
 
       {/* Start About Section */}
+      <Spacing lg="90" md="80" />
+      <Hero42
+        title="Course Deliverables"
+        subtitle="Idealign Academy For Construction Mangement"
+        scrollDownId="#service"
+        socialLinksHeading="Follow Us"
+        // heroSocialLinks={heroSocialLinks}
+        phoneNumber="+044 546664"
+        email="info@arino.com"
+      />
+
+      <Spacing lg="90" md="80" />
+      <Approach />
+      {/* <Div className="container">
+        {" "}
+        <Div className="container">
+          {" "}
+          <About />
+        </Div>
+      </Div> */}
+
       <Spacing lg="150" md="80" />
       {/* <Div className="container">
         <Div className="row">
@@ -111,6 +137,8 @@ export default function AboutPage() {
         />
       </Div>
       {/* End Fun Fact Section */}
+      <Spacing lg="150" md="80" />
+      <Leadership />
 
       {/* Start Why Choose Section */}
       <Spacing lg="100" md="80" />
@@ -169,6 +197,7 @@ export default function AboutPage() {
         {/* <TeamSlider /> */}
         <AboutUsTeam />
       </Div>
+      <Spacing lg="90" md="80" />
       {/* End Team Section */}
 
       {/* Start CTA Section */}

@@ -1,0 +1,105 @@
+// .about_main {
+//     padding: 0px 200px;
+// }
+
+.approach_main{
+        // position: relative; 
+        width: 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.approach_submain{
+    position: relative; 
+    // width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.curve {
+    height: 800px;
+}
+
+.vector_groups {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+.line-image {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+.line-content {
+    position: absolute;
+    height: auto;
+    padding: 0% 11%;
+    text-align: center;
+}
+
+/* Position images along the curvy line using percentages or other positioning */
+.image1 {
+    top: 10%;
+    left: -4%;
+}
+.image2 {
+    top: 25%;
+    right: -4%;
+}
+.image3 {
+    top: 28%;
+    right: -4%;
+}
+.image4 {
+    top: 49%;
+    left: -4%;
+}
+.image5 {
+    bottom: 0%;
+    right: -4%;
+    width: 100px;
+}
+
+.content1 {
+    top: 3%;
+    left: 0%;
+}
+.content2 {
+    top: 23%;
+    left: 0%;
+}
+.content3 {
+    top: 43%;
+    left: 0%;
+}
+.content4 {
+    top: 61%;
+    left: 0%;
+}
+.content5 {
+    top: 82%;
+    left: 0%;
+}
+
+.approachcontent {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 575px) {
+    .line-image {
+        width: 24px;
+    }
+    .curve {
+        height: 600px;
+    }
+    .approachcontent {
+        font-size: 8px;
+    }
+  }
