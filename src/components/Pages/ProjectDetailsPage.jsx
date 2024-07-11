@@ -62,12 +62,16 @@ function getPathSegment(index) {
 }
 
 export default function ProjectDetailsPage() {
-  const { data, loading, error } = useAxiosFetch("/projects/get", {});
+  const category = getPathSegment(1);
+  const { data, loading, error } = useAxiosFetch(
+    `/projects/${category}/get`,
+    {}
+  );
   const projectsList = data?.arrList;
   const params = useParams();
   let projectData = projectsList?.find((project) => project._id === params.id);
   console.log("data", projectData);
-  const category = getPathSegment(1);
+
   pageTitle("Portfolio Details");
   useEffect(() => {
     window.scrollTo(0, 0);

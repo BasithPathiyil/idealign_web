@@ -118,7 +118,10 @@ export default function Home() {
   }, []);
 
   const { data, loading, error } = useAxiosFetch("/stats", {});
-  console.log("data",data)
+  console.log("data", data);
+  let newsCount = data?.result.newsCount;
+  let projectCount = data?.result.projectCount;
+  let blogsCount = data?.result.blogsCount;
 
   return (
     <>
@@ -242,19 +245,25 @@ export default function Home() {
       {/* End Service Section */}
 
       {/* Start Portfolio Section */}
-      <Spacing lg="150" md="50" />
-      <Div>
-        <Div className="container">
-          <SectionHeading
-            title="Projects to Explore"
-            subtitle="Latest Projects"
-            variant="cs-style1 text-center"
-          />
-          <Spacing lg="90" md="45" />
-        </Div>
-        <PortfolioSlider data={portfolioData} />
-        {/* <PortfolioSlider3 /> */}
-      </Div>
+
+      {projectCount > 0 ? (
+        <>
+          <Spacing lg="150" md="50" />
+          <Div>
+            <Div className="container">
+              <SectionHeading
+                title="Projects to Explore"
+                subtitle="Latest Projects"
+                variant="cs-style1 text-center"
+              />
+              <Spacing lg="90" md="45" />
+            </Div>
+            <PortfolioSlider data={portfolioData} />
+            {/* <PortfolioSlider3 /> */}
+          </Div>
+        </>
+      ) : null}
+
       {/* End Portfolio Section */}
 
       {/* Start Awards Section */}
@@ -314,46 +323,55 @@ export default function Home() {
       <TestimonialSlider />
       {/* End Testimonial Section */}
 
-      <Spacing lg="90" md="70" />
-      <Div className="container">
-        <SectionHeading
-          title="News & Events"
-          subtitle=""
-          variant="cs-style1 text-center"
-        />
-        <Spacing lg="85" md="45" />
-        <PortfolioSlider2 />
-      </Div>
+      {newsCount > 0 ? (
+        <>
+          <Spacing lg="90" md="70" />
+          <Div className="container">
+            <SectionHeading
+              title="News & Events"
+              subtitle=""
+              variant="cs-style1 text-center"
+            />
+            <Spacing lg="85" md="45" />
+            <PortfolioSlider2 />
+          </Div>
+        </>
+      ) : null}
 
       {/* Start Blog Section */}
-      <Spacing lg="150" md="80" />
-      <Div className="cs-shape_wrap_4">
-        <Div className="cs-shape_4"></Div>
-        <Div className="cs-shape_4"></Div>
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
-              <SectionHeading2
-                title="Explore recent publication"
-                subtitle="Our Blog"
-                btnText="View More Blog"
-                btnLink="/blog"
-              />
-              <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-7 offset-xl-1">
-              <Div className="cs-half_of_full_width">
-                <PostSlider />
+      {blogsCount > 2 ? (
+        <>
+          <Spacing lg="150" md="80" />
+          <Div className="cs-shape_wrap_4">
+            <Div className="cs-shape_4"></Div>
+            <Div className="cs-shape_4"></Div>
+            <Div className="container">
+              <Div className="row">
+                <Div className="col-xl-4">
+                  <SectionHeading2
+                    title="Explore recent publication"
+                    subtitle="Our Blog"
+                    btnText="View More Blog"
+                    btnLink="/blog"
+                  />
+                  <Spacing lg="90" md="45" />
+                </Div>
+                <Div className="col-xl-7 offset-xl-1">
+                  <Div className="cs-half_of_full_width">
+                    <PostSlider />
+                  </Div>
+                </Div>
               </Div>
             </Div>
           </Div>
-        </Div>
-      </Div>
+        </>
+      ) : null}
+
       <Spacing lg="150" md="80" />
       {/* End Blog Section */}
 
       {/* Start MovingText Section */}
-      <Spacing lg="125" md="70" />
+      {/* <Spacing lg="125" md="70" /> */}
       <MovingText text="Our reputed world wide clients " />
       <Spacing lg="105" md="70" />
       {/* End MovingText Section */}
@@ -362,7 +380,7 @@ export default function Home() {
       <Div className="container">
         <LogoList />
       </Div>
-      <Spacing lg="150" md="80" />
+      <Spacing lg="105" md="70" />
       {/* End LogoList Section */}
 
       {/* Start CTA Section */}

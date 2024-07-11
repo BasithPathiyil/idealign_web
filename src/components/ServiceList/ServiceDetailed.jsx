@@ -30,13 +30,63 @@ export default function ServiceDetailed() {
       /> */}
       <Spacing lg="145" md="80" />
       <Div className="container">
-        <SectionHeading
+        {/* <SectionHeading
           title={`${serviceData.title}`}
           subtitle=""
           variant="cs-style1 text-center"
-        />
-        <Spacing lg="90" md="45" />
-        <h2 className="cs-accordian_title">{serviceData.content}</h2>
+        /> */}
+        <Div className="container">
+          <Div className="row ">
+            <Div className="col-xl-5 col-lg-6">
+              <Div className="cs-radius_15 cs-shine_hover_1">
+                <img
+                  src={serviceData.src}
+                  alt="Member"
+                  className="w-100"
+                  style={{ height: "600px" }}
+                />
+              </Div>
+            </Div>
+            <Div className="col-lg-6 offset-xl-1">
+              <Spacing lg="0" md="45" />
+              <Div className="cs-section_heading cs-style1">
+                <h2 className="cs-section_title">{`${serviceData.title}`}</h2>
+                <Div className="cs-height_10 cs-height_lg_10" />
+                {/* <h3 className="cs-section_subtitle">Product Designer</h3> */}
+                <Div className="cs-height_5 cs-height_lg_5" />
+                <Div className="cs-separator cs-accent_bg" />
+                {serviceData?.additionalImg ? (
+                  <>
+                    <Div className="cs-height_45 cs-height_lg_25" />
+                    <img
+                      src={serviceData.additionalImg}
+                      alt={serviceData.title}
+                      style={{ height: "300px" }}
+                    />
+                  </>
+                ) : null}
+                <Div className="cs-height_45 cs-height_lg_25" />
+                <p className="cs-m0">{serviceData.content}</p>
+                <Div className="cs-height_25 cs-height_lg_20" />
+                <p className="cs-m0">
+                  Ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                  quia non numquam eius modi tempora incidunt ut labore et
+                  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                  veniam, quis nostrum exercitationem ullam corporis suscipit.
+                </p>
+                <Div className="cs-height_25 cs-height_lg_20" />
+                <p className="cs-m0">
+                  Ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                  quia non numquam eius modi tempora incidunt ut labore et
+                  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                  veniam, quis nostrum exercitationem ullam corporis suscipit.
+                </p>
+                <Div className="cs-height_45 cs-height_lg_30" />
+              </Div>
+            </Div>
+          </Div>
+        </Div>
+
         <Spacing lg="65" md="45" />
         {/* <ul>
           {serviceData?.lists.map((item, i) => (
@@ -50,13 +100,14 @@ export default function ServiceDetailed() {
             </>
           ))}
         </ul> */}
-        <Div className="row">
+        {/* <Div className="row">
           {serviceData?.lists.map((item, i) => (
             <Div
               className={`col-lg-${
                 serviceData?.lists.length === 3
                   ? "4"
-                  : serviceData?.lists.length === 2 || serviceData?.lists.length === 4
+                  : serviceData?.lists.length === 2 ||
+                    serviceData?.lists.length === 4
                   ? "6"
                   : "12"
               }`}
@@ -68,31 +119,7 @@ export default function ServiceDetailed() {
               />
             </Div>
           ))}
-          {/* <Div className="col-lg-4">
-            <IconBox
-              icon="/images/icons/service_icon_1.svg"
-              title="Sketching"
-              subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo."
-            />
-            <Spacing lg="30" md="30" />
-          </Div>
-          <Div className="col-lg-4">
-            <IconBox
-              icon="/images/icons/service_icon_2.svg"
-              title="Wireframing"
-              subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo."
-            />
-            <Spacing lg="30" md="30" />
-          </Div>
-          <Div className="col-lg-4">
-            <IconBox
-              icon="/images/icons/service_icon_3.svg"
-              title="Prototyping"
-              subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo."
-            />
-            <Spacing lg="30" md="30" />
-          </Div> */}
-        </Div>
+        </Div> */}
       </Div>
       <Spacing lg="120" md="50" />
       {/* <Div className="container">

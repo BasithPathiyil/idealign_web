@@ -65,7 +65,7 @@ export default function AboutPage() {
         email="info@arino.com"
       />
 
-      <Spacing lg="90" md="80" />
+      <Spacing lg="150" md="80" />
       <Approach />
       {/* <Div className="container">
         {" "}
@@ -141,7 +141,7 @@ export default function AboutPage() {
       <Leadership />
 
       {/* Start Why Choose Section */}
-      <Spacing lg="100" md="80" />
+      <Spacing lg="50" md="30" />
       <Div className="container">
         <Div className="row">
           <Div className="col-xl-5 col-lg-6">
@@ -186,7 +186,7 @@ export default function AboutPage() {
       {/* End Why Choose Section */}
 
       {/* Start Team Section */}
-      <Spacing lg="145" md="80" />
+      <Spacing lg="150" md="80" />
       <Div className="container">
         <SectionHeading
           title="Awesome team <br/>members"
@@ -197,7 +197,7 @@ export default function AboutPage() {
         {/* <TeamSlider /> */}
         <AboutUsTeam />
       </Div>
-      <Spacing lg="90" md="80" />
+      <Spacing lg="150" md="80" />
       {/* End Team Section */}
 
       {/* Start CTA Section */}

@@ -1,53 +1,55 @@
-import React from 'react';
-import Slider from 'react-slick';
-import Div from '../Div';
-import Post from '../Post';
+import React from "react";
+import Slider from "react-slick";
+import Div from "../Div";
+import Post from "../Post";
+import useAxiosFetch from "../../hooks/useAxiosFetch";
 const postData = [
   {
-    url: '/blog/blog-details',
-    src: '/images/post_1.jpeg',
-    alt: 'Post',
-    date: '07 Mar 2022',
-    title: 'How to keep fear from ruining your art business with confident',
+    url: "/blog/blog-details",
+    src: "/images/post_1.jpeg",
+    alt: "Post",
+    date: "07 Mar 2022",
+    title: "How to keep fear from ruining your art business with confident",
   },
   {
-    url: '/blog/blog-details',
-    src: '/images/post_2.jpeg',
-    alt: 'Post',
-    date: '10 Feb 2022',
-    title: 'Artistic mind will be great for creation anything',
+    url: "/blog/blog-details",
+    src: "/images/post_2.jpeg",
+    alt: "Post",
+    date: "10 Feb 2022",
+    title: "Artistic mind will be great for creation anything",
   },
   {
-    url: '/blog/blog-details',
-    src: '/images/post_3.jpeg',
-    alt: 'Post',
-    date: '05 Mar 2022',
-    title: 'A.I will take over all job for human within next year',
+    url: "/blog/blog-details",
+    src: "/images/post_3.jpeg",
+    alt: "Post",
+    date: "05 Mar 2022",
+    title: "A.I will take over all job for human within next year",
   },
-  {
-    url: '/blog/blog-details',
-    src: '/images/post_1.jpeg',
-    alt: 'Post',
-    date: '07 Mar 2022',
-    title: 'How to keep fear from ruining your art business with confident',
-  },
-  {
-    url: '/blog/blog-details',
-    src: '/images/post_2.jpeg',
-    alt: 'Post',
-    date: '10 Feb 2022',
-    title: 'Artistic mind will be great for creation anything',
-  },
-  {
-    url: '/blog/blog-details',
-    src: '/images/post_3.jpeg',
-    alt: 'Post',
-    date: '05 Mar 2022',
-    title: 'A.I will take over all job for human within next year',
-  },
+  // {
+  //   url: '/blog/blog-details',
+  //   src: '/images/post_1.jpeg',
+  //   alt: 'Post',
+  //   date: '07 Mar 2022',
+  //   title: 'How to keep fear from ruining your art business with confident',
+  // },
+  // {
+  //   url: '/blog/blog-details',
+  //   src: '/images/post_2.jpeg',
+  //   alt: 'Post',
+  //   date: '10 Feb 2022',
+  //   title: 'Artistic mind will be great for creation anything',
+  // },
+  // {
+  //   url: '/blog/blog-details',
+  //   src: '/images/post_3.jpeg',
+  //   alt: 'Post',
+  //   date: '05 Mar 2022',
+  //   title: 'A.I will take over all job for human within next year',
+  // },
 ];
 
 export default function PostSlider() {
+  const { data, loading, error } = useAxiosFetch("/blogs/featured", {});
   /** Slider Settings **/
   const settings = {
     dots: false,

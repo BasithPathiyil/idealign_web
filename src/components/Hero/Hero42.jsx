@@ -26,7 +26,7 @@ export default function Hero42({
         <Div className="cs-hero_text ">
           <h1
             style={{ color: "white", margin: "0px" }}
-            className="cs-white_color cs-hero_title text-center"
+            className="cs-white_color cs-hero_title21 text-center"
           >
             {parse("About Us")}
           </h1>

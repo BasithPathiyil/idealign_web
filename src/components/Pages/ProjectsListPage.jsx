@@ -81,12 +81,16 @@ function getPathSegment(index) {
 
 export default function ProjectsListPage() {
   const category = getPathSegment(2);
+  console.log("category", category);
   pageTitle("Creative Portfolio");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const { data, loading, error } = useAxiosFetch("/projects/get", {});
+  const { data, loading, error } = useAxiosFetch(
+    `/projects/${capitalizeFirstLetter(category)}/get`,
+    {}
+  );
   const portfolioData = data?.arrList;
 
   return (

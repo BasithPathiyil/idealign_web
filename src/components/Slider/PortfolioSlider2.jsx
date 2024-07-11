@@ -56,7 +56,7 @@ const portfolioData = [
   // },
 ];
 export default function PortfolioSlider2() {
-  const { data, loading, error } = useAxiosFetch("/newsevents/get", {});
+  const { data, loading, error } = useAxiosFetch("/newsevents/featured", {});
   const portfolios = data?.arrList;
   /** Slider Settings **/
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (

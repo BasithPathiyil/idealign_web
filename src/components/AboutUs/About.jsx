@@ -46,8 +46,8 @@ let datas = [
 const About = () => {
   return (
     <Div className="about_main cs-hero_subtitle">
-      <p className="cs-semi_bold cs-font_16">
-        Our vision is to develop an ecosystem of people, ideas, and technical
+      <p className="cs-semi_bold cs-font_16"><span className="cs-bold">Our vision </span>
+         is to develop an ecosystem of people, ideas, and technical
         expertise that will help clients turn their ambitions into action.
       </p>
       <Div>

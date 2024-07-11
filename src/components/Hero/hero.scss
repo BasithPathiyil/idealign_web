@@ -149,6 +149,86 @@
   }
 }
 
+.cs-hero.cs-style1 {
+  position: relative;
+  padding: 250px 0 170px;
+  height: calc(100vh + 180px);
+  min-height: 1000px;
+  .cs-hero_title21 {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    line-height: 1.25em;
+    color: $black;
+    span {
+      color: $accent;
+    }
+  }
+  .cs-hero_subtitle {
+    font-size: 18px;
+    line-height: 1.9em;
+    color: $primary;
+  }
+  .cs-hero_info {
+    display: flex;
+    align-items: center;
+    > div {
+      width: 50%;
+      flex: none;
+    }
+  }
+  .cs-hero_info2 {
+    display: flex;
+    align-items: center;
+    > div {
+      width: 70%;
+      flex: none;
+    }
+  }
+  .cs-hero_text {
+    position: relative;
+    z-index: 3;
+  }
+  .cs-slider.cs-style1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    * {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &.cs-type2 {
+    min-height: 650px;
+    height: 860px;
+    padding: 30px 115px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 110px;
+    .cs-hero_bg {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 115px;
+      right: 115px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .cs-hero_title {
+      margin-bottom: 40px;
+      &::first-letter {
+        color: $accent;
+      }
+    }
+    .cs-hero_social_wrap {
+      transform: rotate(180deg) translateY(50%);
+    }
+  }
+}
+
 .cs-down_btn {
   position: absolute;
   height: 35px;
@@ -574,6 +654,9 @@
     .cs-hero_title {
       font-size: 100px;
     }
+    .cs-hero_title21 {
+      font-size: 100px;
+    }
   }
   .cs-hero.cs-style3 {
     .cs-hero_title {
@@ -621,6 +704,9 @@
   .cs-hero.cs-style1 {
     min-height: 850px;
     .cs-hero_title {
+      font-size: 80px;
+    }
+    .cs-hero_title21 {
       font-size: 80px;
     }
     .cs-hero_subtitle {
@@ -735,6 +821,10 @@
       align-items: flex-start;
     }
     .cs-hero_title {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+    .cs-hero_title21 {
       font-size: 56px;
       margin-bottom: 20px;
     }

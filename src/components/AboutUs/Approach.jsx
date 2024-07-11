@@ -2,6 +2,7 @@ import React from "react";
 import Div from "../Div";
 import "./about.scss";
 import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
 
 const Approach = () => {
   return (
@@ -9,8 +10,9 @@ const Approach = () => {
       <SectionHeading
         title={"Approach"}
         subtitle={""}
-        variant={"text-center"}
+        variant={"cs-style1 text-center"}
       />
+      <Spacing lg="30" md="20" />
       <Div className="approach_main">
         <Div className="approach_submain">
           <img src="images/aboutus/LINE.png" alt="s" className="curve" />
