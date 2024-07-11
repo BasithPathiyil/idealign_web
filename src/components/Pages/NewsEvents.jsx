@@ -53,7 +53,6 @@ export default function NewsEventsPage() {
     `/newsevents/get?page=${page}`,
     {}
   );
-  console.log("data", data);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -80,7 +79,7 @@ export default function NewsEventsPage() {
                   date={formatDate(item.eventDate)}
                   category={"Tech"}
                   categoryHref={"/newsevents"}
-                  href={`/newsevents/${item._id}`}
+                  href={`/newsevents/${item._id}?type=get`}
                 />
                 {postData.length > index + 1 && <Spacing lg="95" md="60" />}
               </Div>

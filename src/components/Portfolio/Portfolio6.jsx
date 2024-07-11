@@ -38,6 +38,8 @@ export default function Portfolio6({
             <Div className="cs-section_heading cs-style1">
               <h2 className="cs-section_title">{title}</h2>
               <p>{subtitle}</p>
+              <Spacing lg="30" md="30" />
+              <Div className="cs-separator cs-accent_bg"></Div>
               <Spacing lg="45" md="20" />
             </Div>
           </Div>

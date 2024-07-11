@@ -121,7 +121,7 @@ export default function ServiceDetailed() {
           ))}
         </Div> */}
       </Div>
-      <Spacing lg="120" md="50" />
+      {/* <Spacing lg="120" md="50" /> */}
       {/* <Div className="container">
         <Div className="row align-items-center">
           <Div className="col-xl-5 col-lg-6">

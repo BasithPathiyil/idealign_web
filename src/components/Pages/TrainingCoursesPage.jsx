@@ -73,7 +73,6 @@ export default function TrainingCoursesPage() {
       return;
     }
     try {
-      console.log("api call");
       await api.post("/contactform", data);
       clearForm();
     } catch (error) {

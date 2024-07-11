@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import { pageTitle } from "../../helper";
 import Cta from "../Cta";
 import PageHeading from "../PageHeading";
@@ -13,7 +13,10 @@ import { formatDate } from "../../utils/utilities.js";
 import parse from "html-react-parser";
 
 export default function NewsEventsDetailedPage() {
-  const { data, loading, error } = useAxiosFetch("/newsevents/get", {});
+  const [searchParams] = useSearchParams();
+
+  const type = searchParams.get("type");
+  const { data, loading, error } = useAxiosFetch(`/newsevents/${type}`, {});
   const newsEventsList = data?.arrList;
   const params = useParams();
   let projectData = newsEventsList?.find(
@@ -27,7 +30,7 @@ export default function NewsEventsDetailedPage() {
     <>
       {/* Start Page Heading Section */}
       <PageHeading
-        title="Blog Single"
+        title="News & Events Detailed"
         bgSrc="/images/blog_details_hero_bg.jpeg"
         pageLinkText={params.blogDetailsId}
       />
@@ -57,7 +60,9 @@ export default function NewsEventsDetailedPage() {
                   </Link>
                 </Div>
                 <h2 className="cs-post_title">{projectData?.title}</h2>
-                {projectData && projectData?.content ? parse(projectData?.content) : ""}
+                {projectData && projectData?.content
+                  ? parse(projectData?.content)
+                  : ""}
 
                 <Div className="row">
                   <Div className="col-md-6">

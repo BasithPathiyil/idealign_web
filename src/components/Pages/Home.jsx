@@ -22,6 +22,8 @@ import PortfolioSlider3 from "../Slider/PorfolioSlider3";
 import SectionHeading2 from "../SectionHeading/SectionHeading2";
 import Hero from "../Hero";
 import useAxiosFetch from "../../hooks/useAxiosFetch";
+import HomeProjectFragment from "../Projects/HomeProjectFragment";
+import PortfolioSlider4 from "../Slider/PortfolioSlider4";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -118,7 +120,6 @@ export default function Home() {
   }, []);
 
   const { data, loading, error } = useAxiosFetch("/stats", {});
-  console.log("data", data);
   let newsCount = data?.result.newsCount;
   let projectCount = data?.result.projectCount;
   let blogsCount = data?.result.blogsCount;
@@ -246,7 +247,7 @@ export default function Home() {
 
       {/* Start Portfolio Section */}
 
-      {projectCount > 0 ? (
+      {projectCount > 3 ? (
         <>
           <Spacing lg="150" md="50" />
           <Div>
@@ -258,8 +259,7 @@ export default function Home() {
               />
               <Spacing lg="90" md="45" />
             </Div>
-            <PortfolioSlider data={portfolioData} />
-            {/* <PortfolioSlider3 /> */}
+            <PortfolioSlider4 />
           </Div>
         </>
       ) : null}

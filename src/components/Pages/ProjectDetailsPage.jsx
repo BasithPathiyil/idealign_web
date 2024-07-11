@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { pageTitle } from "../../helper";
 import Button from "../Button";
 import Cta from "../Cta";
@@ -50,7 +50,6 @@ function capitalizeFirstLetter(str) {
 
 function getPathSegment(index) {
   try {
-    console.log("window.location.pathname", window.location.pathname);
     const segments = window.location.pathname
       .split("/")
       .filter((segment) => segment.length > 0);
@@ -63,14 +62,16 @@ function getPathSegment(index) {
 
 export default function ProjectDetailsPage() {
   const category = getPathSegment(1);
+  const [searchParams] = useSearchParams();
+
+  const type = searchParams.get("type");
   const { data, loading, error } = useAxiosFetch(
-    `/projects/${category}/get`,
+    type === "featured" ? `/projects/featured` : `/projects/${category}/get`,
     {}
   );
   const projectsList = data?.arrList;
   const params = useParams();
   let projectData = projectsList?.find((project) => project._id === params.id);
-  console.log("data", projectData);
 
   pageTitle("Portfolio Details");
   useEffect(() => {

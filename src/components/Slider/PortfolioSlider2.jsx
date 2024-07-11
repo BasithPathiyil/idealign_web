@@ -88,7 +88,11 @@ export default function PortfolioSlider2() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: portfolios?.length ? portfolios?.length > 4 ? 4 : portfolios?.length : 1,
+    slidesToShow: portfolios?.length
+      ? portfolios?.length > 4
+        ? 4
+        : portfolios?.length
+      : 1,
     slidesToScroll: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
@@ -96,13 +100,21 @@ export default function PortfolioSlider2() {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: portfolios?.length ? portfolios?.length > 3 ? 3 : portfolios?.length : 1,
+          slidesToShow: portfolios?.length
+            ? portfolios?.length > 3
+              ? 3
+              : portfolios?.length
+            : 1,
         },
       },
       {
         breakpoint: 991,
         settings: {
-          slidesToShow:portfolios?.length ? portfolios?.length > 2 ? 2 : portfolios?.length : 1,
+          slidesToShow: portfolios?.length
+            ? portfolios?.length > 2
+              ? 2
+              : portfolios?.length
+            : 1,
           dots: true,
           arrows: false,
         },
@@ -125,7 +137,7 @@ export default function PortfolioSlider2() {
           <Portfolio
             title={item.title}
             subtitle={item.subtitle}
-            href={item.href}
+            href={`/newsevents/${item._id}?type=featured`}
             src={`${Constants.imagebase}${item.mainImage}`}
             variant="cs-style1 cs-type2 cs-size3"
           />

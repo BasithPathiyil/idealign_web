@@ -2,11 +2,12 @@ import React from "react";
 import Portfolio from "../Portfolio";
 import Div from "../Div";
 import Slider from "react-slick";
-import useAxiosFetch from "../../hooks/useAxiosFetch";
 import { Constants } from "../../utils/constants";
-import Portfolio4 from "../Portfolio/Portfolio4";
+import useAxiosFetch from "../../hooks/useAxiosFetch";
 
-export default function PortfolioSlider3() {
+export default function PortfolioSlider4() {
+  const { data, loading, error } = useAxiosFetch("/projects/featured", {});
+  const datas = data?.arrList;
   /** Slider Settings **/
   const settings = {
     className: "center",
@@ -22,21 +23,20 @@ export default function PortfolioSlider3() {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          dots: false,
         },
       },
     ],
   };
 
-  const { data, loading, error } = useAxiosFetch("/projects/get", {});
-  const portfolioData = data?.arrList;
   return (
     <Slider {...settings} className="cs-slider cs-style3 cs-gap-24">
-      {portfolioData?.map((item, index) => (
+      {datas?.map((item, index) => (
         <Div key={index}>
-          <Portfolio4
+          <Portfolio
             title={item.projectName}
             subtitle={item.shortDesc}
-            href={`${item._id}`}
+            href={`/projects/${item._id}?type=featured`}
             src={`${Constants.imagebase}${item.mainImage}`}
           />
         </Div>

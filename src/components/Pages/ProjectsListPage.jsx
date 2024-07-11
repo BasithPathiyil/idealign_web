@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CaseStudy from "../CaseStudy";
 import Cta from "../Cta";
 import Div from "../Div";
@@ -23,40 +23,6 @@ const heroSocialLinks = [
     links: "/",
   },
 ];
-// const portfolioData = [
-//   {
-//     title: "Winery eCommerce website design & development",
-//     subtitle: "Project 01",
-//     btnText: "See Details",
-//     btnLink: "/portfolio/portfolio-details",
-//     imageUrl: "/images/portfolio_35.jpeg",
-//     category: "Web Development",
-//   },
-//   {
-//     title: "Euro corporate agency for healthy environment",
-//     subtitle: "Project 02",
-//     btnText: "See Details",
-//     btnLink: "/portfolio/portfolio-details",
-//     imageUrl: "/images/portfolio_36.jpeg",
-//     category: "Branding",
-//   },
-//   {
-//     title: "Powerful admin dashboard design",
-//     subtitle: "Project 03",
-//     btnText: "See Details",
-//     btnLink: "/portfolio/portfolio-details",
-//     imageUrl: "/images/portfolio_37.jpeg",
-//     category: "UI Design",
-//   },
-//   {
-//     title: "Crypto financial trading apps for hedge fund",
-//     subtitle: "Project 04",
-//     btnText: "See Details",
-//     btnLink: "/portfolio/portfolio-details",
-//     imageUrl: "/images/portfolio_38.jpeg",
-//     category: "Apps Design",
-//   },
-// ];
 
 function capitalizeFirstLetter(str) {
   if (typeof str !== "string" || str.length === 0) {
@@ -68,7 +34,6 @@ function capitalizeFirstLetter(str) {
 
 function getPathSegment(index) {
   try {
-    console.log("window.location.pathname", window.location.pathname);
     const segments = window.location.pathname
       .split("/")
       .filter((segment) => segment.length > 0);
@@ -81,16 +46,35 @@ function getPathSegment(index) {
 
 export default function ProjectsListPage() {
   const category = getPathSegment(2);
-  console.log("category", category);
   pageTitle("Creative Portfolio");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const { data, loading, error } = useAxiosFetch(
-    `/projects/${capitalizeFirstLetter(category)}/get`,
-    {}
+  const [url, setUrl] = useState(
+    `/projects/${capitalizeFirstLetter(category)}/get`
   );
+  // useEffect(() => {
+  //   setUrl(`/projects/${capitalizeFirstLetter(category)}/get`);
+  // }, [category]);
+  useEffect(() => {
+    const handlePathChange = () => {
+      const newCategory = getPathSegment(2);
+      // setCategory(newCategory);
+      setUrl(`/projects/${capitalizeFirstLetter(newCategory)}/get`);
+    };
+
+    // Listen to the pathname changes
+    window.addEventListener("popstate", handlePathChange);
+
+    // Initial URL setup
+    handlePathChange();
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("popstate", handlePathChange);
+    };
+  }, []);
+  const { data, loading, error } = useAxiosFetch(url, {});
   const portfolioData = data?.arrList;
 
   return (
@@ -116,7 +100,7 @@ export default function ProjectsListPage() {
               title={item.projectName}
               subtitle={item.subtitle}
               btnText={"See Details"}
-              btnLink={`/projects/${item._id}`}
+              btnLink={`/projects/${item._id}?type=get`}
               imageUrl={`${Constants.imagebase}${item?.mainImage}`}
               category={item.category}
             />

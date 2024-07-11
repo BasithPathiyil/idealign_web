@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import Div from "../Div";
 import Post from "../Post";
 import useAxiosFetch from "../../hooks/useAxiosFetch";
+import { formatDate } from "../../utils/utilities";
+import { Constants } from "../../utils/constants";
 const postData = [
   {
     url: "/blog/blog-details",
@@ -50,6 +52,7 @@ const postData = [
 
 export default function PostSlider() {
   const { data, loading, error } = useAxiosFetch("/blogs/featured", {});
+  let posts = data?.arrList;
   /** Slider Settings **/
   const settings = {
     dots: false,
@@ -90,13 +93,13 @@ export default function PostSlider() {
 
   return (
     <Slider {...settings} className="cs-gap-24">
-      {postData.map((item, index) => (
+      {posts?.map((item, index) => (
         <Div key={index}>
           <Post
-            url={item.url}
-            src={item.src}
-            alt={item.alt}
-            date={item.date}
+            url={`/blogs/${item._id}?type=featured&page=1`}
+            src={`${Constants.imagebase}${item.mainImage}`}
+            alt={item.title}
+            date={formatDate(item.createdAt)}
             title={item.title}
           />
         </Div>
