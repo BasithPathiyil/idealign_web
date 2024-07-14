@@ -36,7 +36,7 @@ export default function PortfolioSlider4() {
           <Portfolio
             title={item.projectName}
             subtitle={item.shortDesc}
-            href={`/projects/${item._id}?type=featured`}
+            href={`/projects/${item._id}?type=featured&category=`}
             src={`${Constants.imagebase}${item.mainImage}`}
           />
         </Div>

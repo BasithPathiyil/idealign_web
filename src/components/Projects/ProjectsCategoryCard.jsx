@@ -11,9 +11,9 @@ export default function ProjectCategoryCard({
   memberSocial = {},
 }) {
   return (
-    <Div className="cs-team cs-style1">
+    <Div className="cs-team cs-style11">
       <Link to={href} className="">
-        <Div className="cs-member_thumb">
+        <Div className="cs-member_thumb1">
           <img src={cardImage} alt={title} />
           <Div className="cs-member_overlay" />
         </Div>

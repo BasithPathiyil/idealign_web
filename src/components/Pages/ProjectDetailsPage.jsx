@@ -61,12 +61,13 @@ function getPathSegment(index) {
 }
 
 export default function ProjectDetailsPage() {
-  const category = getPathSegment(1);
+  // const category = getPathSegment(1);
   const [searchParams] = useSearchParams();
-
+  
   const type = searchParams.get("type");
+  const category = searchParams.get("category");
   const { data, loading, error } = useAxiosFetch(
-    type === "featured" ? `/projects/featured` : `/projects/${category}/get`,
+    type === "featured" ? `/projects/featured` : `/projects/${capitalizeFirstLetter(category)}/get`,
     {}
   );
   const projectsList = data?.arrList;

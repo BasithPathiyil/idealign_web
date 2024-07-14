@@ -13,6 +13,7 @@ import Spacing from "../Spacing";
 import { pageTitle } from "../../helper";
 import useAxiosFetch from "../../hooks/useAxiosFetch";
 import { Constants } from "../../utils/constants";
+import Portfolio7 from "../Portfolio/Portfolio7";
 const heroSocialLinks = [
   {
     name: "Behance",
@@ -93,33 +94,21 @@ export default function ProjectsListPage() {
 
       {/* Start Portfolio Section */}
       <Spacing lg="90" md="60" />
-      {portfolioData?.map((item, index) =>
-        index % 2 === 0 ? (
-          <Div key={index}>
-            <Portfolio2
-              title={item.projectName}
-              subtitle={item.subtitle}
-              btnText={"See Details"}
-              btnLink={`/projects/${item._id}?type=get`}
-              imageUrl={`${Constants.imagebase}${item?.mainImage}`}
-              category={item.category}
-            />
-            <Spacing lg="100" md="70" />
-          </Div>
-        ) : (
-          <Div key={index}>
-            <Portfolio3
-              title={item.projectName}
-              subtitle={item.subtitle}
-              btnText={"See Details"}
-              btnLink={`/projects/${item._id}`}
-              imageUrl={`${Constants.imagebase}${item?.mainImage}`}
-              category={item.category}
-            />
-            <Spacing lg="100" md="70" />
-          </Div>
-        )
-      )}
+      {portfolioData?.map((item, index) => (
+        <Div key={index}>
+          <Portfolio7
+            title={item.projectName}
+            subtitle={item.shortDesc}
+            place={item.place}
+            area={item.area}
+            btnText={"See Details"}
+            btnLink={`/projects/${item._id}?type=get&category=${category}`}
+            imageUrl={`${Constants.imagebase}${item?.mainImage}`}
+            category={item.category}
+          />
+          <Spacing lg="100" md="70" />
+        </Div>
+      ))}
       {/* End Portfolio Section */}
 
       {/* Start Case Study Section */}
