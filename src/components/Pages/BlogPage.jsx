@@ -74,8 +74,8 @@ export default function BlogPage() {
                   title={item.title}
                   subtitle={item.shortDesc}
                   date={formatDate(item.createdAt)}
-                  category={"Tech"}
-                  categoryHref={"/blogs"}
+                  category={item?.category}
+                  categoryHref={"/blog"}
                   href={`/blogs/${item._id}?type=get&page=1`}
                 />
                 {postData.length > index + 1 && <Spacing lg="95" md="60" />}

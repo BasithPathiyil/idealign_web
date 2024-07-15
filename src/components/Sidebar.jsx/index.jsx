@@ -61,23 +61,23 @@ export default function Sidebar() {
   ]
   const categoryData = [
     {
-      title: 'Corporate',
-      url:'/'
+      title: 'PMC',
+      url:'/blog'
     },
     {
-      title: 'Company',
-      url:'/'
+      title: 'Construction',
+      url:'/blog'
     },
     {
-      title: 'Search Engine',
-      url:'/'
+      title: 'Architecture',
+      url:'/blog'
     },
     {
-      title: 'Information',
-      url:'/'
+      title: 'MEP',
+      url:'/blog'
     },
     {
-      title: 'Painting',
+      title: 'Civil',
       url:'/'
     }
   ]
@@ -109,13 +109,13 @@ export default function Sidebar() {
   ]
   return (
     <>
-      <Div className="cs-sidebar_item">
+      {/* <Div className="cs-sidebar_item">
         <AuthorWidget 
           src='/images/avatar_1.png'
           name='Kuber Jontra' 
           description='At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.'
         />
-      </Div>
+      </Div> */}
       <Div className="cs-sidebar_item">
         <SearchWidget title='Search'/>
       </Div>
@@ -125,12 +125,12 @@ export default function Sidebar() {
       <Div className="cs-sidebar_item">
         <RecentPost title='Archives' data={recentPostData}/>
       </Div>
-      <Div className="cs-sidebar_item">
+      {/* <Div className="cs-sidebar_item">
         <SideMenuWidget title='Archives' data={archiveData}/>
       </Div>
       <Div className="cs-sidebar_item">
         <TagWidget title='Tags' data={tagData}/>
-      </Div>
+      </Div> */}
     </>
   )
 }

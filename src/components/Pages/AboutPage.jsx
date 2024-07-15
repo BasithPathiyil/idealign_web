@@ -141,7 +141,7 @@ export default function AboutPage() {
       <Leadership />
 
       {/* Start Why Choose Section */}
-      <Spacing lg="50" md="30" />
+      {/* <Spacing lg="50" md="30" />
       <Div className="container">
         <Div className="row">
           <Div className="col-xl-5 col-lg-6">
@@ -182,11 +182,11 @@ export default function AboutPage() {
             </SectionHeading>
           </Div>
         </Div>
-      </Div>
+      </Div> */}
       {/* End Why Choose Section */}
 
       {/* Start Team Section */}
-      <Spacing lg="150" md="80" />
+      <Spacing lg="50" md="30" />
       <Div className="container">
         <SectionHeading
           title="Awesome team <br/>members"

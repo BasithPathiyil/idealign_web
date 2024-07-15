@@ -3,7 +3,7 @@ export const services = [
     id: "designengineeringmanagement",
     title: "Design Engineering Mangement",
     link: "/service/designengineeringmanagement",
-    src: "/images/services/designengineering.jpg",
+    src: "/images/services/civildesign.jpg",
     content:
       "Our team includes architects, structural consultants, electro-mechanical (MEP) consultants,lighting designers, landscape experts, and more. For ease of coordination, our Technical Manager will be your single point of contact, streamlining the progress of design and providing regular updates. We ensure that creativity does not compromise project objectives",
   },
@@ -28,7 +28,7 @@ export const services = [
     id: "contactmanagement",
     title: "Contract & Claim Management",
     link: "/service/contactmanagement",
-    src: "/images/services/claimmanagement.jpg",
+    src: "/images/services/civildesign3.jpg",
     content:
       "We excel in contract and claim management, ensuring smooth contract execution and minimizing disruptions and legal conflicts. Our focus is on quality claim management and efficient project execution.",
   },
@@ -44,7 +44,7 @@ export const services = [
     id: "constructionmanagement",
     title: "Construction Management",
     link: "/service/constructionmanagement",
-    src: "/images/services/construction.jpg",
+    src: "/images/services/civildesign5.jpg",
     content:
       "Idealign offers construction management services that exceed ordinary oversight, embodying a commitment to excellence. We assure the highest level of service tailored to your needs, backed by our commitment, resources, and passion for project completion.",
   },

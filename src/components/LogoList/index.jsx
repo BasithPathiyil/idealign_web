@@ -3,7 +3,7 @@ import Div from "../Div";
 import "./logolist.scss";
 const partnerLogos = [
   {
-    src: "/images/clientlogos/lulu.gif",
+    src: "/images/clientlogos/ags.png",
     alt: "Partner",
   },
   {
@@ -11,15 +11,15 @@ const partnerLogos = [
     alt: "Partner",
   },
   {
-    src: "/images/clientlogos/focuzayur.png",
+    src: "/images/clientlogos/abc.png",
     alt: "Partner",
   },
   {
-    src: "/images/clientlogos/gokulam.png",
+    src: "/images/clientlogos/mihas.png",
     alt: "Partner",
   },
   {
-    src: "/images/clientlogos/aak.png",
+    src: "/images/clientlogos/wisdom.png",
     alt: "Partner",
   },
 ];

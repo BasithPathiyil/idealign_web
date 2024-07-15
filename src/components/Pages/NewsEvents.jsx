@@ -77,7 +77,7 @@ export default function NewsEventsPage() {
                   title={item.title}
                   subtitle={item.shortDesc}
                   date={formatDate(item.eventDate)}
-                  category={"Tech"}
+                  category={item?.category}
                   categoryHref={"/newsevents"}
                   href={`/newsevents/${item._id}?type=get`}
                 />

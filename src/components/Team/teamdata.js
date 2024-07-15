@@ -13,6 +13,19 @@ export const teamData = [
     },
   },
   {
+    memberImage: "/images/team/abin.jpg",
+    memberName: "Abinraj",
+    memberDesignation: "Project Manager",
+    description:
+      "Abinraj is a distinguished Project Manager with a robust foundation in civil engineering. With over nine years of professional experience, he has excelled in both local and international construction projects. At Maps Global Construction Pvt Ltd, Abinraj spent seven years as a Project Coordinator, demonstrating his proficiency in managing complex projects and ensuring their timely completion. His role as Project Manager for the Presentation School Project in Kenya, Africa, showcased his adeptness at handling international projects and leading cross-cultural teams. Furthermore, his tenure at Ashiyana Properties in Calicut saw him successfully manage diverse construction projects, maintaining high standards and exceeding client expectations. Abinraj’s proven track record in project management, coupled with his leadership skills and commitment to excellence, makes him an invaluable asset to Idealign.",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+  {
     memberImage: "/images/team/mridhul.jpg",
     memberName: "Mridhul V",
     memberDesignation: "Head of Cost Department",
