@@ -273,7 +273,7 @@ export default function TrainingCoursesPage() {
         phoneNumber="+044 546664"
         email="info@arino.com"
       />
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" />
       <Div className="container">
         <Div className="row">
           <Div className="col-lg-6">
@@ -382,7 +382,7 @@ export default function TrainingCoursesPage() {
             </form>
           </Div>
         </Div>
-      </Div>
+      </Div> */}
       {/* <Spacing lg="150" md="80" />
       <Div className="cs-google_map">
         <iframe
@@ -391,7 +391,7 @@ export default function TrainingCoursesPage() {
           title="Google Map"
         />
       </Div> */}
-      <Spacing lg="50" md="40" />
+      {/* <Spacing lg="50" md="40" /> */}
     </>
   );
 }
