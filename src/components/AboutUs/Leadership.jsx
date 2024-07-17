@@ -9,7 +9,8 @@ import SectionHeading from "../SectionHeading";
 
 const portfolioData = [
   {
-    title: "Rabeeh Maics",
+    title: "Rabeeh",
+    smallTitle: "MRICS",
     subtitle:
       " Rabeeh is focused on delivering outcomes against strong principles, strategic priorities, and operational systems. He is a chartered surveyor from the Royal Institution of Chartered Surveyors and holds a Master's degree in Construction Management from the University of Manchester.",
     btnText: "See Details",
@@ -31,13 +32,18 @@ const portfolioData = [
 const Leadership = () => {
   return (
     <Div className="container">
-      <SectionHeading title={"Leadership"} subtitle={""} variant={"text-center"} />
+      <SectionHeading
+        title={"Leadership"}
+        subtitle={""}
+        variant={"text-center"}
+      />
       <Spacing lg="90" md={"60"} />
       {portfolioData.map((item, index) =>
         index % 2 === 0 ? (
           <Div key={index}>
             <Portfolio6
               title={item.title}
+              smallTitle={item?.smallTitle}
               subtitle={item.subtitle}
               btnText={item.btnText}
               btnLink={item.btnLink}

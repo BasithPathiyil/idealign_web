@@ -54,7 +54,7 @@ export const teamData = [
   {
     memberImage: "/images/team/nazih.jpg",
     memberName: "Nazih A Kabeer",
-    memberDesignation: "React Developer",
+    memberDesignation: "Head of Planning Department",
     description:
       "an alumnus of NIT, has three years of experience as the Head of the Planning Department, where he excels in project scheduling and cash flow management from concept to completion. His meticulous oversight ensures timely completion and financial efficiency across diverse projects, including warehouses, 5-star hotels, and luxury residences. Nazih's strategic planning and proactive problem-solving skills make him a vital asset, delivering exceptional results and maintaining high standards in every project he manages.",
     memberSocial: {
@@ -101,7 +101,7 @@ export const teamData = [
   // },
   {
     memberImage: "/images/team/renjith.jpg",
-    memberName: "Ranjith KT",
+    memberName: "Ranjith Raveendran",
     memberDesignation: "Project Manager",
     description:
       "is a highly accomplished civil engineer with a robust educational background and a wealth of practical experience across various facets of the construction industry. Beginning his career as a Site Engineer at Al Burj Builders, he gained hands-on experience in managing construction sites, ensuring adherence to project specifications, and overseeing day-to-day operations to maintain project timelines and quality standards. His career then took him to Nigeria, where he undertook a dual role as both a Site Engineer and Quantity Surveyor at On shore Constructors LLC for the prestigious Dangote Refinery project. This experience not only sharpened his technical skills in site management and engineering but also deepened his expertise in quantity surveying, where he was responsible for accurately estimating costs, managing budgets, and optimizing resources amidst the complexities of a major refinery construction.<br /> Returning to India, he served as a Quantity Surveyor at Anjali Constructors, where he played a pivotal role in various commercial and residential projects. His meticulous approach to cost estimation and financial management contributed significantly to the successful execution of these projects, demonstrating his ability to handle diverse project scopes and client requirements effectively.<br /> In Qatar, he further expanded his horizons as a Project Engineer at Grand Hyper, where he led project planning, coordination, and execution. His tenure in Qatar exposed him to international construction practices and standards, enhancing his global perspective and enriching his project management skills.<br /> Throughout his career journey, he has consistently exhibited a strong commitment to excellence, attention to detail, and adaptability in dynamic work environments. His multifaceted experience across different roles and regions underscores his versatility and capability to deliver results across complex construction projects, making him a valuable asset in the field of civil engineering and project management.",

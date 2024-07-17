@@ -55,8 +55,8 @@ const funfaceData = [
     suffix: "₹",
   },
   {
-    title: "Projects",
-    factNumber: "838",
+    title: "Valued Projects",
+    factNumber: "2838",
     suffix: "Cr+",
   },
 ];

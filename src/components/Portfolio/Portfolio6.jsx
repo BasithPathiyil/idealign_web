@@ -6,6 +6,7 @@ import Button2 from "../Button/Button2";
 
 export default function Portfolio6({
   title,
+  smallTitle,
   subtitle,
   btnText,
   btnLink,
@@ -36,7 +37,12 @@ export default function Portfolio6({
           <Div className="col-xl-5 col-lg-6 offset-xl-1">
             <Spacing lg="0" md="35" />
             <Div className="cs-section_heading cs-style1">
-              <h2 className="cs-section_title">{title}</h2>
+              <h2 className="cs-section_title">
+                {title}
+                <span style={{ fontSize: "16px", marginLeft: "18px" }}>
+                  {smallTitle ? smallTitle : ""}
+                </span>
+              </h2>
               <p>{subtitle}</p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
