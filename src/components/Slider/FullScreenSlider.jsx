@@ -24,13 +24,13 @@ const FullScreenSlider = ({ data }) => {
         {data.map((item, index) => (
           <div key={index}>
             <Div
-              className="cs-hero cs-style1 text-center cs-bg"
+              className="cs-hero cs-style1 text-center cs-bg cs-overlayiacm"
               style={{ backgroundImage: `url(${item.imgUrl})` }}
             >
               <Link to={item.href} className="cs-hero_link" />
               <Div className="cs-hero_text">
                 <h2
-                  style={{ color: "white" }}
+                  style={{ color: "white",margin:"0px" }}
                   className="cs-hero_title  cs-white_color"
                 >
                   {parse(item.title)}

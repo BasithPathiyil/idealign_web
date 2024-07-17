@@ -61,7 +61,7 @@ export default function ServiceDetailed() {
                     <img
                       src={serviceData.additionalImg}
                       alt={serviceData.title}
-                      style={{ height: "300px" }}
+                      style={{ width: "100%" }}
                     />
                   </>
                 ) : null}

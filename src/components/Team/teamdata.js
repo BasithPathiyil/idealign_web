@@ -1,5 +1,18 @@
 export const teamData = [
   {
+    memberImage: "/images/team/mubaraka.jpg",
+    memberName: "Mubarak Ali KP",
+    memberDesignation: "Project Director",
+    description:
+      "holding a Bachelor's degree in Civil Engineering, has swiftly advanced in her career with a year of experience as a Quantity Surveyor and a subsequent role as Head of the Technical Department for one and a half years, focusing on technical drawings. Her initial role involved meticulous cost estimation, budgeting, and resource allocation, ensuring project completion within financial limits and timeframes. As Head of the Technical Department, Henna managed detailed technical drawings, led engineering teams, provided innovative solutions to complex challenges, and ensured high-quality standards across various projects. Her expertise spans residential, commercial, industrial, and hospitality sectors. Henna's ability to understand client visions and translate them into precise technical plans, combined with her leadership and technical acumen, makes her a valuable asset in the civil engineering field, consistently delivering high-quality and innovative results",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+  {
     memberImage: "/images/team/henna.jpg",
     memberName: "Henna",
     memberDesignation: "Head of Technical Department",

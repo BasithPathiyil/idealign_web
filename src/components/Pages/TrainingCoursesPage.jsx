@@ -93,13 +93,13 @@ export default function TrainingCoursesPage() {
     {
       title: "IACM",
       subtitle: "Idealign Academy For Construction Mangement",
-      imgUrl: "/images/slider_1.jpeg",
+      imgUrl: "/images//training/const.jpg",
       href: "/case-study/case-study-details",
     },
     {
       title: "Construction Project <br/>Management Program",
       subtitle: "Construction Management Training",
-      imgUrl: "/images/slider_2.jpeg",
+      imgUrl: "/images//training/const2.jpg",
       href: "/case-study/case-study-details",
     },
     // {

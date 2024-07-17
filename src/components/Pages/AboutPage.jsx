@@ -14,6 +14,7 @@ import Hero41 from "../Hero/Hero41";
 import Hero42 from "../Hero/Hero42";
 import Leadership from "../AboutUs/Leadership";
 import Approach from "../AboutUs/Approach";
+import StepsComponent from "../AboutUs/StepsComponent";
 const funfaceData = [
   {
     title: "Global Happy Clients",
@@ -64,9 +65,17 @@ export default function AboutPage() {
         phoneNumber="+044 546664"
         email="info@arino.com"
       />
+      <Div className="approach_lap">
+        <Spacing lg="150" md="80" />
+        <Div className="container">
+          <StepsComponent />
+        </Div>
+      </Div>
+      <Div className="approach_phone">
+        <Spacing lg="150" md="80" />
+        <Approach />
+      </Div>
 
-      <Spacing lg="150" md="80" />
-      <Approach />
       {/* <Div className="container">
         {" "}
         <Div className="container">
