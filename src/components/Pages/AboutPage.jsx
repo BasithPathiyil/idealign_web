@@ -17,24 +17,24 @@ import Approach from "../AboutUs/Approach";
 import StepsComponent from "../AboutUs/StepsComponent";
 const funfaceData = [
   {
-    title: "Global Happy Clients",
-    factNumber: "40",
-    suffix: "K",
-  },
-  {
-    title: "Project Completed",
-    factNumber: "50",
-    suffix: "K",
-  },
-  {
-    title: "Team Members",
-    factNumber: "245",
+    title: "Work Hours",
+    factNumber: "5796648",
     suffix: "",
   },
   {
-    title: "Digital products",
-    factNumber: "550",
-    suffix: "",
+    title: "Efficiency optimizing",
+    factNumber: "53.61",
+    suffix: "%",
+  },
+  {
+    title: "Cost Saved",
+    factNumber: "27700000",
+    suffix: "₹",
+  },
+  {
+    title: "Valued Projects",
+    factNumber: "2838",
+    suffix: "Cr+",
   },
 ];
 
