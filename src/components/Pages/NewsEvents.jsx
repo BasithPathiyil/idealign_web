@@ -64,7 +64,7 @@ export default function NewsEventsPage() {
         btnLink="contact"
         btnText={""}
         socialLinksHeading="Follow Us"
-        bgImageUrl="./images/servicesbg.jpg"
+        bgImageUrl="./images/newseventsheading.jpg"
       />
       <Spacing lg="150" md="80" />
       <Div className="container">

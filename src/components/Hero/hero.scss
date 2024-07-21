@@ -223,6 +223,10 @@
         color: $accent;
       }
     }
+    .cs-hero_title22 {
+      margin-bottom: 40px;
+      color: #fff;
+    }
     .cs-hero_social_wrap {
       transform: rotate(180deg) translateY(50%);
     }
@@ -642,6 +646,9 @@
     .cs-hero_title {
       font-size: 100px;
     }
+    .cs-hero_title22 {
+      font-size: 100px;
+    }
   }
 }
 @media screen and (max-width: 1400px) {
@@ -678,6 +685,9 @@
   }
   .cs-hero.cs-style1.cs-type2 {
     .cs-hero_title {
+      font-size: 80px;
+    }
+    .cs-hero_title22 {
       font-size: 80px;
     }
   }
@@ -898,6 +908,9 @@
     .cs-hero_title {
       font-size: 50px;
     }
+    .cs-hero_title22 {
+      font-size: 50px;
+    }
   }
   // .cs-hero.cs-style5 {
   //   height: calc(100vh + 180px);
@@ -936,6 +949,9 @@
   }
   .cs-hero.cs-style1.cs-type2 {
     .cs-hero_title {
+      font-size: 40px;
+    }
+    .cs-hero_title22 {
       font-size: 40px;
     }
   }

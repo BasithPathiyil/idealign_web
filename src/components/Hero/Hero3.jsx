@@ -1,9 +1,9 @@
-import React from 'react';
-import parse from 'html-react-parser';
-import WaterWave from 'react-water-wave';
-import Div from '../Div';
-import Button from '../Button';
-import VerticalLinks from '../VerticalLinks';
+import React from "react";
+import parse from "html-react-parser";
+import WaterWave from "react-water-wave";
+import Div from "../Div";
+import Button from "../Button";
+import VerticalLinks from "../VerticalLinks";
 
 export default function Hero3({
   title,
@@ -22,7 +22,7 @@ export default function Hero3({
         {() => (
           <Div className="container">
             <Div className="cs-hero_text text-center">
-              <h1 className="cs-hero_title">{parse(title)}</h1>
+              <h1 className="cs-hero_title ">{parse(title)}</h1>
               {/* <Button btnLink={btnLink} btnText={btnText} /> */}
             </Div>
           </Div>

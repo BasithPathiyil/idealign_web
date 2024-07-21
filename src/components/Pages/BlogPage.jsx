@@ -61,7 +61,7 @@ export default function BlogPage() {
         btnLink="contact"
         btnText={""}
         socialLinksHeading="Follow Us"
-        bgImageUrl="./images/servicesbg.jpg"
+        bgImageUrl="./images/blogsheading2.jpg"
       />
       <Spacing lg="150" md="80" />
       <Div className="container">
