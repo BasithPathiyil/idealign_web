@@ -1,10 +1,11 @@
 export const teamData = [
   {
     memberImage: "/images/team/mubaraka.jpg",
+    objectPositionValue:10,
     memberName: "Mubarak Ali KP",
     memberDesignation: "Project Director",
     description:
-      "holding a Bachelor's degree in Civil Engineering, has swiftly advanced in her career with a year of experience as a Quantity Surveyor and a subsequent role as Head of the Technical Department for one and a half years, focusing on technical drawings. Her initial role involved meticulous cost estimation, budgeting, and resource allocation, ensuring project completion within financial limits and timeframes. As Head of the Technical Department, Henna managed detailed technical drawings, led engineering teams, provided innovative solutions to complex challenges, and ensured high-quality standards across various projects. Her expertise spans residential, commercial, industrial, and hospitality sectors. Henna's ability to understand client visions and translate them into precise technical plans, combined with her leadership and technical acumen, makes her a valuable asset in the civil engineering field, consistently delivering high-quality and innovative results",
+      "With an impressive 35-year career in civil engineering, including 11 years of experience in the Gulf region, he has a proven track record in managing the construction of commercial and residential buildings. He served as the Resident Engineer for the current RTA Headquarters in Dubai, contributing to several projects valued at $580 million. His expertise encompasses project planning, material procurement and control, labor and personnel management, and successful collaboration with multinational teams. He has managed numerous projects for institutions such as IIM Kozhikode and Medical College Hospital Kozhikode, among others. Renowned for his ability to perform under pressure and meet tight deadlines, he excels in competitive and fast-paced project environments.",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -14,10 +15,11 @@ export const teamData = [
   },
   {
     memberImage: "/images/team/henna.jpg",
+    objectPositionValue:10,
     memberName: "Henna",
     memberDesignation: "Head of Technical Department",
     description:
-      "holding a Bachelor's degree in Civil Engineering, has swiftly advanced in her career with a year of experience as a Quantity Surveyor and a subsequent role as Head of the Technical Department for one and a half years, focusing on technical drawings. Her initial role involved meticulous cost estimation, budgeting, and resource allocation, ensuring project completion within financial limits and timeframes. As Head of the Technical Department, Henna managed detailed technical drawings, led engineering teams, provided innovative solutions to complex challenges, and ensured high-quality standards across various projects. Her expertise spans residential, commercial, industrial, and hospitality sectors. Henna's ability to understand client visions and translate them into precise technical plans, combined with her leadership and technical acumen, makes her a valuable asset in the civil engineering field, consistently delivering high-quality and innovative results",
+      "As Head of the Technical Department, Henna managed detailed technical drawings, led engineering teams, provided innovative solutions to complex challenges, and ensured high-quality standards across various projects. Her expertise spans residential, commercial, industrial, and hospitality sectors. Henna's ability to understand client visions and translate them into precise technical plans, combinedwith her leadership and technical acumen, allows her to consistently deliver high-quality and innovative results",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -27,10 +29,11 @@ export const teamData = [
   },
   {
     memberImage: "/images/team/abin.jpg",
+    objectPositionValue:30,
     memberName: "Abinraj",
     memberDesignation: "Project Manager",
     description:
-      "Abinraj is a distinguished Project Manager with a robust foundation in civil engineering. With over nine years of professional experience, he has excelled in both local and international construction projects. At Maps Global Construction Pvt Ltd, Abinraj spent seven years as a Project Coordinator, demonstrating his proficiency in managing complex projects and ensuring their timely completion. His role as Project Manager for the Presentation School Project in Kenya, Africa, showcased his adeptness at handling international projects and leading cross-cultural teams. Furthermore, his tenure at Ashiyana Properties in Calicut saw him successfully manage diverse construction projects, maintaining high standards and exceeding client expectations. Abinraj’s proven track record in project management, coupled with his leadership skills and commitment to excellence, makes him an invaluable asset to Idealign.",
+      "Over 9 years of professional experience, Abinraj has excelled in both local and international construction projects. He spent 7 years as a Project Coordinator At Maps Global Construction Pvt Ltd, demonstrating his proficiency in managing complex projects and ensuring their timely completion. As the Manager for the Presentation School Project in Kenya, Africa, he showcased his adeptness at handling international projects and leading cross-cultural teams. Abinraj has maintained high standards and exceeded client expectations with his proven track record in project management coupled with his leadership skills and commitment to excellence. ",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -40,10 +43,11 @@ export const teamData = [
   },
   {
     memberImage: "/images/team/mridhul.jpg",
+    objectPositionValue:10,
     memberName: "Mridhul V",
     memberDesignation: "Head of Cost Department",
     description:
-      "with a Bachelor's degree in Civil Engineering, has nearly three years of experience as the Head of the Cost Department at our firm, where he led a team in procurement, quantity surveying, cost control, and billing. He has demonstrated exceptional leadership and expertise, ensuring seamless collaboration and efficient workflow across various departments. Mridhul's proficiency in managing procurement processes, implementing cost control measures, and overseeing billing has been pivotal in maintaining project budgets and timelines. He has rich experience in residential, commercial, industrial, and hospitality projects, working with renowned multinational companies such as AAK, Gokulam, AGS, ABC, and LULU. His versatile and effective management has significantly contributed to the success of these high-profile projects, making him an invaluable asset to our firm.",
+      "Mridhul leads a team in procurement, quantity surveying, cost control, and billing. He has demonstrated exceptional leadership and expertise, ensuring seamless collaboration and efficient workflow across various departments. His proficiency in managing procurement processes, implementing cost control measures, and overseeing billing has been pivotal in maintaining project budgets and timelines. He hasextensive experience in residential, commercial, industrial, and hospitality projects. His versatile and effective management has significantly contributed to the success of these high-profile projects, making him an invaluable asset to our firm.",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -53,10 +57,11 @@ export const teamData = [
   },
   {
     memberImage: "/images/team/nazih.jpg",
+    objectPositionValue:30,
     memberName: "Nazih A Kabeer",
     memberDesignation: "Head of Planning Department",
     description:
-      "an alumnus of NIT, has three years of experience as the Head of the Planning Department, where he excels in project scheduling and cash flow management from concept to completion. His meticulous oversight ensures timely completion and financial efficiency across diverse projects, including warehouses, 5-star hotels, and luxury residences. Nazih's strategic planning and proactive problem-solving skills make him a vital asset, delivering exceptional results and maintaining high standards in every project he manages.",
+      "As an alumnus of NIT, Nazih excels in project scheduling and planning from concept to completion. His meticulous oversight ensures timely completion and financial efficiency across diverse projects, including warehouses, 5-star hotels, and luxury residences. Nazih's strategic planning and proactive problem-solving skills make him a vital asset, delivering exceptional results and maintaining high standards in every project he manages.",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -66,10 +71,11 @@ export const teamData = [
   },
   {
     memberImage: "/images/team/fahad.jpg",
+    objectPositionValue:0,
     memberName: "Aashiq Fahad",
     memberDesignation: "Head of MEPFC",
     description:
-      "is a seasoned professional in the field of civil engineering, having construction industry. His career journey began with four impactful years at IBLEC in Saudi Arabia, where he excelled as a Technical Engineer. During this tenure, Ashiq specialized in completed his B.Tech degree and amassed over 15 years of invaluable experience in the overseeing the intricate technical aspects of various construction projects, refining his skills in engineering design, project coordination, and the implementation of innovative technical solutions.Following his tenure at IBLEC, Ashiq transitioned to a pivotal role as a Planning Engineer at Al Muhaibid Six Construct, a prominent multinational company based in Saudi Arabia. Here, his responsibilities expanded to include developing meticulous project schedules, ensuring adherence to timelines, and meticulously managing project budgets. His strategic approach to planning and his adeptness in coordinating with diverse teams were crucial in successfully delivering high-profile projects such as the renowned King Abdullah Sports City and the prestigious King Salman International Convention Center.Ashiq's international project experience has equipped him with a deep understanding of global construction practices and standards, making him a sought-after professional in the industry. His leadership skills and ability to navigate complex project landscapes have consistently resulted in the achievement of project milestones with utmost efficiency and quality. Ashiq Fahad continues to play a pivotal role in shaping the landscape of international construction projects, setting benchmarks for excellence and innovation in every endeavor he undertakes.",
+      "Ashiq is a seasoned professional in civil engineering with over 15 years of invaluable experience in the construction industry. He specializes in overseeing the intricate technical aspects of various construction projects, such as King Abdullah Sports City and King Salman International Convention Center in Saudi Arabia. His international project experience has equipped him with a deep understanding of global construction practices and standards, making him a sought-after professional in the industry. His leadership skills and ability to navigate complex project landscapes have consistently resulted in the achievement of project milestones with utmost efficiency and quality. Ashiq sets benchmarks for excellence and innovation in every endeavor he undertakes. ",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -101,10 +107,11 @@ export const teamData = [
   // },
   {
     memberImage: "/images/team/renjith.jpg",
+    objectPositionValue:30,
     memberName: "Ranjith Raveendran",
     memberDesignation: "Project Manager",
     description:
-      "is a highly accomplished civil engineer with a robust educational background and a wealth of practical experience across various facets of the construction industry. Beginning his career as a Site Engineer at Al Burj Builders, he gained hands-on experience in managing construction sites, ensuring adherence to project specifications, and overseeing day-to-day operations to maintain project timelines and quality standards. His career then took him to Nigeria, where he undertook a dual role as both a Site Engineer and Quantity Surveyor at On shore Constructors LLC for the prestigious Dangote Refinery project. This experience not only sharpened his technical skills in site management and engineering but also deepened his expertise in quantity surveying, where he was responsible for accurately estimating costs, managing budgets, and optimizing resources amidst the complexities of a major refinery construction.<br /> Returning to India, he served as a Quantity Surveyor at Anjali Constructors, where he played a pivotal role in various commercial and residential projects. His meticulous approach to cost estimation and financial management contributed significantly to the successful execution of these projects, demonstrating his ability to handle diverse project scopes and client requirements effectively.<br /> In Qatar, he further expanded his horizons as a Project Engineer at Grand Hyper, where he led project planning, coordination, and execution. His tenure in Qatar exposed him to international construction practices and standards, enhancing his global perspective and enriching his project management skills.<br /> Throughout his career journey, he has consistently exhibited a strong commitment to excellence, attention to detail, and adaptability in dynamic work environments. His multifaceted experience across different roles and regions underscores his versatility and capability to deliver results across complex construction projects, making him a valuable asset in the field of civil engineering and project management.",
+      "With 12 years of extensive experience, Ranjith specializes in managing large-scale construction projects, collaborating effectively with diverse teams, and ensuring the successful execution of complex tasks. He has handled significant projects, including the Military Camp in Trivandrum, the Nerolac Paint Factory in Gujarat, and the Central University in Punjab. His responsibilities encompass workingclosely with architects, contractors, and other professionals to monitor project progress and resolve issues. Ranjith is proficient in managing piling work, structural work, and the execution of civil works. Furthermore, he oversees contractors, manpower, and quality control. ",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -114,10 +121,11 @@ export const teamData = [
   },
   {
     memberImage: "/images/team/athira.jpg",
+    objectPositionValue:0,
     memberName: "Aathira Subramanyan",
-    memberDesignation: "React Developer",
+    memberDesignation: "Procurement Engineer",
     description:
-      "holding a B.Tech in Civil Engineering, has contributed significantly to our firm for over a year in procurement roles. Her career began as a Quantity Surveyor at Assist Chartered Engineer, followed by roles at Lasa Steel Structure where she excelled in budget coordination, quantity surveying, and procurement. Transitioning to MapsGlobal Constructions Pvt. Ltd, Aathira's responsibilities expanded to include site engineering, procurement, and tendering. Her diverse expertise in cost estimation, financial management, and project execution underscores her valuable contributions to optimizing project efficiency and delivery within the construction industry.",
+      "Aathira is a dedicated and skilled Procurement Engineer with managing procurement processes and ensuring the efficient acquisition of materials and services for construction projects. With a meticulous approach to vendor management and contract negotiations, Aathira excels in optimizing procurement operations to achieve cost savings and enhance project timelines. Her analytical skills and attention to detail enable her to evaluate supplier performance and ensure compliance with industry standards and project specifications. ",
     memberSocial: {
       linkedin: "/",
       twitter: "/",
@@ -127,10 +135,11 @@ export const teamData = [
   },
   {
     memberImage: "/images/team/nahan.jpg",
+    objectPositionValue:20,
     memberName: "Aysha Nahan",
     memberDesignation: "Technical Engineer",
     description:
-      "is a highly accomplished Technical Engineer at our company, bringing extensive academic credentials and practical experience in construction engineering. With a Master's degree in Construction Engineering and Management, complemented by a Bachelor's degree in Civil Engineering and a Diploma in Civil Engineering, Aysha possesses a robust foundation in engineering principles and technical expertise. Her internship stints at KLDC Trissur and TDLCCS Trissur provided her with invaluable hands-on experience in project planning and execution.<br /><br /> Aysha has demonstrated a strong commitment to sustainable development through her projects, including a proposal on slum rehabilitation and designs for a Civil Center and Municipal Shopping complex. Her leadership skills and passion for innovative design are further underscored by her achievement of winning the 1st prize in a Seminar competition at the State Institute of Technical Teacher Training and Research (SITTR). Aysha's combination of technical proficiency, creative vision, and dedication to sustainability makes her a valuable asset in advancing our company's construction initiatives.",
+      "Aysha possesses a robust foundation in engineering principles and technical expertise. Her internship stints at KLDC Trissur and TDLCCS Trissur provided her with invaluable hands-on experience in project planning and execution. Her leadership skills and passion for innovative design are further underscored by her achievement of winning the 1st prize in a Seminar competition at the State Institute of Technical Teacher Training and Research (SITTR). Aysha's combination of technical proficiency, creative vision, and dedication to sustainability. ",
     memberSocial: {
       linkedin: "/",
       twitter: "/",

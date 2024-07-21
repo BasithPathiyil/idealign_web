@@ -6,7 +6,6 @@ import Team from "../Team";
 import TeamMemberModal from "../Team/TeamMemberModal";
 import { teamData } from "../Team/teamdata";
 
-
 export default function TeamSlider() {
   /** Team Member Data **/
 
@@ -102,6 +101,7 @@ export default function TeamSlider() {
               memberDesignation={item.memberDesignation}
               // memberSocial={item.memberSocial}
               memberSocial={{}}
+              objPos={item.objectPositionValue}
             />
           </Div>
         ))}

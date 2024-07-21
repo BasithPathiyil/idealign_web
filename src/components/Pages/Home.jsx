@@ -86,32 +86,32 @@ const funfaceData = [
 //     src: "/images/portfolio_3.jpeg",
 //   },
 // ];
-const portfolioData = [
-  {
-    title: "Lulu Tirur",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/projects/1 lulu tirur.jpg",
-  },
-  {
-    title: "Gokulam Grand Hotel",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/projects/gokulam.jpg",
-  },
-  {
-    title: "Lulu Tirur",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/projects/1 lulu tirur.jpg",
-  },
-  {
-    title: "Gokulam Grand Hotel",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/projects/gokulam.jpg",
-  },
-];
+// const portfolioData = [
+//   {
+//     title: "Lulu Tirur",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/projects/1 lulu tirur.jpg",
+//   },
+//   {
+//     title: "Gokulam Grand Hotel",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/projects/gokulam.jpg",
+//   },
+//   {
+//     title: "Lulu Tirur",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/projects/1 lulu tirur.jpg",
+//   },
+//   {
+//     title: "Gokulam Grand Hotel",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/projects/gokulam.jpg",
+//   },
+// ];
 export default function Home() {
   pageTitle("Home");
 

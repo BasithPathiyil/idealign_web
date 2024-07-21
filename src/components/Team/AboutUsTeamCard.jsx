@@ -9,11 +9,16 @@ export default function AboutUsTeamCard({
   memberName,
   memberDesignation,
   memberSocial,
+  objPos,
 }) {
   return (
     <Div className="cs-team cs-style1">
       <Div className="cs-member_thumb">
-        <img src={memberImage} alt={memberName} />
+        <img
+          src={memberImage}
+          alt={memberName}
+          style={{ objectPosition: `0-${objPos}px` }}
+        />
         <Div className="cs-member_overlay" />
       </Div>
       <Div className="cs-member_info">
