@@ -100,7 +100,7 @@ export default function ContactPage() {
         btnText="Get a Quote"
         btnLink="/contact"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/bgImg1.jpeg"
       /> */}

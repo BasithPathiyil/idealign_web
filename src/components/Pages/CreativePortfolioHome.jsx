@@ -69,7 +69,7 @@ export default function CreativePortfolioHome() {
         title="Arino Creative <br />Portfolio"
         btnLink="contact"
         btnText={`Let's talk`}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="./images/hero_bg_4.jpeg"
       />

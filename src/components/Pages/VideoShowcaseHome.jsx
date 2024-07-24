@@ -37,7 +37,7 @@ export default function VideoShowcaseHome() {
     <>
       <Hero12
         heroSocialLinks={heroSocialLinks}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         showcaseData={showcaseData}
       />
     </>

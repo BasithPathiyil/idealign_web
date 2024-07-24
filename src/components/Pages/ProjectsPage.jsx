@@ -47,7 +47,7 @@ export default function ProjectsPage() {
         title={`Projects`}
         btnLink="contact"
         btnText={""}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         bgImageUrl="./images/servicesbg.jpg"
       />
       <Spacing lg="150" md="80" />

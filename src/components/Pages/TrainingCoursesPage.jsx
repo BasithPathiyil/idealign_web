@@ -176,7 +176,7 @@ export default function TrainingCoursesPage() {
         btnText="Get a Quote"
         btnLink="/contact"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/bgImg1.jpeg"
       /> */}
@@ -184,14 +184,14 @@ export default function TrainingCoursesPage() {
         title="IACM"
         subtitle="Idealign Academy For Construction Mangement"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         phoneNumber="+044 546664"
         email="info@arino.com"
       /> */}
       <Hero6
         heroSocialLinks={heroSocialLinks}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         showcaseData={showcaseData}
       />
       <Spacing lg="150" md="80" />
@@ -268,7 +268,7 @@ export default function TrainingCoursesPage() {
         title="Course Deliverables"
         subtitle="Idealign Academy For Construction Mangement"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         phoneNumber="+044 546664"
         email="info@arino.com"

@@ -133,7 +133,7 @@ export default function Home() {
         btnText="Get a Quote"
         btnLink="/contact"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         // bgImageUrl="/images/slide_1_3-200x140.jpg"
         bgImageUrl="/images/bgImageideal2.jpg"
@@ -144,7 +144,7 @@ export default function Home() {
         btnText="Get a Quote"
         btnLink="/contact"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/bgImg1.jpeg"
       />

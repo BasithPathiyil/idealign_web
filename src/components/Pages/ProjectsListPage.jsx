@@ -86,7 +86,7 @@ export default function ProjectsListPage() {
         title={`${capitalizeFirstLetter(category)} Projects`}
         btnLink="contact"
         btnText={""}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="./images/hero_bg_4.jpeg"
       />

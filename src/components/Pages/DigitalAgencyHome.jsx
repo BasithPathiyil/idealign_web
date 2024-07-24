@@ -150,7 +150,7 @@ export default function DigitalAgencyHome() {
         title="We Are <span>A</span>rino <br />Digital Agency"
         subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         phoneNumber="+044 546664"
         email="info@arino.com"

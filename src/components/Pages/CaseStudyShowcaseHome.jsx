@@ -50,7 +50,7 @@ export default function CaseStudyShowcaseHome() {
     <>
       <Hero7
         heroSocialLinks={heroSocialLinks}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         showcaseData={showcaseData}
       />
     </>

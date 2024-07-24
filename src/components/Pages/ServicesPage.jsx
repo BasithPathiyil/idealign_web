@@ -23,7 +23,7 @@ export default function ServicesPage() {
         title={`Services`}
         btnLink="contact"
         btnText={""}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         bgImageUrl="./images/servicesbg.jpg"
       />
 

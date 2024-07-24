@@ -28,11 +28,11 @@ export default function Hero3({
           </Div>
         )}
       </WaterWave>
-      <VerticalLinks
+      {/* <VerticalLinks
         data={heroSocialLinks}
         title={socialLinksHeading}
         variant="cs-left_side"
-      />
+      /> */}
     </Div>
   );
 }

@@ -46,7 +46,7 @@ export default function ShowcasePortfolioHome() {
   return (
     <Hero6
       heroSocialLinks={heroSocialLinks}
-      socialLinksHeading="Follow Us"
+      socialLinksHeading=" "
       showcaseData={showcaseData}
     />
   );

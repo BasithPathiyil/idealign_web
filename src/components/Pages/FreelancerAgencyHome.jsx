@@ -129,7 +129,7 @@ export default function FreelancerAgencyHome() {
         finest finishing product in present and upcoming future."
         btnLink="/contact"
         btnText="Let’s talk"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/hero_bg_5.jpeg"
         bannerHighlightText="A"

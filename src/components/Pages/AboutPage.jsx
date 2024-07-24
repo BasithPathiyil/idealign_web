@@ -60,7 +60,7 @@ export default function AboutPage() {
         title="Course Deliverables"
         subtitle="Idealign Academy For Construction Mangement"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         // heroSocialLinks={heroSocialLinks}
         phoneNumber="+044 546664"
         email="info@arino.com"

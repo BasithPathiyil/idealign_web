@@ -57,7 +57,7 @@ export default function MarketingAgencyHome() {
         subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
         btnLink="contact"
         btnText="Let’s talk"
-        socialLinksHeading="Follow Us"
+        socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
       />
       {/* End Hero Section */}
