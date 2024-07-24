@@ -19,6 +19,7 @@ export default function ServicesPage() {
   }, []);
   return (
     <>
+      <Spacing lg="90" md="60" />
       <Hero3
         title={`Services`}
         btnLink="contact"
@@ -27,7 +28,7 @@ export default function ServicesPage() {
         bgImageUrl="./images/servicesbg.jpg"
       />
 
-      <Spacing lg="90" md="60" />
+      {/* <Spacing lg="90" md="60" /> */}
       <Div className="cs-shape_wrap_41">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>
@@ -72,6 +73,15 @@ export default function ServicesPage() {
         </Div>
       </Div>
       <Spacing lg="150" md="80" />
+      <Div className="container">
+        <Cta
+          title="Let’s disscuse make <br />something <i>cool</i> together"
+          btnText="Apply For Meeting"
+          btnLink="/contact"
+          bgSrc="/images/cta_bg.jpeg"
+        />
+      </Div>
+      <Spacing lg="90" md="60" />
       {/* <Div className="container">
         <SectionHeading
           title='Providing best <br/>pricing for client' 

@@ -50,7 +50,17 @@ export default function ProjectsPage() {
         socialLinksHeading=" "
         bgImageUrl="./images/servicesbg.jpg"
       />
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="90" md="60" /> */}
+      <Div className="container">
+        <h2 className="cs-accordian_title ">
+          Idealign specializes in delivering tailor-made, end-to-end holistic
+          project management solutions designed for the entire life cycle of
+          real estate and construction projects. Our commitment is to empower
+          clients with innovative solutions, ensuring timely project delivery,
+          adherence to budget constraints, and the highest quality standards.
+        </h2>
+      </Div>
+      <Spacing lg="90" md="60" />
       <Div className="container">
         <Div className="row">
           {/* <Div className="col-lg-12"> */}
@@ -68,6 +78,16 @@ export default function ProjectsPage() {
           {/* </Div> */}
         </Div>
       </Div>
+      <Spacing lg="90" md="60" />
+      <Div className="container">
+        <Cta
+          title="Let’s disscuse make <br />something <i>cool</i> together"
+          btnText="Contac Us"
+          btnLink="/contact"
+          bgSrc="/images/cta_bg.jpeg"
+        />
+      </Div>
+      <Spacing lg="90" md="60" />
     </>
   );
 }

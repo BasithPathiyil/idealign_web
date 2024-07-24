@@ -59,6 +59,7 @@ export default function NewsEventsPage() {
   const newsEventsData = data?.arrList;
   return (
     <>
+      <Spacing lg="90" md="60" />
       <Hero3
         title={`News & Events`}
         btnLink="contact"
@@ -66,7 +67,7 @@ export default function NewsEventsPage() {
         socialLinksHeading=" "
         bgImageUrl="./images/newseventsheading.jpg"
       />
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" /> */}
       <Div className="container">
         <Div className="row">
           <Div className="col-lg-8">
@@ -107,6 +108,7 @@ export default function NewsEventsPage() {
           bgSrc="/images/cta_bg.jpeg"
         />
       </Div>
+      <Spacing lg="90" md="60" />
     </>
   );
 }

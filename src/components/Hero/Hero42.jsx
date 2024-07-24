@@ -22,14 +22,22 @@ export default function Hero42({
         padding: "40px 0px 0px 0px",
       }}
     >
-      <Div className="container">
+      <Div
+        className="container "
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100%",
+        }}
+      >
         <Div className="cs-hero_text ">
-          <h1
+          {/* <h1
             style={{ color: "white", margin: "0px" }}
             className="cs-white_color cs-hero_title21 text-center"
           >
             {parse("About Us")}
-          </h1>
+          </h1> */}
           <Div className="cs-hero_info2 justify-content-center">
             <About />
           </Div>

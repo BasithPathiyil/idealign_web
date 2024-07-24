@@ -15,6 +15,7 @@ import Hero42 from "../Hero/Hero42";
 import Leadership from "../AboutUs/Leadership";
 import Approach from "../AboutUs/Approach";
 import StepsComponent from "../AboutUs/StepsComponent";
+import Hero3 from "../Hero/Hero3";
 const funfaceData = [
   {
     title: "Work Hours",
@@ -47,6 +48,14 @@ export default function AboutPage() {
   return (
     <>
       {/* Start Page Heading Section */}
+      <Spacing lg="90" md="60" />
+      <Hero3
+        title={`About Us`}
+        btnLink="contact"
+        btnText={""}
+        socialLinksHeading=" "
+        bgImageUrl="./images/servicesbg.jpg"
+      />
       {/* <PageHeading
         title="About Us"
         bgSrc="images/about_hero_bg.jpeg"
@@ -55,7 +64,7 @@ export default function AboutPage() {
       {/* End Page Heading Section */}
 
       {/* Start About Section */}
-      <Spacing lg="90" md="80" />
+      <Spacing lg="30" md="20" />
       <Hero42
         title="Course Deliverables"
         subtitle="Idealign Academy For Construction Mangement"

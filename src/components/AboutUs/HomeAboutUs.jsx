@@ -10,13 +10,14 @@ const HomeAboutUs = () => {
         <Div className="col-xl-5 col-lg-7">
           <SectionHeading title="About Idealign" subtitle="">
             <Spacing lg="30" md="20" />
-            <p className="cs-m0">
+            <p className="cs-m0" style={{ textAlign: "justify" }}>
               A construction project is considered successful if it is completed
               on schedule, within budget, and with the needed quality. The best
               commercial management strategies strike a balance between these
               forces and the company's longer-term business plan.
             </p>
-            <p className="cs-m0">
+            <Spacing lg="30" md="30" />
+            <p className="cs-m0" style={{ textAlign: "justify" }}>
               Idealign provides construction services that guarantee quality and
               cost savings while limiting client risk and streamlining
               communication among project stakeholders. The company is supported

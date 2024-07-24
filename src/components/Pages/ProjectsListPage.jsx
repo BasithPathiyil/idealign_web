@@ -14,6 +14,8 @@ import { pageTitle } from "../../helper";
 import useAxiosFetch from "../../hooks/useAxiosFetch";
 import { Constants } from "../../utils/constants";
 import Portfolio7 from "../Portfolio/Portfolio7";
+import PageHeading2 from "../PageHeading/PageHeading2";
+import { useLocation } from "react-router-dom";
 const heroSocialLinks = [
   {
     name: "Behance",
@@ -46,7 +48,9 @@ function getPathSegment(index) {
 }
 
 export default function ProjectsListPage() {
+  const location = useLocation();
   const category = getPathSegment(2);
+  console.log("coategory", category);
   pageTitle("Creative Portfolio");
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -60,6 +64,7 @@ export default function ProjectsListPage() {
   useEffect(() => {
     const handlePathChange = () => {
       const newCategory = getPathSegment(2);
+      console.log("newCategory", newCategory);
       // setCategory(newCategory);
       setUrl(`/projects/${capitalizeFirstLetter(newCategory)}/get`);
     };
@@ -74,14 +79,19 @@ export default function ProjectsListPage() {
     return () => {
       window.removeEventListener("popstate", handlePathChange);
     };
-  }, []);
+  }, [location.pathname]);
   const { data, loading, error } = useAxiosFetch(url, {});
   const portfolioData = data?.arrList;
 
   return (
     <>
       {/* Start Hero Section */}
-      <Spacing lg="150" md="80" />
+      <PageHeading2
+        title={`${capitalizeFirstLetter(category)} Projects`}
+        bgSrc="/images/training/const.jpg"
+        pageLinkText=""
+      />
+      {/* <Spacing lg="150" md="80" />
       <Hero3
         title={`${capitalizeFirstLetter(category)} Projects`}
         btnLink="contact"
@@ -89,11 +99,11 @@ export default function ProjectsListPage() {
         socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="./images/hero_bg_4.jpeg"
-      />
+      /> */}
       {/* End Hero Section */}
 
       {/* Start Portfolio Section */}
-      <Spacing lg="90" md="60" />
+      <Spacing lg="150" md="80" />
       {portfolioData?.map((item, index) => (
         <Div key={index}>
           <Portfolio7

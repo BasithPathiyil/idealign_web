@@ -14,10 +14,15 @@ export default function Hero3({
   bgImageUrl,
 }) {
   return (
-    <Div className="cs-hero cs-style1 cs-type2" id="home">
+    <Div
+      className="cs-hero cs-style1 cs-type2"
+      id="home"
+      // style={{ height: "400px" }}
+    >
       <WaterWave
         className="cs-hero_bg cs-bg cs-ripple_version cs-center"
         imageUrl={bgImageUrl}
+        style={{ height: "400px" }}
       >
         {() => (
           <Div className="container">

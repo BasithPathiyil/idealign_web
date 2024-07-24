@@ -12,6 +12,9 @@ import Hero4 from "../Hero/Hero4";
 import Hero6 from "../Hero/Hero6";
 import CoursesCard from "../TrainingCourses/CoursesCard";
 import Hero41 from "../Hero/Hero41";
+import Cta from "../Cta";
+import PageHeading2 from "../PageHeading/PageHeading2";
+import CoursesList from "../PricingTable/CoursesList";
 
 export default function TrainingCoursesPage() {
   pageTitle("Contact Us");
@@ -165,11 +168,11 @@ export default function TrainingCoursesPage() {
 
   return (
     <>
-      {/* <PageHeading
-        title="Contact Us"
-        bgSrc="/images/contact_hero_bg.jpeg"
-        pageLinkText="Contact"
-      /> */}
+      <PageHeading2
+        title="IACM"
+        bgSrc="/images//training/const.jpg"
+        pageLinkText="Idealign Academy For Construction Mangement"
+      />
       {/* <Hero
         title="Let's Align <br/> Your Ideas"
         subtitle="Our efficient team of consultants, designers, architects, engineers and project managers help to achieve your goals. Together we can align your ideas."
@@ -189,12 +192,12 @@ export default function TrainingCoursesPage() {
         phoneNumber="+044 546664"
         email="info@arino.com"
       /> */}
-      <Hero6
+      {/* <Hero6
         heroSocialLinks={heroSocialLinks}
         socialLinksHeading=" "
         showcaseData={showcaseData}
-      />
-      <Spacing lg="150" md="80" />
+      /> */}
+      <Spacing lg="90" md="60" />
       <Div className="container">
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
@@ -224,7 +227,7 @@ export default function TrainingCoursesPage() {
             />
             <Spacing lg="25" md="25" />
           </Div>
-          <Div className="col-lg-7">
+          {/* <Div className="col-lg-7">
             <img
               src="/images/about_img_2.jpeg"
               alt="About"
@@ -239,12 +242,12 @@ export default function TrainingCoursesPage() {
               className="w-100 cs-radius_15"
             />
             <Spacing lg="25" md="25" />
-          </Div>
+          </Div> */}
         </Div>
       </Div>
-      <Spacing lg="150" md="80" />
+      <Spacing lg="90" md="60" />
       <Div className="container">
-        <SectionHeading
+        {/* <SectionHeading
           title="OUR COURSES"
           subtitle=""
           variant="cs-style1 text-center"
@@ -262,8 +265,29 @@ export default function TrainingCoursesPage() {
               />
             </Div>
           ))}
+        </Div> */}
+        <Div className="contianer">
+          <SectionHeading
+            title="OUR COURSES"
+            subtitle=""
+            variant="cs-style1 text-center"
+          />
+          <Spacing lg="55" md="30" />
+          <CoursesList />
+          {/* {teamData.map((item, index) => (
+            <Div className="col-lg-3" key={index}>
+              <CoursesCard
+                memberImage={item.memberImage}
+                memberName={item.memberName}
+                memberDesignation={item.memberDesignation}
+                // memberSocial={item.memberSocial}
+                memberSocial={{}}
+              />
+            </Div>
+          ))} */}
         </Div>
       </Div>
+      <Spacing lg="90" md="60" />
       <Hero41
         title="Course Deliverables"
         subtitle="Idealign Academy For Construction Mangement"
@@ -273,6 +297,16 @@ export default function TrainingCoursesPage() {
         phoneNumber="+044 546664"
         email="info@arino.com"
       />
+      <Spacing lg="90" md="60" />
+      <Div className="container">
+        <Cta
+          title="Let’s disscuse make <br />something <i>cool</i> together"
+          btnText="Apply For Meeting"
+          btnLink="/contact"
+          bgSrc="/images/cta_bg.jpeg"
+        />
+      </Div>
+      <Spacing lg="90" md="60" />
       {/* <Spacing lg="150" md="80" />
       <Div className="container">
         <Div className="row">

@@ -208,7 +208,7 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li> */}
-                    
+
                     <li className="menu-item-has-children">
                       <NavLink
                         to="projects"
@@ -254,10 +254,12 @@ export default function Header({ variant }) {
                       </DropDown>
                     </li>
                     <li className="">
-                      <NavLink to="newsevents" onClick={() => setMobileToggle(false)}>
+                      <NavLink
+                        to="newsevents"
+                        onClick={() => setMobileToggle(false)}
+                      >
                         News & Events
                       </NavLink>
-                    
                     </li>
                     <li className="">
                       <NavLink to="blog" onClick={() => setMobileToggle(false)}>
@@ -284,20 +286,21 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown> */}
                     </li>
-                    <li>
-                      <Link
-                        to="/contact"
-                        onClick={() => setMobileToggle(false)}
-                      >
-                        Contact
-                      </Link>
-                    </li>
+
                     <li>
                       <Link
                         to="/trainingcourses"
                         onClick={() => setMobileToggle(false)}
                       >
                         Training & Courses
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/contact"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Contact
                       </Link>
                     </li>
                     {/* <li className="menu-item-has-children">
