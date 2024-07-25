@@ -84,7 +84,7 @@ export default function ProjectsListPage() {
   const portfolioData = data?.arrList;
   const postData = [
     {
-      thumb: "/images/projects/commercial.jpeg",
+      thumb: "/images/projects/commercial1.jpg",
       title: "Commercial",
       href: "/projects/category/commercial",
     },
@@ -94,19 +94,19 @@ export default function ProjectsListPage() {
       href: "/projects/category/industrial",
     },
     {
-      thumb: "/images/projects/hsopitality.jpg",
+      thumb: "/images/projects/hsopitality3.jpg",
       title: "Hospitality",
       href: "/projects/category/hospitality",
     },
     ,
     {
-      thumb: "/images/projects/residential.jpg",
+      thumb: "/images/projects/residential3.jpg",
       title: "Residential",
       href: "/projects/category/residential",
     },
   ];
-  const item = postData.find(
-    (list) => list.title === capitalizeFirstLetter(category)
+  const item = postData?.find(
+    (list) => list?.title === capitalizeFirstLetter(category)
   );
   return (
     <>
