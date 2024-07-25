@@ -11,23 +11,23 @@ import ProjectCategoryCard from "../Projects/ProjectsCategoryCard.jsx";
 import Hero3 from "../Hero/Hero3.jsx";
 const postData = [
   {
-    thumb: "/images/blog_hero_bg.jpeg",
+    thumb: "/images/projects/commercial.jpeg",
     title: "Commercial",
     href: "/projects/category/commercial",
   },
   {
-    thumb: "/images/blog_hero_bg.jpeg",
+    thumb: "/images/projects/industrial.jpg",
     title: "Industrial",
     href: "/projects/category/industrial",
   },
   {
-    thumb: "/images/blog_hero_bg.jpeg",
+    thumb: "/images/projects/hsopitality.jpg",
     title: "Hospitality",
     href: "/projects/category/hospitality",
   },
   ,
   {
-    thumb: "/images/blog_hero_bg.jpeg",
+    thumb: "/images/projects/residential.jpg",
     title: "Residential",
     href: "/projects/category/residential",
   },

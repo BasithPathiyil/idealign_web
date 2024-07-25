@@ -17,9 +17,15 @@ export default function Hero({
 }) {
   return (
     <Div
-      className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1"
-      style={{ backgroundImage: `url(${bgImageUrl})` }}
+      className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1 video-background1"
+      // style={{ backgroundImage: `url(${bgImageUrl})` }}
     >
+      <video autoPlay loop muted playsInline>
+        <source src={"video/video-2.mp4"} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="gradient-overlay"></div>
+      <div class="gradient-overlay2"></div>
       <Div className="cs-shape_1" />
       <Div className="cs-shape_1" />
       <Div className="cs-shape_1" />
@@ -38,6 +44,7 @@ export default function Hero({
           </Div>
         </Div>
       </Div>
+
       <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} />
       <a href={scrollDownId} className="cs-down_btn">
         .

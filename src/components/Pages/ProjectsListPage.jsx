@@ -82,13 +82,38 @@ export default function ProjectsListPage() {
   }, [location.pathname]);
   const { data, loading, error } = useAxiosFetch(url, {});
   const portfolioData = data?.arrList;
-
+  const postData = [
+    {
+      thumb: "/images/projects/commercial.jpeg",
+      title: "Commercial",
+      href: "/projects/category/commercial",
+    },
+    {
+      thumb: "/images/projects/industrial.jpg",
+      title: "Industrial",
+      href: "/projects/category/industrial",
+    },
+    {
+      thumb: "/images/projects/hsopitality.jpg",
+      title: "Hospitality",
+      href: "/projects/category/hospitality",
+    },
+    ,
+    {
+      thumb: "/images/projects/residential.jpg",
+      title: "Residential",
+      href: "/projects/category/residential",
+    },
+  ];
+  const item = postData.find(
+    (list) => list.title === capitalizeFirstLetter(category)
+  );
   return (
     <>
       {/* Start Hero Section */}
       <PageHeading2
         title={`${capitalizeFirstLetter(category)} Projects`}
-        bgSrc="/images/training/const.jpg"
+        bgSrc={item.thumb}
         pageLinkText=""
       />
       {/* <Spacing lg="150" md="80" />

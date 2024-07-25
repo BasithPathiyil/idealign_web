@@ -14,8 +14,8 @@ export default function ProjectCategoryCard({
     <Div className="cs-team cs-style11">
       <Link to={href} className="">
         <Div className="cs-member_thumb1">
-          <img src={cardImage} alt={title} />
           <Div className="cs-member_overlay" />
+          <img src={cardImage} alt={title} />
         </Div>
         <Div className="cs-member_info">
           <h2 className="cs-member_name cs-white_color">
