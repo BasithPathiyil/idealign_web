@@ -4,7 +4,7 @@ import WaterWave from "react-water-wave";
 import Div from "../Div";
 import Button from "../Button";
 import VerticalLinks from "../VerticalLinks";
-
+//cs-overlayiacm1
 export default function Hero3({
   title,
   socialLinksHeading,
@@ -15,18 +15,18 @@ export default function Hero3({
 }) {
   return (
     <Div
-      className="cs-hero cs-style1 cs-type2"
+      className="cs-hero cs-style1 cs-type2 "
       id="home"
 
       style={{ height: "410px" }}
     >
       <WaterWave
-        className="cs-hero_bg cs-bg cs-ripple_version cs-center"
+        className="cs-hero_bg cs-bg cs-ripple_version cs-center "
         imageUrl={bgImageUrl}
         style={{ height: "400px" }}
       >
         {() => (
-          <Div className="container">
+          <Div className="container ">
             <Div className="cs-hero_text text-center">
               <h1 className="cs-hero_title ">{parse(title)}</h1>
               {/* <Button btnLink={btnLink} btnText={btnText} /> */}
