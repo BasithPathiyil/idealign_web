@@ -24,7 +24,7 @@ export default function Hero({
         <source src={"video/video-2.mp4"} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div class="gradient-overlay"></div>
+      {/* <div class="gradient-overlay"></div> */}
       <div class="gradient-overlay2"></div>
       <Div className="cs-shape_1" />
       <Div className="cs-shape_1" />

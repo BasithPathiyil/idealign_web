@@ -81,7 +81,7 @@ export default function ProjectsPage() {
       <Spacing lg="90" md="60" />
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Build your career<br />with IACM"
           btnText="Contac Us"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"

@@ -15,6 +15,7 @@ import Hero41 from "../Hero/Hero41";
 import Cta from "../Cta";
 import PageHeading2 from "../PageHeading/PageHeading2";
 import CoursesList from "../PricingTable/CoursesList";
+import SideMenuWidget from "../Widget/SideMenuWidget";
 
 export default function TrainingCoursesPage() {
   pageTitle("Contact Us");
@@ -173,34 +174,14 @@ export default function TrainingCoursesPage() {
         bgSrc="/images//training/const.jpg"
         pageLinkText="Idealign Academy For Construction Mangement"
       />
-      {/* <Hero
-        title="Let's Align <br/> Your Ideas"
-        subtitle="Our efficient team of consultants, designers, architects, engineers and project managers help to achieve your goals. Together we can align your ideas."
-        btnText="Get a Quote"
-        btnLink="/contact"
-        scrollDownId="#service"
-        socialLinksHeading=" "
-        heroSocialLinks={heroSocialLinks}
-        bgImageUrl="/images/bgImg1.jpeg"
-      /> */}
-      {/* <Hero4
-        title="IACM"
-        subtitle="Idealign Academy For Construction Mangement"
-        scrollDownId="#service"
-        socialLinksHeading=" "
-        heroSocialLinks={heroSocialLinks}
-        phoneNumber="+044 546664"
-        email="info@arino.com"
-      /> */}
-      {/* <Hero6
-        heroSocialLinks={heroSocialLinks}
-        socialLinksHeading=" "
-        showcaseData={showcaseData}
-      /> */}
+
       <Spacing lg="90" md="60" />
       <Div className="container">
-        <Div className="row">
-          <Div className="col-xl-5 col-lg-7">
+        <Div
+          className="row"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Div className="col-xl-5 col-lg-6">
             <SectionHeading title="Why IACM?" subtitle="">
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
@@ -219,7 +200,25 @@ export default function TrainingCoursesPage() {
               <Spacing lg="25" md="40" />
             </SectionHeading>
           </Div>
-          <Div className="col-lg-5 offset-xl-2">
+          {/* //offset-xl-2 */}
+          <Div className="col-lg-6 ">
+            <img
+              src="/images/about_img_1.jpeg"
+              style={{ width: "100%" }}
+              alt="About"
+              className="w-100 cs-radius_15"
+            />
+            <Spacing lg="25" md="25" />
+          </Div>
+        </Div>
+      </Div>
+      <Spacing lg="90" md="60" />
+      <Div className="container">
+        <Div
+          className="row"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Div className="col-lg-6 ">
             <img
               src="/images/about_img_1.jpeg"
               alt="About"
@@ -227,64 +226,49 @@ export default function TrainingCoursesPage() {
             />
             <Spacing lg="25" md="25" />
           </Div>
-          {/* <Div className="col-lg-7">
-            <img
-              src="/images/about_img_2.jpeg"
-              alt="About"
-              className="w-100 cs-radius_15"
-            />
-            <Spacing lg="25" md="25" />
+          {/* <Div className="col-xl-7 col-lg-2"></Div> */}
+          <Div className="col-xl-5 col-lg-6">
+            <SectionHeading
+              title="Construction Project Mangement Program"
+              subtitle=""
+            >
+              <Spacing lg="30" md="20" />
+              <SideMenuWidget
+                title={""}
+                data={[
+                  {
+                    title: "Certified Instituition with Accrediated Programs",
+                    url: "",
+                  },
+                  {
+                    title: "Tailor made professional Courses",
+                    url: "",
+                  },
+                  {
+                    title:
+                      "Suitable for Students, Graduates and Working Professionals in Construction Industry",
+                    url: "",
+                  },
+                ]}
+              />
+              <Spacing lg="30" md="30" />
+              <Div className="cs-separator cs-accent_bg"></Div>
+              <Spacing lg="25" md="40" />
+            </SectionHeading>
           </Div>
-          <Div className="col-lg-5">
-            <img
-              src="/images/about_img_3.jpeg"
-              alt="About"
-              className="w-100 cs-radius_15"
-            />
-            <Spacing lg="25" md="25" />
-          </Div> */}
         </Div>
       </Div>
+
       <Spacing lg="90" md="60" />
       <Div className="container">
-        {/* <SectionHeading
-          title="OUR COURSES"
-          subtitle=""
-          variant="cs-style1 text-center"
-        />
-        <Spacing lg="55" md="30" />
-        <Div className="row">
-          {teamData.map((item, index) => (
-            <Div className="col-lg-3" key={index}>
-              <CoursesCard
-                memberImage={item.memberImage}
-                memberName={item.memberName}
-                memberDesignation={item.memberDesignation}
-                // memberSocial={item.memberSocial}
-                memberSocial={{}}
-              />
-            </Div>
-          ))}
-        </Div> */}
         <Div className="contianer">
           <SectionHeading
-            title="OUR COURSES"
+            title="Our Courses"
             subtitle=""
             variant="cs-style1 text-center"
           />
           <Spacing lg="55" md="30" />
           <CoursesList />
-          {/* {teamData.map((item, index) => (
-            <Div className="col-lg-3" key={index}>
-              <CoursesCard
-                memberImage={item.memberImage}
-                memberName={item.memberName}
-                memberDesignation={item.memberDesignation}
-                // memberSocial={item.memberSocial}
-                memberSocial={{}}
-              />
-            </Div>
-          ))} */}
         </Div>
       </Div>
       <Spacing lg="90" md="60" />
@@ -300,8 +284,8 @@ export default function TrainingCoursesPage() {
       <Spacing lg="90" md="60" />
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
+          title="Build your career<br />with IACM"
+          btnText="Enroll Now"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />

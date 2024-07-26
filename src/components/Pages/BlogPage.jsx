@@ -94,7 +94,8 @@ export default function BlogPage() {
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          // title="Build your career<br />with <i>cool</i> together"
+          title="Build your career<br />with IACM"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"

@@ -3,7 +3,8 @@ import { useState } from "react";
 import Div from "../Div";
 const accordionData = [
   {
-    question: " Understand the principles, stages, and workflow of aconstruction project",
+    question:
+      " Understand the principles, stages, and workflow of aconstruction project",
     answer:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.",
   },
@@ -18,12 +19,14 @@ const accordionData = [
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.",
   },
   {
-    question: " Acquiring necessary skills and knowledge in Quantity Surveying, construction planning & Scheduling and Contracts Management.",
+    question:
+      " Acquiring necessary skills and knowledge in Quantity Surveying, construction planning & Scheduling and Contracts Management.",
     answer:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.",
   },
   {
-    question: " Application of Project Management Tools in prepar ing and analyzing, project plan, schedules, project monitoring and control.",
+    question:
+      " Application of Project Management Tools in prepar ing and analyzing, project plan, schedules, project monitoring and control.",
     answer:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.",
   },
@@ -49,7 +52,9 @@ export default function Accordion2() {
             className="cs-accordian_head "
             onClick={() => handelToggle(index)}
           >
-            <h2 className="cs-accordian_title cs-white_color">{item.question}</h2>
+            <h2 className="cs-accordian_title  cs-white_color">
+              {item.question}
+            </h2>
             {/* <span className="cs-accordian_toggle cs-accent_color">
               <svg
                 width={15}
