@@ -467,7 +467,7 @@ label {
   cursor: pointer;
   &:hover {
     .cs-accordian_title {
-      color: $accent;
+    color: $hover;
     }
   }
 }

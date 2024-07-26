@@ -18,12 +18,12 @@ export default function Cta({ title, btnText, btnLink, bgSrc, variant }) {
       <Div className="cs-shape_1" />
       <Div className="cs-cta_in">
         <h2 className="cs-cta_title cs-semi_bold cs-m0 cs-white_color">
-          {parse("Build your career<br />with IACM")}
+          {parse(title)}
         </h2>
         {btnText && (
           <>
             <Spacing lg="70" md="30" />
-            <Button btnLink={btnLink} btnText={"Enroll Now"} />
+            <Button btnLink={btnLink} btnText={btnText} />
           </>
         )}
       </Div>

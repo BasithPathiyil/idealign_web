@@ -48,7 +48,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Start Page Heading Section */}
-      <Spacing lg="90" md="60" />
+      <Spacing lg="90" md="90" />
       <Hero3
         title={`About Us`}
         btnLink="contact"

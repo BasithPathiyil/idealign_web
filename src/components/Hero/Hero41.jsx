@@ -89,8 +89,9 @@ export default function Hero41({
             <Div className="row">
               <Div className="col-xl-5 col-lg-6">
                 <SectionHeading3
-                  title="Course Deliverables"
+                  title="Course <br /> Deliverables"
                   subtitle="FAQ’s"
+                  // variant={"text-left"}
                 />
                 <Spacing lg="90" md="45" />
               </Div>

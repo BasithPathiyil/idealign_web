@@ -42,7 +42,7 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <Spacing lg="90" md="60" />
+      <Spacing lg="90" md="90" />
       <Hero3
         title={`Projects`}
         btnLink="contact"
@@ -81,8 +81,8 @@ export default function ProjectsPage() {
       <Spacing lg="90" md="60" />
       <Div className="container">
         <Cta
-          title="Build your career<br />with IACM"
-          btnText="Contac Us"
+          title="If you have <br />any project in mind"
+          btnText="Enquire Now"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />

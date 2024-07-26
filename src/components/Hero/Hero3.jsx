@@ -17,7 +17,8 @@ export default function Hero3({
     <Div
       className="cs-hero cs-style1 cs-type2"
       id="home"
-      // style={{ height: "400px" }}
+
+      style={{ height: "410px" }}
     >
       <WaterWave
         className="cs-hero_bg cs-bg cs-ripple_version cs-center"

@@ -106,65 +106,6 @@ export default function TrainingCoursesPage() {
       imgUrl: "/images//training/const2.jpg",
       href: "/case-study/case-study-details",
     },
-    // {
-    //   title: "Think reality <br/>do positive",
-    //   imgUrl: "/images/slider_3.jpeg",
-    //   href: "/case-study/case-study-details",
-    // },
-    // {
-    //   title: "Think reality <br/>do positive",
-    //   imgUrl: "/images/slider_4.jpeg",
-    //   href: "/case-study/case-study-details",
-    // },
-  ];
-  const teamData = [
-    {
-      memberImage: "/images/services/designengineering.jpg",
-      memberName: "Introduction To Construction Management",
-      memberDesignation: "Introduction To Construction Management content",
-      memberSocial: {
-        linkedin: "/",
-        twitter: "/",
-        youtube: "/",
-        facebook: "/",
-      },
-    },
-    {
-      memberImage: "/images/services/projectcontrol.jpg",
-      memberName: "Quantity Surveying",
-      memberDesignation:
-        "Quantity Surveying is primarily centered on management of costs and budgets of construction projects.",
-      memberSocial: {
-        linkedin: "/",
-        twitter: "/",
-        youtube: "/",
-        facebook: "/",
-      },
-    },
-    {
-      memberImage: "/images/services/costmanagement.jpg",
-      memberName: "Project Engineering",
-      memberDesignation:
-        "This program is aimed to train the emerging graduates with the latest and best tools, techniques",
-      memberSocial: {
-        linkedin: "/",
-        twitter: "/",
-        youtube: "/",
-        facebook: "/",
-      },
-    },
-    {
-      memberImage: "/images/services/claimmanagement.jpg",
-      memberName: "Planning and Scheduling",
-      memberDesignation:
-        "Planning a project is 20% software application & 80% implementing proper planning & scheduling techniques.",
-      memberSocial: {
-        linkedin: "/",
-        twitter: "/",
-        youtube: "/",
-        facebook: "/",
-      },
-    },
   ];
 
   return (
@@ -200,7 +141,6 @@ export default function TrainingCoursesPage() {
               <Spacing lg="25" md="40" />
             </SectionHeading>
           </Div>
-          {/* //offset-xl-2 */}
           <Div className="col-lg-6 ">
             <img
               src="/images/training/const2.jpg"
@@ -226,13 +166,11 @@ export default function TrainingCoursesPage() {
             />
             <Spacing lg="25" md="25" />
           </Div>
-          {/* <Div className="col-xl-7 col-lg-2"></Div> */}
           <Div className="col-xl-5 col-lg-6">
             <SectionHeading
               title="Construction Project Mangement Program"
               subtitle=""
             >
-              {/* <Spacing lg="30" md="20" /> */}
               <SideMenuWidget
                 title={""}
                 data={[
@@ -253,7 +191,6 @@ export default function TrainingCoursesPage() {
               />
               <Spacing lg="20" md="20" />
               <Div className="cs-separator cs-accent_bg"></Div>
-              {/* <Spacing lg="25" md="40" /> */}
             </SectionHeading>
           </Div>
         </Div>
@@ -291,125 +228,6 @@ export default function TrainingCoursesPage() {
         />
       </Div>
       <Spacing lg="90" md="60" />
-      {/* <Spacing lg="150" md="80" />
-      <Div className="container">
-        <Div className="row">
-          <Div className="col-lg-6">
-            <SectionHeading
-              title="Do you have a project <br/>in your mind?"
-              subtitle="Getting Touch"
-            />
-            <Spacing lg="55" md="30" />
-            <ContactInfoWidget withIcon />
-            <Spacing lg="0" md="50" />
-          </Div>
-          <Div className="col-lg-6">
-            <form action="#" className="row">
-              <Div className="col-sm-6">
-                <label className="cs-black_color">Full Name*</label>
-                <input
-                  onChange={(e) => {
-                    setErrors({ ...errors, fullName: "" });
-                    setFullName(e.target.value);
-                  }}
-                  type="text"
-                  className="cs-form_field"
-                />
-                {errors.fullName ? (
-                  <p className="form_err_msg">{errors.fullName}</p>
-                ) : (
-                  ""
-                )}
-                <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-6">
-                <label className="cs-black_color">Email*</label>
-                <input
-                  onChange={(e) => {
-                    setErrors({ ...errors, email: "" });
-                    setEmail(e.target.value);
-                  }}
-                  type="text"
-                  className="cs-form_field"
-                />
-                {errors.email ? (
-                  <p className="form_err_msg">{errors.email}</p>
-                ) : (
-                  ""
-                )}
-                <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-6">
-                <label className="cs-black_color">Project Type*</label>
-                <input
-                  onChange={(e) => {
-                    setErrors({ ...errors, project: "" });
-                    setProject(e.target.value);
-                  }}
-                  type="text"
-                  className="cs-form_field"
-                />
-                {errors.project ? (
-                  <p className="form_err_msg">{errors.project}</p>
-                ) : (
-                  ""
-                )}
-                <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-6">
-                <label className="cs-black_color">Mobile*</label>
-                <input
-                  onChange={(e) => {
-                    setErrors({ ...errors, mobile: "" });
-                    setMobile(e.target.value);
-                  }}
-                  type="text"
-                  className="cs-form_field"
-                />
-                {errors.mobile ? (
-                  <p className="form_err_msg">{errors.mobile}</p>
-                ) : (
-                  ""
-                )}
-                <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-12">
-                <label className="cs-black_color">Message*</label>
-                <textarea
-                  onChange={(e) => {
-                    setErrors({ ...errors, message: "" });
-                    setMessage(e.target.value);
-                  }}
-                  cols="30"
-                  rows="7"
-                  className="cs-form_field"
-                ></textarea>
-                {errors.message ? (
-                  <p className="form_err_msg">{errors.message}</p>
-                ) : (
-                  ""
-                )}
-                <Spacing lg="25" md="25" />
-              </Div>
-              <Div className="col-sm-12">
-                <button onClick={handleClickSend} className="cs-btn cs-style1">
-                  <span>Send Message</span>
-                  <Icon icon="bi:arrow-right" />
-                </button>
-              </Div>
-            </form>
-          </Div>
-        </Div>
-      </Div> */}
-      {/* <Spacing lg="150" md="80" />
-      <Div className="cs-google_map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd"
-          allowFullScreen
-          title="Google Map"
-        />
-      </Div> */}
-      {/* <Spacing lg="50" md="40" /> */}
     </>
   );
 }

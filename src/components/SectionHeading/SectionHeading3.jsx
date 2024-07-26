@@ -5,7 +5,7 @@ import Spacing from "../Spacing";
 import Div from "../Div";
 import Button2 from "../Button/Button2";
 
-export default function SectionHeading3 ({
+export default function SectionHeading3({
   title,
   subtitle,
   btnLink,
@@ -21,7 +21,6 @@ export default function SectionHeading3 ({
           : `cs-section_heading cs-style1`
       }
     >
-      {/* <h3 className="cs-section_subtitle">{parse(subtitle)}</h3> */}
       <h2 className="cs-section_title cs-white_color">{parse(title)}</h2>
       {children}
       {btnText && (

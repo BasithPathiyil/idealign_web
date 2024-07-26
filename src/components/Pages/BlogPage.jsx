@@ -95,8 +95,8 @@ export default function BlogPage() {
       <Div className="container">
         <Cta
           // title="Build your career<br />with <i>cool</i> together"
-          title="Build your career<br />with IACM"
-          btnText="Apply For Meeting"
+          title="If you have <br />any project in mind"
+          btnText="Enquire Now"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />
