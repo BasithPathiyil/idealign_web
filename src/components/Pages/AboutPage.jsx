@@ -54,7 +54,7 @@ export default function AboutPage() {
         btnLink="contact"
         btnText={""}
         socialLinksHeading=" "
-        bgImageUrl="./images/servicesbg.jpg"
+        bgImageUrl="./images/aboutus/bgimg.jpg"
       />
       {/* <PageHeading
         title="About Us"

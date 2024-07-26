@@ -171,7 +171,7 @@ export default function TrainingCoursesPage() {
     <>
       <PageHeading2
         title="IACM"
-        bgSrc="/images//training/const.jpg"
+        bgSrc="/images/training/course2.webp"
         pageLinkText="Idealign Academy For Construction Mangement"
       />
 
@@ -203,7 +203,7 @@ export default function TrainingCoursesPage() {
           {/* //offset-xl-2 */}
           <Div className="col-lg-6 ">
             <img
-              src="/images/about_img_1.jpeg"
+              src="/images/training/const2.jpg"
               style={{ width: "100%" }}
               alt="About"
               className="w-100 cs-radius_15"
@@ -220,7 +220,7 @@ export default function TrainingCoursesPage() {
         >
           <Div className="col-lg-6 ">
             <img
-              src="/images/about_img_1.jpeg"
+              src="/images/training/course1.webp"
               alt="About"
               className="w-100 cs-radius_15"
             />
@@ -232,7 +232,7 @@ export default function TrainingCoursesPage() {
               title="Construction Project Mangement Program"
               subtitle=""
             >
-              <Spacing lg="30" md="20" />
+              {/* <Spacing lg="30" md="20" /> */}
               <SideMenuWidget
                 title={""}
                 data={[
@@ -251,9 +251,9 @@ export default function TrainingCoursesPage() {
                   },
                 ]}
               />
-              <Spacing lg="30" md="30" />
+              <Spacing lg="20" md="20" />
               <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="40" />
+              {/* <Spacing lg="25" md="40" /> */}
             </SectionHeading>
           </Div>
         </Div>

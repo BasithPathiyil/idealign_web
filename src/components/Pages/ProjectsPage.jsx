@@ -48,7 +48,7 @@ export default function ProjectsPage() {
         btnLink="contact"
         btnText={""}
         socialLinksHeading=" "
-        bgImageUrl="./images/servicesbg.jpg"
+        bgImageUrl="./images/aboutus/projects.jpg"
       />
       {/* <Spacing lg="90" md="60" /> */}
       <Div className="container">

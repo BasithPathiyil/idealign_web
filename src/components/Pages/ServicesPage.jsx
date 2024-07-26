@@ -25,7 +25,7 @@ export default function ServicesPage() {
         btnLink="contact"
         btnText={""}
         socialLinksHeading=" "
-        bgImageUrl="./images/servicesbg.jpg"
+        bgImageUrl="./images/aboutus/servicebg.jpg"
       />
 
       {/* <Spacing lg="90" md="60" /> */}
