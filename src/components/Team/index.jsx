@@ -17,7 +17,7 @@ export default function Team({
         <img
           src={memberImage}
           alt={memberName}
-          style={{ objectPosition: `0-${objPos}px` }}
+          style={{ objectPosition: `0-${objPos}px`, filter: "grayscale(90%)" }}
         />
         <Div className="cs-member_overlay" />
       </Div>

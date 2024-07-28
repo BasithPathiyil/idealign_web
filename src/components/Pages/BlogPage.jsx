@@ -82,8 +82,8 @@ export default function BlogPage() {
                 {postData.length > index + 1 && <Spacing lg="95" md="60" />}
               </Div>
             ))}
-            <Spacing lg="60" md="40" />
-            <Pagination />
+            {/* <Spacing lg="60" md="40" />
+            <Pagination /> */}
           </Div>
           <Div className="col-xl-3 col-lg-4 offset-xl-1">
             <Spacing lg="0" md="80" />

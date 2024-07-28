@@ -207,7 +207,7 @@ export default function AboutPage() {
       <Spacing lg="50" md="30" />
       <Div className="container">
         <SectionHeading
-          title="Awesome team <br/>members"
+          title="Team <br/>members"
           subtitle="Our Team"
           variant="cs-style1"
         />

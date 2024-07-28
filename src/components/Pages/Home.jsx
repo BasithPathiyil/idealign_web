@@ -309,7 +309,7 @@ export default function Home() {
       <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading
-          title="Awesome team <br/>members"
+          title="Team <br/>members"
           subtitle="Our Team"
           variant="cs-style1"
         />

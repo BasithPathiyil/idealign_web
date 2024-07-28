@@ -16,8 +16,8 @@ export default function HomeServiceList({ variant }) {
   return (
     <>
       <Div className="cs-shape_wrap_4">
-        <Div className="cs-shape_4"></Div>
-        <Div className="cs-shape_4"></Div>
+        {/* <Div className="cs-shape_4"></Div> */}
+        {/* <Div className="cs-shape_4"></Div> */}
         <Div className="container">
           <Div className="row">
             <Div className="col-xl-4">

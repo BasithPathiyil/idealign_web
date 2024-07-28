@@ -30,8 +30,8 @@ export default function ServicesPage() {
 
       {/* <Spacing lg="90" md="60" /> */}
       <Div className="cs-shape_wrap_41">
-        <Div className="cs-shape_4"></Div>
-        <Div className="cs-shape_4"></Div>
+        {/* <Div className="cs-shape_4"></Div> */}
+        {/* <Div className="cs-shape_4"></Div> */}
         <Div className="container">
           <Div className="row">
             <h2 className="cs-accordian_title">

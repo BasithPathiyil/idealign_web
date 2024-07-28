@@ -85,13 +85,13 @@ export default function NewsEventsPage() {
                 {postData.length > index + 1 && <Spacing lg="95" md="60" />}
               </Div>
             ))}
-            <Spacing lg="60" md="40" />
+            {/* <Spacing lg="60" md="40" />
             <Pagination2
               page={page}
               setPage={setPage}
               totalCounts={14}
               itemsPerPage={3}
-            />
+            /> */}
           </Div>
           <Div className="col-xl-3 col-lg-4 offset-xl-1">
             <Spacing lg="0" md="80" />
