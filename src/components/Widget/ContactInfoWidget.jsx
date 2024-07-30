@@ -8,7 +8,7 @@ export default function ContactInfoWidget({withIcon, title}) {
       <ul className="cs-menu_widget cs-style1 cs-mp0">
         <li>
           {withIcon?<span className='cs-accent_color'><Icon icon="material-symbols:add-call-rounded" /></span>:''}
-          +91 6238075823, +9197468171941
+          +91 62380 75823, +91 97468 171941
         </li>
         <li>
           {withIcon?<span className='cs-accent_color'><Icon icon="mdi:envelope" /></span>:''}

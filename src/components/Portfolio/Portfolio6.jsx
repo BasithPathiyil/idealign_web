@@ -25,8 +25,12 @@ export default function Portfolio6({
               }
             >
               <h3 className="cs-portfolio_img_title">{category}</h3>
-              <Div className="cs-portfolio_img_in cs-shine_hover_1 cs-radius_5">
+              <Div
+                className="cs-portfolio_img_in cs-shine_hover_1 cs-radius_5"
+                style={{ display: "flex", justifyContent: "center" }}
+              >
                 <img
+                  style={{ width: "50%", objectFit: "cover" }}
                   src={imageUrl}
                   alt="Portfolio"
                   className="cs-w100 leadershipimg"

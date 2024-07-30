@@ -83,8 +83,8 @@ export default function Hero41({
           </Div>
         </Div> */}
         <Div className="container cs-shape_wrap_4">
-          <Div className="cs-shape_4"></Div>
-          <Div className="cs-shape_4"></Div>
+          {/* <Div className="cs-shape_4"></Div>
+          <Div className="cs-shape_4"></Div> */}
           <Div className="container">
             <Div className="row">
               <Div className="col-xl-5 col-lg-6">

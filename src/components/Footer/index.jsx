@@ -1,46 +1,46 @@
-import React from 'react';
-import Div from '../Div';
-import ContactInfoWidget from '../Widget/ContactInfoWidget';
-import MenuWidget from '../Widget/MenuWidget';
-import Newsletter from '../Widget/Newsletter';
-import SocialWidget from '../Widget/SocialWidget';
-import TextWidget from '../Widget/TextWidget';
-import './footer.scss';
+import React from "react";
+import Div from "../Div";
+import ContactInfoWidget from "../Widget/ContactInfoWidget";
+import MenuWidget from "../Widget/MenuWidget";
+import Newsletter from "../Widget/Newsletter";
+import SocialWidget from "../Widget/SocialWidget";
+import TextWidget from "../Widget/TextWidget";
+import "./footer.scss";
 const copyrightLinks = [
   {
-    title: 'Terms of Use',
-    href: '/',
+    title: "Terms of Use",
+    href: "/",
   },
   {
-    title: 'Privacy Policy',
-    href: '/',
+    title: "Privacy Policy",
+    href: "/",
   },
 ];
 
 const serviceMenu = [
   {
-    title: 'Desgin Engineering Mangement',
-    href: '/service/service-details',
+    title: "Desgin Engineering Mangement",
+    href: "/service/service-details",
   },
   {
-    title: 'Project Control',
-    href: '/service/service-details',
+    title: "Project Control",
+    href: "/service/service-details",
   },
   {
-    title: 'Cost Mangement',
-    href: '/service/service-details',
+    title: "Cost Mangement",
+    href: "/service/service-details",
   },
   {
-    title: 'Contract & Claim Management',
-    href: '/service/service-details',
+    title: "Contract & Claim Management",
+    href: "/service/service-details",
   },
   {
-    title: 'Time Management',
-    href: '/service/service-details',
+    title: "Time Management",
+    href: "/service/service-details",
   },
   {
-    title: 'Construction Management',
-    href: '/service/service-details',
+    title: "Construction Management",
+    href: "/service/service-details",
   },
 ];
 
@@ -85,10 +85,12 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
       <Div className="container cs-bottom_footer_main">
         <Div className="cs-bottom_footer">
           <Div className="cs-bottom_footer_left">
-            <Div className="cs-copyright">Copyright © 2022 Laralink.</Div>
+            <Div className="cs-copyright">
+              Copyright © 2022 Idealign LLP. All rights reserved.
+            </Div>
           </Div>
           <Div className="cs-bottom_footer_right">
-            <MenuWidget menuItems={copyrightLinks} variant=" cs-style2" />
+            {/* <MenuWidget menuItems={copyrightLinks} variant=" cs-style2" /> */}
           </Div>
         </Div>
       </Div>

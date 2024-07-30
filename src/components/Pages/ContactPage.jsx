@@ -110,7 +110,7 @@ export default function ContactPage() {
           <Div className="col-lg-6">
             <SectionHeading
               title="Let's build your<br/>journey together"
-              subtitle="Getting Touch"
+              subtitle=""
             />
             <Spacing lg="55" md="30" />
             <ContactInfoWidget withIcon />

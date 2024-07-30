@@ -16,6 +16,7 @@ import Cta from "../Cta";
 import PageHeading2 from "../PageHeading/PageHeading2";
 import CoursesList from "../PricingTable/CoursesList";
 import SideMenuWidget from "../Widget/SideMenuWidget";
+import CustomDelayAnimation from "../framer/CustomDelayAnimation";
 
 export default function TrainingCoursesPage() {
   pageTitle("Contact Us");
@@ -123,32 +124,37 @@ export default function TrainingCoursesPage() {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Div className="col-xl-5 col-lg-6">
-            <SectionHeading title="Why IACM?" subtitle="">
-              <Spacing lg="30" md="20" />
-              <p className="cs-m0">
-                When you complete this program, you will have acquired a unique
-                combination of construction and project management skills along
-                with necessary tools to stay ahead the curve in the industry.
-              </p>
-              <Spacing lg="30" md="30" />
-              <p className="cs-m0">
-                This 3- part program will cover major facets of construction
-                management including project engineering, planning & scheduling
-                and cost estimating & control.
-              </p>
-              <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="40" />
-            </SectionHeading>
+            <CustomDelayAnimation delayInSec={0.3} durInSec={1}>
+              <SectionHeading title="Why IACM?" subtitle="">
+                <Spacing lg="30" md="20" />
+                <p className="cs-m0">
+                  When you complete this program, you will have acquired a
+                  unique combination of construction and project management
+                  skills along with necessary tools to stay ahead the curve in
+                  the industry.
+                </p>
+                <Spacing lg="30" md="30" />
+                <p className="cs-m0">
+                  This 3- part program will cover major facets of construction
+                  management including project engineering, planning &
+                  scheduling and cost estimating & control.
+                </p>
+                <Spacing lg="30" md="30" />
+                <Div className="cs-separator cs-accent_bg"></Div>
+                <Spacing lg="25" md="40" />
+              </SectionHeading>
+            </CustomDelayAnimation>
           </Div>
           <Div className="col-lg-6 ">
-            <img
-              src="/images/training/const2.jpg"
-              style={{ width: "100%" }}
-              alt="About"
-              className="w-100 cs-radius_15"
-            />
-            <Spacing lg="25" md="25" />
+            <CustomDelayAnimation delayInSec={0.3} durInSec={1}>
+              <img
+                src="/images/training/const2.jpg"
+                style={{ width: "100%" }}
+                alt="About"
+                className="w-100 cs-radius_15"
+              />
+              <Spacing lg="25" md="25" />
+            </CustomDelayAnimation>
           </Div>
         </Div>
       </Div>
@@ -159,39 +165,43 @@ export default function TrainingCoursesPage() {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Div className="col-lg-6 ">
-            <img
-              src="/images/training/course1.webp"
-              alt="About"
-              className="w-100 cs-radius_15"
-            />
-            <Spacing lg="25" md="25" />
+            <CustomDelayAnimation delayInSec={0.3} durInSec={1}>
+              <img
+                src="/images/training/course1.webp"
+                alt="About"
+                className="w-100 cs-radius_15"
+              />
+              <Spacing lg="25" md="25" />
+            </CustomDelayAnimation>
           </Div>
           <Div className="col-xl-5 col-lg-6">
-            <SectionHeading
-              title="Construction Project Mangement Program"
-              subtitle=""
-            >
-              <SideMenuWidget
-                title={""}
-                data={[
-                  {
-                    title: "Certified Instituition with Accrediated Programs",
-                    url: "",
-                  },
-                  {
-                    title: "Tailor made professional Courses",
-                    url: "",
-                  },
-                  {
-                    title:
-                      "Suitable for Students, Graduates and Working Professionals in Construction Industry",
-                    url: "",
-                  },
-                ]}
-              />
-              <Spacing lg="20" md="20" />
-              <Div className="cs-separator cs-accent_bg"></Div>
-            </SectionHeading>
+            <CustomDelayAnimation delayInSec={0.3} durInSec={1}>
+              <SectionHeading
+                title="Construction Project Mangement Program"
+                subtitle=""
+              >
+                <SideMenuWidget
+                  title={""}
+                  data={[
+                    {
+                      title: "Certified Instituition with Accrediated Programs",
+                      url: "",
+                    },
+                    {
+                      title: "Tailor made professional Courses",
+                      url: "",
+                    },
+                    {
+                      title:
+                        "Suitable for Students, Graduates and Working Professionals in Construction Industry",
+                      url: "",
+                    },
+                  ]}
+                />
+                <Spacing lg="20" md="20" />
+                <Div className="cs-separator cs-accent_bg"></Div>
+              </SectionHeading>
+            </CustomDelayAnimation>
           </Div>
         </Div>
       </Div>
@@ -199,12 +209,14 @@ export default function TrainingCoursesPage() {
       <Spacing lg="90" md="60" />
       <Div className="container">
         <Div className="contianer">
-          <SectionHeading
-            title="Our Courses"
-            subtitle=""
-            variant="cs-style1 text-center"
-          />
-          <Spacing lg="55" md="30" />
+          <CustomDelayAnimation delayInSec={0.3} durInSec={1}>
+            <SectionHeading
+              title="Our Courses"
+              subtitle=""
+              variant="cs-style1 text-center"
+            />
+            <Spacing lg="55" md="30" />
+          </CustomDelayAnimation>
           <CoursesList />
         </Div>
       </Div>

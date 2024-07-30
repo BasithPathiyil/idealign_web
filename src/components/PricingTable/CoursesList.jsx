@@ -4,6 +4,7 @@ import PricingTable from ".";
 import Section from "../Div";
 import Spacing from "../Spacing";
 import PricingCourseCard from "./PricingCourseCard";
+import CustomDelayAnimation from "../framer/CustomDelayAnimation";
 
 const teamData = [
   {
@@ -62,15 +63,17 @@ export default function CoursesList() {
       <Section className="row">
         {teamData?.map((item) => (
           <Section className="col-lg-3">
-            <PricingCourseCard
-              title={item.memberName}
-              timeline={item.memberDesignation}
-              imageUrl={item.memberImage}
-              btnText="Enroll Now"
-              btnLink="/contact"
-            />
+            <CustomDelayAnimation delayInSec={0.3} durInSec={1}>
+              <PricingCourseCard
+                title={item.memberName}
+                timeline={item.memberDesignation}
+                imageUrl={item.memberImage}
+                btnText="Enroll Now"
+                btnLink="/contact"
+              />
 
-            <Spacing lg="25" md="25" />
+              <Spacing lg="25" md="25" />
+            </CustomDelayAnimation>
           </Section>
         ))}
       </Section>
