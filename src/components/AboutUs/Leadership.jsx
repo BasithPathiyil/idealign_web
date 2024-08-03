@@ -15,7 +15,7 @@ const portfolioData = [
       " Rabeeh is focused on delivering outcomes against strong principles, strategic priorities, and operational systems. He is a chartered surveyor from the Royal Institution of Chartered Surveyors and holds a Master's degree in Construction Management from the University of Manchester.",
     btnText: "See Details",
     btnLink: "/portfolio/portfolio-details",
-    imageUrl: "/images/aboutus/photo_rabeeh.jpg",
+    imageUrl: "/images/aboutus/photo_rabeeh2.jpg",
     category: "",
   },
   {

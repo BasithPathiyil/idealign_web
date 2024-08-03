@@ -95,19 +95,19 @@ export default function NewsEventsPage() {
           </Div>
           <Div className="col-xl-3 col-lg-4 offset-xl-1">
             <Spacing lg="0" md="80" />
-            <Sidebar />
+            {/* <Sidebar /> */}
           </Div>
         </Div>
       </Div>
       <Spacing lg="150" md="80" />
-      <Div className="container">
+      {/* <Div className="container">
         <Cta
           title="If you have <br />any project in mind"
           btnText="Enquire Now"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />
-      </Div>
+      </Div> */}
       <Spacing lg="90" md="60" />
     </>
   );

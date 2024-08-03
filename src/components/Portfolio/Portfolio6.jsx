@@ -30,7 +30,10 @@ export default function Portfolio6({
                 style={{ display: "flex", justifyContent: "center" }}
               >
                 <img
-                  style={{ width: "50%", objectFit: "cover" }}
+                  style={{
+                    width: "50%",
+                    // objectFit: "cover",
+                  }}
                   src={imageUrl}
                   alt="Portfolio"
                   className="cs-w100 leadershipimg"
@@ -48,8 +51,6 @@ export default function Portfolio6({
                 </span>
               </h2>
               <p>{subtitle}</p>
-              <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
               <Spacing lg="45" md="20" />
             </Div>
           </Div>
