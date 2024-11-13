@@ -4,7 +4,7 @@ import Div from "../Div";
 const accordionData = [
   {
     question:
-      " Understand the principles, stages, and workflow of aconstruction project",
+      " Understand the principles, stages, and workflow of a construction project",
     answer:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.",
   },
@@ -14,7 +14,7 @@ const accordionData = [
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.",
   },
   {
-    question: "Understand roles &responsibilities of Project Engineers.",
+    question: "Understand roles & responsibilities of Project Engineers.",
     answer:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.",
   },
@@ -52,7 +52,7 @@ export default function Accordion2() {
             className="cs-accordian_head "
             onClick={() => handelToggle(index)}
           >
-            <h2 className="cs-accordian_title  cs-white_color">
+            <h2 className="cs-accordian_title  cs-accent_color">
               {item.question}
             </h2>
             {/* <span className="cs-accordian_toggle cs-accent_color">

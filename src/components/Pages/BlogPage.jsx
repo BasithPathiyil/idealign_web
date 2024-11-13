@@ -56,15 +56,21 @@ export default function BlogPage() {
   const blogsData = data?.arrList;
   return (
     <>
+      <PageHeading
+        title="Blogs"
+        bgSrc="images/8.jpg"
+        pageLinkText="About Us"
+      />
       <Spacing lg="90" md="60" />
-      <Hero3
+      {/* <Hero3
         title={`Blogs`}
         btnLink="contact"
         btnText={""}
         socialLinksHeading=" "
         bgImageUrl="./images/blogsheading2.jpg"
       />
-      <Spacing lg="30" md="20" />
+      <Spacing lg="30" md="20" /> */}
+      <Spacing lg="60" md="40" />
       <Div className="container">
         <Div className="row">
           <Div className="col-lg-8">
@@ -91,7 +97,7 @@ export default function BlogPage() {
           </Div>
         </Div>
       </Div>
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" />
       <Div className="container">
         <Cta
           // title="Build your career<br />with <i>cool</i> together"
@@ -100,7 +106,7 @@ export default function BlogPage() {
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />
-      </Div>
+      </Div> */}
       <Spacing lg="90" md="60" />
     </>
   );

@@ -149,7 +149,7 @@
 export const sssss = [
     {
       id: "designengineeringmanagement",
-      title: "Design Engineering Mangement",
+      title: "Design Engineering Management",
       link: "/service/costmanagement",
       src: "/images/services/designengineering.jpg",
       content:
@@ -195,7 +195,7 @@ export const sssss = [
     },
     {
       id: "costmanagement",
-      title: "Cost Mangement",
+      title: "Cost Management",
       link: "/service/procurement",
       src: "/images/services/costmanagement.jpg",
       content:

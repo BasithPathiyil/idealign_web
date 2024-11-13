@@ -29,11 +29,11 @@ export default function NewsEventsDetailedPage() {
   return (
     <>
       {/* Start Page Heading Section */}
-      <PageHeading
+      {/* <PageHeading
         title="News & Events Detailed"
         bgSrc="/images/blog_details_hero_bg.jpeg"
         pageLinkText={params.blogDetailsId}
-      />
+      /> */}
       {/* End Page Heading Section */}
 
       {/* Start Blog Details */}
@@ -56,7 +56,7 @@ export default function NewsEventsDetailedPage() {
                     {formatDate(projectData?.eventDate)}
                   </span>
                   <Link to="/blog" className="cs-post_avatar">
-                    Tech
+                    {projectData?.category}
                   </Link>
                 </Div>
                 <h2 className="cs-post_title">{projectData?.title}</h2>
@@ -64,7 +64,7 @@ export default function NewsEventsDetailedPage() {
                   ? parse(projectData?.content)
                   : ""}
 
-                <Div className="row">
+                {/* <Div className="row">
                   <Div className="col-md-6">
                     <img
                       src="/images/blog_details_img_1.jpeg"
@@ -106,13 +106,13 @@ export default function NewsEventsDetailedPage() {
                   nothing prevents our being able to do what we like best, every
                   pleasure is to be welcomed and every pain avoided. But in
                   certain amount of people.
-                </p>
+                </p> */}
               </Div>
             </Div>
             {/* End Details Post Content */}
 
             {/* Start Comment Section */}
-            <Spacing lg="30" md="30" />
+            {/* <Spacing lg="30" md="30" />
             <h2 className="cs-font_50 cs-m0">Leave A Reply</h2>
             <Spacing lg="5" md="5" />
             <p className="cs-m0">
@@ -156,13 +156,13 @@ export default function NewsEventsDetailedPage() {
                   <Icon icon="bi:arrow-right" />
                 </button>
               </Div>
-            </form>
+            </form> */}
             {/* End Comment Section */}
           </Div>
           <Div className="col-xl-3 col-lg-4 offset-xl-1">
             {/* Start Sidebar */}
             <Spacing lg="0" md="80" />
-            <Sidebar />
+            {/* <Sidebar /> */}
             {/* End Sidebar */}
           </Div>
         </Div>
@@ -171,14 +171,14 @@ export default function NewsEventsDetailedPage() {
       {/* Start Blog Details */}
 
       {/* Start CTA Section */}
-      <Div className="container">
+      {/* <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
+          title="Build your career<br />with IACM"
+          btnText="Enroll Now"
           btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
+          bgSrc="/images/6.jpg"
         />
-      </Div>
+      </Div> */}
       {/* End CTA Section */}
     </>
   );

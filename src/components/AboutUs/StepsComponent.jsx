@@ -25,9 +25,9 @@ const StepsComponent = () => {
 
           <div>
             <p className="contentstep">
-              Our process begins by identifying the project overview,
-              objectives, and stakeholders' perspectives, then assigning a team
-              capable of handling the project with perfection.
+              Our process starts with understanding the project overview,
+              objectives, and stakeholder perspectives. We then assign a team
+              skilled in delivering flawless results.
             </p>
           </div>
         </div>
@@ -40,7 +40,11 @@ const StepsComponent = () => {
         </div>
         <div className="step">
           <div className="flexjustifycentre icon-container">
-            <Icon icon="arcticons:geogebra-geometry" width={"48px"} height={"40px"}/>
+            <Icon
+              icon="arcticons:geogebra-geometry"
+              width={"48px"}
+              height={"40px"}
+            />
           </div>
           <div className="flexjustifycentre">
             <h4>Planning</h4>
@@ -48,9 +52,9 @@ const StepsComponent = () => {
 
           <div>
             <p className="contentstep">
-              We formulate a comprehensive project strategy by defining the
-              scope, allocating resources, budgeting and scheduling, assessing
-              risks, and establishing quality standards.
+              We create a detailed project strategy by outlining the scope,
+              allocating resources, budgeting, scheduling, evaluating risks, and
+              setting quality standards.
             </p>
           </div>
         </div>
@@ -63,7 +67,11 @@ const StepsComponent = () => {
         </div>
         <div className="step">
           <div className="flexjustifycentre icon-container">
-            <Icon icon="fluent:hat-graduation-sparkle-24-filled" width={"48px"} height={"40px"}/>
+            <Icon
+              icon="fluent:hat-graduation-sparkle-24-filled"
+              width={"48px"}
+              height={"40px"}
+            />
           </div>
           <div className="flexjustifycentre">
             <h4>Execution</h4>
@@ -99,10 +107,9 @@ const StepsComponent = () => {
 
           <div>
             <p className="contentstep">
-              Integrating project oversight is crucial as it involves overseeing
-              progress, addressing challenges promptly, managing adjustments,
-              controlling expenditures, and mitigating risks to keep the project
-              on track.
+              Effective project oversight involves monitoring progress,
+              addressing challenges quickly, managing adjustments, controlling
+              costs, and mitigating risks to keep the project on track.
             </p>
           </div>
         </div>
@@ -114,7 +121,7 @@ const StepsComponent = () => {
         </div>
         <div className="step">
           <div className="flexjustifycentre icon-container">
-            <Icon icon="fa6-solid:house-flag" width={"48px"} height={"40px"}/>
+            <Icon icon="fa6-solid:house-flag" width={"48px"} height={"40px"} />
           </div>
           <div className="flexjustifycentre">
             <h4>Closure</h4>
@@ -122,9 +129,9 @@ const StepsComponent = () => {
 
           <div>
             <p className="contentstep">
-              We focus on obtaining client approval, consolidating project
-              documentation, and finalizing financial aspects, ensuring a
-              seamless handover of the project.
+              We prioritize securing client approval, consolidating project
+              documentation, and finalizing financial details to ensure a smooth
+              project handover.
             </p>
           </div>
         </div>

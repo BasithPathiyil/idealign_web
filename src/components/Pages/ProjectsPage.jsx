@@ -11,7 +11,7 @@ import ProjectCategoryCard from "../Projects/ProjectsCategoryCard.jsx";
 import Hero3 from "../Hero/Hero3.jsx";
 const postData = [
   {
-    thumb: "/images/projects/commercial.jpeg",
+    thumb: "/images/projects/commercial3.jpg",
     title: "Commercial",
     href: "/projects/category/commercial",
   },
@@ -25,9 +25,8 @@ const postData = [
     title: "Hospitality",
     href: "/projects/category/hospitality",
   },
-  ,
   {
-    thumb: "/images/projects/residential.jpg",
+    thumb: "/images/projects/residential4.jpg",
     title: "Residential",
     href: "/projects/category/residential",
   },
@@ -42,16 +41,23 @@ export default function ProjectsPage() {
 
   return (
     <>
+      <PageHeading
+        title="Projects"
+        bgSrc="images/3.jpg"
+        pageLinkText="About Us"
+        accent={true}
+        bgPosition={"bottom"}
+      />
       <Spacing lg="90" md="90" />
-      <Hero3
+      {/* <Hero3
         title={`Projects`}
         btnLink="contact"
         btnText={""}
         socialLinksHeading=" "
         bgImageUrl="./images/aboutus/projects.jpg"
-      />
+      /> */}
       {/* <Spacing lg="90" md="60" /> */}
-      <Div className="container">
+      {/* <Div className="container">
         <h2 className="cs-accordian_title ">
           Idealign specializes in delivering tailor-made, end-to-end holistic
           project management solutions designed for the entire life cycle of
@@ -59,8 +65,8 @@ export default function ProjectsPage() {
           clients with innovative solutions, ensuring timely project delivery,
           adherence to budget constraints, and the highest quality standards.
         </h2>
-      </Div>
-      <Spacing lg="90" md="60" />
+      </Div> */}
+      <Spacing lg="60" md="40" />
       <Div className="container">
         <Div className="row">
           {/* <Div className="col-lg-12"> */}
@@ -84,7 +90,7 @@ export default function ProjectsPage() {
           title="If you have <br />any project in mind"
           btnText="Enquire Now"
           btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
+          bgSrc="/images/7.jpg"
         />
       </Div>
       <Spacing lg="90" md="60" />

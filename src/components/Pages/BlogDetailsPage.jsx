@@ -31,11 +31,11 @@ export default function BlogDetailsPage() {
   return (
     <>
       {/* Start Page Heading Section */}
-      <PageHeading
+      {/* <PageHeading
         title="Blog Single"
         bgSrc="/images/blog_details_hero_bg.jpeg"
         pageLinkText={params.id}
-      />
+      /> */}
       {/* End Page Heading Section */}
 
       {/* Start Blog Details */}
@@ -59,7 +59,7 @@ export default function BlogDetailsPage() {
                     {formatDate(projectData?.createdAt)}
                   </span>
                   <Link to="/blog" className="cs-post_avatar">
-                    Tech
+                    {projectData?.category}
                   </Link>
                 </Div>
                 <h2 className="cs-post_title">{projectData?.title}</h2>
@@ -67,7 +67,7 @@ export default function BlogDetailsPage() {
                 {projectData && projectData?.content
                   ? parse(projectData?.content)
                   : ""}
-                <Div className="row">
+                {/* <Div className="row">
                   <Div className="col-md-6">
                     <img
                       src="/images/blog_details_img_1.jpeg"
@@ -84,9 +84,9 @@ export default function BlogDetailsPage() {
                     />
                     <Div className="cs-height_45 cs-height_lg_45" />
                   </Div>
-                </Div>
-                <h3>Art is powerful and imaginary source</h3>
-                <p>
+                </Div> */}
+                {/* <h3>Art is powerful and imaginary source</h3> */}
+                {/* <p>
                   we denounce with righteous indignation and dislike men who are
                   so beguiled and demoralized by the charms of pleasure of the
                   moment, so blinded by desire, that they cannot foresee the
@@ -109,13 +109,13 @@ export default function BlogDetailsPage() {
                   nothing prevents our being able to do what we like best, every
                   pleasure is to be welcomed and every pain avoided. But in
                   certain amount of people.
-                </p>
+                </p> */}
               </Div>
             </Div>
             {/* End Details Post Content */}
 
             {/* Start Comment Section */}
-            <Spacing lg="30" md="30" />
+            {/* <Spacing lg="30" md="30" />
             <h2 className="cs-font_50 cs-m0">Leave A Reply</h2>
             <Spacing lg="5" md="5" />
             <p className="cs-m0">
@@ -159,7 +159,7 @@ export default function BlogDetailsPage() {
                   <Icon icon="bi:arrow-right" />
                 </button>
               </Div>
-            </form>
+            </form> */}
             {/* End Comment Section */}
           </Div>
           <Div className="col-xl-3 col-lg-4 offset-xl-1">
@@ -174,14 +174,14 @@ export default function BlogDetailsPage() {
       {/* Start Blog Details */}
 
       {/* Start CTA Section */}
-      <Div className="container">
+      {/* <Div className="container">
         <Cta
           title="Build your career<br />with IACM"
-          btnText="Apply For Meeting"
+          btnText="Enroll Now"
           btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
+          bgSrc="/images/6.jpg"
         />
-      </Div>
+      </Div> */}
       {/* End CTA Section */}
     </>
   );

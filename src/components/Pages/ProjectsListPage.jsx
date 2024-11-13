@@ -84,7 +84,7 @@ export default function ProjectsListPage() {
   const portfolioData = data?.arrList;
   const postData = [
     {
-      thumb: "/images/projects/commercial1.jpg",
+      thumb: "/images/projects/commercial3.jpg",
       title: "Commercial",
       href: "/projects/category/commercial",
     },
@@ -94,13 +94,13 @@ export default function ProjectsListPage() {
       href: "/projects/category/industrial",
     },
     {
-      thumb: "/images/projects/hsopitality3.jpg",
+      thumb: "/images/projects/hsopitality.jpg",
       title: "Hospitality",
       href: "/projects/category/hospitality",
     },
     ,
     {
-      thumb: "/images/projects/residential3.jpg",
+      thumb: "/images/projects/residential4.jpg",
       title: "Residential",
       href: "/projects/category/residential",
     },
@@ -186,17 +186,6 @@ export default function ProjectsListPage() {
       </Div>
       <Spacing lg="150" md="80" /> */}
       {/* End LogoList Section */}
-
-      {/* Start CTA Section */}
-      {/* <Div className="container">
-        <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg_3.jpeg"
-        />
-      </Div> */}
-      {/* End CTA Section */}
     </>
   );
 }

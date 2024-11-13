@@ -51,6 +51,7 @@
         top: 0px;
         opacity: 1;
         transition-delay: 0.4s;
+        background: linear-gradient(to top right, $accent 30%, rgba(0, 0, 0, 0) 100%);
       }
       .cs-portfolio_title {
         left: 0px;
@@ -267,13 +268,14 @@
 .cs-arrow_style4 {
   .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 43%;
     transform: translateY(-50%);
     height: 50px;
     width: 50px;
-    background-color: rgba($ternary, 0.5);
+    // background-color: rgba($accent, 0.7);
+    background-color: $logo2;
     border-radius: 50%;
-    z-index: 5;
+    z-index: 5 !important;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex !important;
@@ -281,14 +283,15 @@
     justify-content: center;
     font-size: 24px;
     &:hover {
-      background-color: $ternary;
+      background-color: $accent;
       border-color: $accent;
+      color:white;
     }
     &.slick-prev {
-      left: 40px;
+      left: 18%;
     }
     &.slick-next {
-      right: 40px;
+      right: 18%;
     }
   }
   .slick-prev {
@@ -296,6 +299,19 @@
   }
   .slick-next {
     right: 0;
+  }
+
+  @media (max-width: 768px) {
+    .slick-arrow {
+      top: 50%;
+      &.slick-prev {
+        left: 10%;
+      }
+      
+      &.slick-next {
+        right: 10%;
+      }
+    }
   }
 }
 .cs-testimonial_slider {

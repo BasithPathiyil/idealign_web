@@ -67,20 +67,23 @@ export default function ServiceDetailed() {
                 ) : null}
                 <Div className="cs-height_45 cs-height_lg_25" />
                 <p className="cs-m0">{serviceData.content}</p>
-                <Div className="cs-height_25 cs-height_lg_20" />
+
+                {serviceData?.additionalParagraphs &&
+                  serviceData?.additionalParagraphs?.length > 0 &&
+                  serviceData?.additionalParagraphs?.map((item, i) => (
+                    <>
+                      <Div className="cs-height_25 cs-height_lg_20" />
+                      <p className="cs-m0">{item}</p>
+                    </>
+                  ))}
+                {/* <Div className="cs-height_25 cs-height_lg_20" />
                 <p className="cs-m0">
                   Ipsum quia dolor sit amet, consectetur, adipisci velit, sed
                   quia non numquam eius modi tempora incidunt ut labore et
                   dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
                   veniam, quis nostrum exercitationem ullam corporis suscipit.
                 </p>
-                <Div className="cs-height_25 cs-height_lg_20" />
-                <p className="cs-m0">
-                  Ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-                  quia non numquam eius modi tempora incidunt ut labore et
-                  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                  veniam, quis nostrum exercitationem ullam corporis suscipit.
-                </p>
+                 */}
                 <Div className="cs-height_45 cs-height_lg_30" />
               </Div>
             </Div>
@@ -122,92 +125,7 @@ export default function ServiceDetailed() {
         </Div> */}
       </Div>
       {/* <Spacing lg="120" md="50" /> */}
-      {/* <Div className="container">
-        <Div className="row align-items-center">
-          <Div className="col-xl-5 col-lg-6">
-            <Div className="cs-radius_15 cs-shine_hover_1">
-              <img
-                src="/images/service_img_1.jpeg"
-                alt="Service"
-                className="cs-radius_15 w-100"
-              />
-            </Div>
-            <Spacing lg="0" md="40" />
-          </Div>
-          <Div className="col-lg-6 offset-xl-1">
-            <h2 className="cs-font_50 cs-m0">
-              Below our most design related services
-            </h2>
-            <Spacing lg="50" md="30" />
-            <Div className="row">
-              <Div className="col-lg-6">
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Web page design"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="eCommerce design"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Landing page"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Email template"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Application design"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Illustration"
-                  variant="cs-type2"
-                />
-                <Spacing lg="0" md="10" />
-              </Div>
-              <Div className="col-lg-6">
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Infographic design"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Mobile apps design"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Banner, brochure, card"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-                <Button
-                  btnLink="/service/service-details"
-                  btnText="Other design"
-                  variant="cs-type2"
-                />
-                <Spacing lg="20" md="10" />
-              </Div>
-            </Div>
-          </Div>
-        </Div>
-      </Div> */}
+
       {/* <Spacing lg="150" md="80" />
       <TestimonialSlider /> */}
       {/* <Spacing lg="145" md="80" />
@@ -229,15 +147,7 @@ export default function ServiceDetailed() {
           </Div>
         </Div>
       </Div> */}
-      {/* <Spacing lg="150" md="80" />
-      <Div className="container">
-        <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
-        />
-      </Div> */}
+     
     </>
   );
 }

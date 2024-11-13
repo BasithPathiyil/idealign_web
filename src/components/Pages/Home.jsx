@@ -24,11 +24,54 @@ import Hero from "../Hero";
 import useAxiosFetch from "../../hooks/useAxiosFetch";
 import HomeProjectFragment from "../Projects/HomeProjectFragment";
 import PortfolioSlider4 from "../Slider/PortfolioSlider4";
+import MovingText2 from "../MovingText/MovingText2";
+import NormalText from "../MovingText/NormalText";
 
+const partnerLogos = [
+  {
+    src: "/images/clientlogos/ags.png",
+    alt: "Partner",
+  },
+  {
+    src: "/images/clientlogos/aak.png",
+    alt: "Partner",
+  },
+  {
+    src: "/images/clientlogos/abc.png",
+    alt: "Partner",
+  },
+  {
+    src: "/images/clientlogos/mihas.png",
+    alt: "Partner",
+  },
+  {
+    src: "/images/clientlogos/wisdom.png",
+    alt: "Partner",
+  },
+  {
+    src: "/images/clientlogos/Ramachandranlogo.png",
+    alt: "Partner",
+  },
+];
+
+const serviceData1 = [
+  {
+    title: "UI/UX Design",
+    href: "/service/service-details",
+  },
+  {
+    title: "Marketing",
+    href: "/service/service-details",
+  },
+  {
+    title: "Branding",
+    href: "/service/service-details",
+  },
+];
 // Hero Social Links
 const heroSocialLinks = [
   {
-    name: "Behance",
+    name: "Facebook",
     links: "/",
   },
   {
@@ -42,16 +85,19 @@ const funfaceData = [
   {
     title: "Work Hours",
     factNumber: "5796648",
+    // factNumber: "57",
     suffix: "",
   },
   {
-    title: "Efficiency optimizing",
-    factNumber: "53.61",
-    suffix: "%",
+    title: "Sq.Ft. total Buildup Area",
+    factNumber: "5667357",
+    // factNumber: "56",
+    suffix: "",
   },
   {
     title: "Cost Saved",
     factNumber: "27700000",
+    // factNumber: "277",
     suffix: "₹",
   },
   {
@@ -123,6 +169,7 @@ export default function Home() {
   let newsCount = data?.result.newsCount;
   let projectCount = data?.result.projectCount;
   let blogsCount = data?.result.blogsCount;
+  let teamsCount = data?.result.teamsCount;
 
   return (
     <>
@@ -163,9 +210,7 @@ export default function Home() {
 
       {/* About Us Section */}
       <Spacing lg="150" md="80" />
-      <div className="container">
-        <HomeAboutUs />
-      </div>
+      <HomeAboutUs />
       {/* About UsSection */}
 
       {/* Start Services Section */}
@@ -294,33 +339,39 @@ export default function Home() {
       <Spacing lg="130" md="70" />
       <Div className="container">
         <h2 className="cs-font_50 cs-m0 text-center cs-line_height_4">
-          Our agile process is ability to adapt and respond to change. Agile
-          organizations view change as an opportunity, not a threat.
+          Our policy is service excellence in all aspects of project management.
+          We strive to adapt our services to the specific nature of each project
+          and then act accordingly.
         </h2>
-        <Spacing lg="70" md="70" />
-        <VideoModal
+        {/* <Spacing lg="70" md="70" /> */}
+        {/* <VideoModal
           videoSrc="https://www.youtube.com/watch?v=VcaAVWtP48A"
           bgUrl="/images/video_bg.jpeg"
-        />
+        /> */}
       </Div>
       {/* End Video Block Section */}
 
       {/* Start Team Section */}
-      <Spacing lg="145" md="80" />
-      <Div className="container">
-        <SectionHeading
-          title="Team <br/>members"
-          subtitle="Our Team"
-          variant="cs-style1"
-        />
-        <Spacing lg="85" md="45" />
-        <TeamSlider />
-      </Div>
-      <Spacing lg="150" md="80" />
+      {teamsCount > 4 && (
+        <>
+          <Spacing lg="130" md="70" />
+          <Div className="container">
+            <SectionHeading
+              title="Team <br/>members"
+              subtitle=""
+              variant="cs-style1"
+            />
+            <Spacing lg="85" md="45" />
+            <TeamSlider />
+          </Div>
+        </>
+      )}
+
+      {/* <Spacing lg="90" md="70" /> */}
       {/* End Team Section */}
 
       {/* Start Testimonial Section */}
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
       {/* End Testimonial Section */}
 
       {newsCount > 0 ? (
@@ -367,32 +418,22 @@ export default function Home() {
         </>
       ) : null}
 
-      <Spacing lg="150" md="80" />
+      <Spacing lg="90" md="70" />
       {/* End Blog Section */}
 
       {/* Start MovingText Section */}
       {/* <Spacing lg="125" md="70" /> */}
-      <MovingText text="Our reputed world wide clients " />
-      <Spacing lg="105" md="70" />
+      <NormalText text="   OUR CLIENTS    " />
+      <Spacing lg="10" md="10" />
+      <MovingText2 reverseDirection data={serviceData1} />
       {/* End MovingText Section */}
 
       {/* Start LogoList Section */}
-      <Div className="container">
+      {/* <Div className="container">
         <LogoList />
-      </Div>
+      </Div> */}
       <Spacing lg="105" md="70" />
       {/* End LogoList Section */}
-
-      {/* Start CTA Section */}
-      {/* <Div className="container">
-        <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
-        />
-      </Div> */}
-      {/* End CTA Section */}
     </>
   );
 }

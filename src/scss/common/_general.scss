@@ -1028,7 +1028,7 @@ label {
     top: -30px;
     height: 151px;
     width: 151px;
-    background: $accent;
+    // background: $accent;
     opacity: 0.8;
     // filter: blur(125px);
   }
@@ -1631,6 +1631,10 @@ label {
   }
   .cs-partner_logo {
     padding: 10px;
+    img {
+      height: 89px;
+      width: 89px;
+    }
   }
   .cs-case_study .cs-case_study_title {
     font-size: 30px;

@@ -21,7 +21,7 @@ export default function Hero({
       // style={{ backgroundImage: `url(${bgImageUrl})` }}
     >
       <video autoPlay loop muted playsInline>
-        <source src={"video/video-2.mp4"} type="video/mp4" />
+        <source src={"video/video-4.mp4"} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* <div class="gradient-overlay"></div> */}

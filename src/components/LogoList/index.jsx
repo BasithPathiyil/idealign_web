@@ -22,6 +22,10 @@ const partnerLogos = [
     src: "/images/clientlogos/wisdom.png",
     alt: "Partner",
   },
+  {
+    src: "/images/clientlogos/Ramachandranlogo.png",
+    alt: "Partner",
+  },
 ];
 
 export default function LogoList() {

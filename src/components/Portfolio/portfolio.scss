@@ -95,7 +95,7 @@
     position: relative;
     z-index: 2;
     padding-right: 30px;
-    color: $secondary;
+    // color: $secondary;
     &::after {
       content: '';
       height: 1px;
@@ -353,6 +353,14 @@
     }
   }
 }
+
+.leadershipimg1 {
+  height: 600px;
+  width: 50%;
+  object-fit: scale-down;
+  background-color: $white;
+  transform: scale(1.5);
+}
 @media screen and (max-width: 575px) {
   .cs-portfolio.cs-style1 {
     height: 380px;
@@ -361,6 +369,9 @@
   .cs-portfolio.cs-style2.cs-type1 .cs-portfolio_img_title {
     margin: 0px 0 0 -20px;
     font-size: 32px;
+  }
+  .leadershipimg1 {
+    width: 100%;
   }
 }
 .cs_portfolio_grid_2 {
@@ -376,6 +387,7 @@
   .cs-portfolio.cs-style1 {
     border-radius: 0;
   }
+  
 }
 
 .leadershipimg {
@@ -385,6 +397,11 @@
   background-color: $white;
   transform: scale(1.5);
 }
+
+
+
+
+
 
 
 //////////////
@@ -445,4 +462,8 @@
   &:hover .cs-gradient_overlay {
     background: linear-gradient(to top, rgba(25, 30, 70, 0.8), transparent);
   }
+}
+
+.gridgap {
+  grid-gap: 80px;
 }

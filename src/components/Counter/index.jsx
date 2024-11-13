@@ -2,6 +2,12 @@ import { useInView } from "framer-motion";
 import React, { useRef } from "react";
 import CountUp from "react-countup";
 
+const formatNumber = (value) => {
+  return value.toLocaleString();
+};
+const formatNumberToLakh = (value) => {
+  return value.toString().replace(/(\d)(?=(\d\d)+(\d)(?!\d))/g, "$1,");
+};
 const Counter = ({ num, suffix }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -15,7 +21,15 @@ const Counter = ({ num, suffix }) => {
         color: "white",
       }}
     >
-      <CountUp start={0} end={num} duration={3} enableScrollSpy scrollSpyOnce />
+      <CountUp
+        start={0}
+        end={num}
+        duration={3}
+        enableScrollSpy
+        scrollSpyOnce
+        formattingFn={(value) => formatNumberToLakh(value)}
+        separator=","
+      />
 
       {suffix}
     </h2>

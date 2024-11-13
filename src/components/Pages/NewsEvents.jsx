@@ -59,15 +59,21 @@ export default function NewsEventsPage() {
   const newsEventsData = data?.arrList;
   return (
     <>
+      <PageHeading
+        title="News & Events"
+        bgSrc="images/5.jpg"
+        pageLinkText="About Us"
+      />
       <Spacing lg="90" md="60" />
-      <Hero3
+      {/* <Hero3
         title={`News & Events`}
         btnLink="contact"
         btnText={""}
         socialLinksHeading=" "
         bgImageUrl="./images/newseventsheading.jpg"
-      />
+      /> */}
       {/* <Spacing lg="150" md="80" /> */}
+      <Spacing lg="60" md="40" />
       <Div className="container">
         <Div className="row">
           <Div className="col-lg-8">

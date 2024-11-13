@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import Div from "../Div";
 
 import parse from "html-react-parser";
+import { Constants } from "../../utils/constants";
 
 export default function TeamMemberModal({ member, isOpen, onClose }) {
   if (!isOpen) return null;
@@ -26,7 +27,7 @@ export default function TeamMemberModal({ member, isOpen, onClose }) {
           <Div className="row">
             <Div className="col-lg-4">
               <img
-                src={member.memberImage}
+                src={`${Constants.imagebase}${member.mainImage}`}
                 alt={member.memberName}
                 style={{
                   width: "100%",

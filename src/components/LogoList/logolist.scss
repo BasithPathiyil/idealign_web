@@ -8,6 +8,9 @@
 }
 @media screen and (max-width: 575px) {
   .cs-partner_logo_wrap {
-    margin: 0 -10px;
+    // margin: 0 -10px;
+  }
+  .cs-partner_logo {
+    padding: 8px;
   }
 }

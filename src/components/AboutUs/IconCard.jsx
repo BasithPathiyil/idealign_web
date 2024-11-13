@@ -14,10 +14,10 @@ const IconCard = ({
         {iconImg}
       </Div>
       <Div>
-        <h2 className="cs-white_color cs-abouttitle" style={{ margin: "0px" }}>
+        <h2 className="cs-accent_color cs-abouttitle" style={{ margin: "0px" }}>
           {title}
         </h2>
-        <p className="cs-aboutsubtitle">{subtitle}</p>
+        <p className="cs-aboutsubtitle cs-accent_color">{subtitle}</p>
       </Div>
     </Div>
   );

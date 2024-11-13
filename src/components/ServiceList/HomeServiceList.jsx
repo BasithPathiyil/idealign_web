@@ -20,17 +20,17 @@ export default function HomeServiceList({ variant }) {
         {/* <Div className="cs-shape_4"></Div> */}
         <Div className="container">
           <Div className="row">
-            <Div className="col-xl-4">
+            <Div className="col-xl-12">
               <CustomDelayAnimation delayInSec={0.2} durInSec={1}>
                 <SectionHeading
-                  title="Services we can help you with"
-                  subtitle="What Can We Do"
+                  title="Services"
+                  subtitle=""
                 />
               </CustomDelayAnimation>
               <Spacing lg="90" md="45" />
             </Div>
 
-            <Div className="col-xl-8">
+            <Div className="col-xl-12">
               <Div className="row">
                 {services.map((service, index) => (
                   <React.Fragment key={service.link}>

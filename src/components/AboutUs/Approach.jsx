@@ -37,25 +37,31 @@ const Approach = () => {
               alt="hand"
               className="line-image image4"
             />
+
             <img
               src="images/aboutus/Vector Smart Object-25.png"
               alt="hand"
               className="line-image image5"
             />
+            <img
+              src="images/aboutus/Vector Smart Object-23.png"
+              alt="hand"
+              className="line-image image6"
+            />
             <Div className="line-content content1">
               <h5 style={{ margin: "0px" }}>Initiation</h5>
               <p className="approachcontent">
-                Our process begins by identifying the project overview,
-                objectives, and stakeholders' perspectives, then assigning a
-                team capable of handling the project with perfection.
+                Our process starts with understanding the project overview,
+                objectives, and stakeholder perspectives. We then assign a team
+                skilled in delivering flawless results.
               </p>
             </Div>
             <Div className="line-content content2">
               <h5 style={{ margin: "0px" }}>Planning</h5>
               <p className="approachcontent">
-                We formulate a comprehensive project strategy by defining the
-                scope, allocating resources, budgeting and scheduling, assessing
-                risks, and establishing quality standards.
+                We create a detailed project strategy by outlining the scope,
+                allocating resources, budgeting, scheduling, evaluating risks,
+                and setting quality standards.
               </p>
             </Div>
             <Div className="line-content content3">
@@ -69,18 +75,17 @@ const Approach = () => {
             <Div className="line-content content4">
               <h5 style={{ margin: "0px" }}>Monitoring & Controlling</h5>
               <p className="approachcontent">
-                Integrating project oversight is crucial as it involves
-                overseeing progress, addressing challenges promptly, managing
-                adjustments, controlling expenditures, and mitigating risks to
-                keep the project on track.
+                Effective project oversight involves monitoring progress,
+                addressing challenges quickly, managing adjustments, controlling
+                costs, and mitigating risks to keep the project on track.
               </p>
             </Div>
             <Div className="line-content content5">
               <h5 style={{ margin: "0px" }}>Closure</h5>
               <p className="approachcontent">
-                We focus on obtaining client approval, consolidating project
-                documentation, and finalizing financial aspects, ensuring a
-                seamless handover of the project.
+                We prioritize securing client approval, consolidating project
+                documentation, and finalizing financial details to ensure a
+                smooth project handover.
               </p>
             </Div>
           </Div>

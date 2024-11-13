@@ -67,6 +67,11 @@
     right: -4%;
     width: 100px;
 }
+.image6 {
+    bottom: 28%;
+    right: -4%;
+    // width: 100px;
+}
 
 .content1 {
     top: 3%;
@@ -81,7 +86,7 @@
     left: 0%;
 }
 .content4 {
-    top: 61%;
+    top: 62%;
     left: 0%;
 }
 .content5 {
@@ -91,6 +96,7 @@
 
 .approachcontent {
     font-size: 14px;
+    color: #000;
 }
 
 @media screen and (max-width: 575px) {
@@ -102,5 +108,6 @@
     }
     .approachcontent {
         font-size: 8px;
+        line-height: 20px;
     }
   }

@@ -5,8 +5,12 @@ import Div from "../Div";
 import Team from "../Team";
 import TeamMemberModal from "../Team/TeamMemberModal";
 import { teamData } from "../Team/teamdata";
+import useAxiosFetch from "../../hooks/useAxiosFetch";
+import { Constants } from "../../utils/constants";
 
 export default function TeamSlider() {
+  const { data, loading, error } = useAxiosFetch(`/teams/get`, {});
+  const teamDatas = data?.arrList;
   /** Team Member Data **/
 
   /** Slider Settings **/
@@ -89,14 +93,15 @@ export default function TeamSlider() {
   return (
     <>
       <Slider {...settings} className="cs-gap-24 cs-arrow_style2">
-        {teamData?.map((item, index) => (
+        {teamDatas?.map((item, index) => (
           <Div
             className="pointer"
             key={index}
             onClick={() => handleCardClick(item)}
           >
             <Team
-              memberImage={item.memberImage}
+              // memberImage={item.memberImage}
+              memberImage={`${Constants.imagebase}${item.mainImage}`}
               memberName={item.memberName}
               memberDesignation={item.memberDesignation}
               // memberSocial={item.memberSocial}

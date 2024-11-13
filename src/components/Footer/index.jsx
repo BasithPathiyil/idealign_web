@@ -19,28 +19,28 @@ const copyrightLinks = [
 
 const serviceMenu = [
   {
-    title: "Desgin Engineering Mangement",
-    href: "/service/service-details",
+    title: "Design Engineering Management",
+    href: "/service/designengineeringmanagement",
   },
   {
     title: "Project Control",
-    href: "/service/service-details",
+    href: "/service/projectcontrol",
   },
   {
-    title: "Cost Mangement",
-    href: "/service/service-details",
+    title: "Cost Management",
+    href: "/service/costmanagement",
   },
   {
     title: "Contract & Claim Management",
-    href: "/service/service-details",
+    href: "/service/contactmanagement",
   },
   {
     title: "Time Management",
-    href: "/service/service-details",
+    href: "/service/timemanagement",
   },
   {
     title: "Construction Management",
-    href: "/service/service-details",
+    href: "/service/constructionmanagement",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
         <Div className="cs-bottom_footer">
           <Div className="cs-bottom_footer_left">
             <Div className="cs-copyright">
-              Copyright © 2022 Idealign LLP. All rights reserved.
+              Copyright © 2024 Idealign LLP. All rights reserved.
             </Div>
           </Div>
           <Div className="cs-bottom_footer_right">

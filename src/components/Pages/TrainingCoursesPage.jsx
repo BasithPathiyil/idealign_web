@@ -7,16 +7,16 @@ import SectionHeading from "../SectionHeading";
 import Spacing from "../Spacing";
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import api from "../../utils/api";
-import Hero from "../Hero";
-import Hero4 from "../Hero/Hero4";
-import Hero6 from "../Hero/Hero6";
-import CoursesCard from "../TrainingCourses/CoursesCard";
 import Hero41 from "../Hero/Hero41";
 import Cta from "../Cta";
 import PageHeading2 from "../PageHeading/PageHeading2";
 import CoursesList from "../PricingTable/CoursesList";
 import SideMenuWidget from "../Widget/SideMenuWidget";
 import CustomDelayAnimation from "../framer/CustomDelayAnimation";
+import PageHeading3 from "../PageHeading/PageHeading3";
+import Portfolio8 from "../Portfolio/Portfolio8";
+import ContactInfoWidget2 from "../Widget/ContactInfoWidget2";
+import Cta3 from "../Cta/Cta3";
 
 export default function TrainingCoursesPage() {
   pageTitle("Contact Us");
@@ -27,7 +27,7 @@ export default function TrainingCoursesPage() {
   const [errors, setErrors] = useState({});
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [project, setProject] = useState("");
+  const [qualification, setQualification] = useState("");
   const [mobile, setMobile] = useState();
   const [message, setMessage] = useState("");
 
@@ -41,8 +41,8 @@ export default function TrainingCoursesPage() {
     if (!email?.trim()) {
       errors.email = "Email is required";
     }
-    if (!project?.trim()) {
-      errors.project = "Project type is required";
+    if (!qualification?.trim()) {
+      errors.qualification = "Qualification type is required";
     }
     if (!mobile?.trim()) {
       errors.mobile = "Mobile is required";
@@ -58,7 +58,7 @@ export default function TrainingCoursesPage() {
   const clearForm = () => {
     setFullName("");
     setEmail("");
-    setProject("");
+    setQualification("");
     setMobile("");
     setMessage("");
   };
@@ -69,7 +69,7 @@ export default function TrainingCoursesPage() {
     let data = {
       fullName,
       email,
-      project,
+      qualification,
       mobile,
       message,
     };
@@ -97,7 +97,7 @@ export default function TrainingCoursesPage() {
   const showcaseData = [
     {
       title: "IACM",
-      subtitle: "Idealign Academy For Construction Mangement",
+      subtitle: "Idealign Academy For Construction Management",
       imgUrl: "/images//training/const.jpg",
       href: "/case-study/case-study-details",
     },
@@ -111,10 +111,10 @@ export default function TrainingCoursesPage() {
 
   return (
     <>
-      <PageHeading2
+      <PageHeading3
         title="IACM"
         bgSrc="/images/training/course2.webp"
-        pageLinkText="Idealign Academy For Construction Mangement"
+        pageLinkText="Idealign Academy For Construction Management"
       />
 
       <Spacing lg="90" md="60" />
@@ -140,7 +140,7 @@ export default function TrainingCoursesPage() {
                   scheduling and cost estimating & control.
                 </p>
                 <Spacing lg="30" md="30" />
-                <Div className="cs-separator cs-accent_bg"></Div>
+                {/* <Div className="cs-separator cs-accent_bg"></Div> */}
                 <Spacing lg="25" md="40" />
               </SectionHeading>
             </CustomDelayAnimation>
@@ -177,7 +177,7 @@ export default function TrainingCoursesPage() {
           <Div className="col-xl-5 col-lg-6">
             <CustomDelayAnimation delayInSec={0.3} durInSec={1}>
               <SectionHeading
-                title="Construction Project Mangement Program"
+                title="Construction Project Management Program"
                 subtitle=""
               >
                 <SideMenuWidget
@@ -199,7 +199,7 @@ export default function TrainingCoursesPage() {
                   ]}
                 />
                 <Spacing lg="20" md="20" />
-                <Div className="cs-separator cs-accent_bg"></Div>
+                {/* <Div className="cs-separator cs-accent_bg"></Div> */}
               </SectionHeading>
             </CustomDelayAnimation>
           </Div>
@@ -218,12 +218,22 @@ export default function TrainingCoursesPage() {
             <Spacing lg="55" md="30" />
           </CustomDelayAnimation>
           <CoursesList />
+          {/* {portfolioData?.map((item, index) => (
+            <Div key={index}>
+              <Portfolio8
+                title={item.projectName}
+                subtitle={item.shortDesc}
+                imageUrl={`${Constants.imagebase}${item?.mainImage}`}
+              />
+              <Spacing lg="100" md="70" />
+            </Div>
+          ))} */}
         </Div>
       </Div>
       <Spacing lg="90" md="60" />
       <Hero41
         title="Course Deliverables"
-        subtitle="Idealign Academy For Construction Mangement"
+        subtitle="Idealign Academy For Construction Management"
         scrollDownId="#service"
         socialLinksHeading=" "
         heroSocialLinks={heroSocialLinks}
@@ -232,13 +242,124 @@ export default function TrainingCoursesPage() {
       />
       <Spacing lg="90" md="60" />
       <Div className="container">
-        <Cta
+        <Cta3
           title="Build your career<br />with IACM"
           btnText="Enroll Now"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
+          btnLink="https://iacm.in/"
+          bgSrc="/images/6.jpg"
         />
       </Div>
+      {/* <Spacing lg="90" md="60" />
+      <Div className="container">
+        <Div className="row">
+          <Div className="col-lg-6">
+            <SectionHeading
+              title="Let's build your<br/>journey together"
+              subtitle=""
+            />
+            <Spacing lg="55" md="30" />
+            <ContactInfoWidget2 withIcon />
+            <Spacing lg="0" md="50" />
+          </Div>
+          <Div className="col-lg-6">
+            <form action="#" className="row">
+              <Div className="col-sm-6">
+                <label className="cs-black_color">Full Name*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, fullName: "" });
+                    setFullName(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.fullName ? (
+                  <p className="form_err_msg">{errors.fullName}</p>
+                ) : (
+                  ""
+                )}
+                <Spacing lg="20" md="20" />
+              </Div>
+              <Div className="col-sm-6">
+                <label className="cs-black_color">Email*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, email: "" });
+                    setEmail(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.email ? (
+                  <p className="form_err_msg">{errors.email}</p>
+                ) : (
+                  ""
+                )}
+                <Spacing lg="20" md="20" />
+              </Div>
+              <Div className="col-sm-6">
+                <label className="cs-black_color">Mobile*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, mobile: "" });
+                    setMobile(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.mobile ? (
+                  <p className="form_err_msg">{errors.mobile}</p>
+                ) : (
+                  ""
+                )}
+                <Spacing lg="20" md="20" />
+              </Div>
+              <Div className="col-sm-6">
+                <label className="cs-black_color">Your Qualification*</label>
+                <input
+                  onChange={(e) => {
+                    setErrors({ ...errors, qualification: "" });
+                    setQualification(e.target.value);
+                  }}
+                  type="text"
+                  className="cs-form_field"
+                />
+                {errors.qualification ? (
+                  <p className="form_err_msg">{errors.qualification}</p>
+                ) : (
+                  ""
+                )}
+                <Spacing lg="20" md="20" />
+              </Div>
+
+              <Div className="col-sm-12">
+                <label className="cs-black_color">Message*</label>
+                <textarea
+                  onChange={(e) => {
+                    setErrors({ ...errors, message: "" });
+                    setMessage(e.target.value);
+                  }}
+                  cols="30"
+                  rows="7"
+                  className="cs-form_field"
+                ></textarea>
+                {errors.message ? (
+                  <p className="form_err_msg">{errors.message}</p>
+                ) : (
+                  ""
+                )}
+                <Spacing lg="25" md="25" />
+              </Div>
+              <Div className="col-sm-12">
+                <button onClick={handleClickSend} className="cs-btn cs-style1">
+                  <span>Send Message</span>
+                  <Icon icon="bi:arrow-right" />
+                </button>
+              </Div>
+            </form>
+          </Div>
+        </Div>
+      </Div> */}
       <Spacing lg="90" md="60" />
     </>
   );

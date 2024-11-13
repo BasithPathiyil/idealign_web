@@ -11,28 +11,27 @@ const HomeAboutUs = () => {
           <SectionHeading title="About Idealign" subtitle="">
             <Spacing lg="30" md="20" />
             <p className="cs-m0" style={{ textAlign: "justify" }}>
-              A construction project is considered successful if it is completed
-              on schedule, within budget, and with the needed quality. The best
-              commercial management strategies strike a balance between these
-              forces and the company's longer-term business plan.
+              At <span className="cs-bold">Idealign </span>, we are committed to
+              redefining industry norms in construction management. We
+              understand that a successful project is one that is delivered on
+              time, within budget, and with unwavering commitment to quality.
+              Our approach to commercial management is aligned with your
+              long-term vision and aspirations.
             </p>
             <Spacing lg="30" md="30" />
             <p className="cs-m0" style={{ textAlign: "justify" }}>
-              Idealign provides construction services that guarantee quality and
-              cost savings while limiting client risk and streamlining
-              communication among project stakeholders. The company is supported
-              by a multi-discipline staff of engineers, planners, and project
-              managers. Our extensive engineering resources enable us to
-              effortlessly deliver projects to clients on time and within budget
-              by acting as a one-stop shop for the client and a quick resource
-              for the project manager on the ground.
+              Our approach guarantees quality, cost efficiency, minimal risk and
+              enhanced communication between all stakeholders. Supported by a
+              multidisciplinary team of engineers and project managers, we bring
+              the expertise and resources necessary to keep your project on
+              schedule and budget.
             </p>
             <Spacing lg="30" md="30" />
-            <Div className="cs-separator cs-accent_bg"></Div>
+            {/* <Div className="cs-separator cs-accent_bg"></Div> */}
             <Spacing lg="25" md="40" />
           </SectionHeading>
         </Div>
-        <Div className="col-lg-5 offset-xl-2">
+        <Div className="col-lg-5 offset-xl-2" style={{ display: "flex" }}>
           <img
             src="/images/about_img_1.jpeg"
             alt="About"

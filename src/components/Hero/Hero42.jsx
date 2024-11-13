@@ -17,10 +17,10 @@ export default function Hero42({
   return (
     <Div
       className="cs-hero cs-style1  cs-fixed_bg"
-      style={{
-        backgroundImage: "url(./images/hero_bg_2.jpeg)",
-        padding: "40px 0px 0px 0px",
-      }}
+      // style={{
+      //   backgroundImage: "url(./images/hero_bg_2.jpeg)",
+      //   padding: "40px 0px 0px 0px",
+      // }}
     >
       <Div
         className="container "

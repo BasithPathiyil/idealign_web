@@ -21,7 +21,7 @@ export default function SectionHeading3({
           : `cs-section_heading cs-style1`
       }
     >
-      <h2 className="cs-section_title cs-white_color">{parse(title)}</h2>
+      <h2 className="cs-section_title cs-accent_color" style={{textAlign:"left",fontSize:"64px"}}>{parse(title)}</h2>
       {children}
       {btnText && (
         <Div style={{ marginLeft: "120px" }}>

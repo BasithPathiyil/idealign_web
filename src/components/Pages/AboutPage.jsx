@@ -1,35 +1,55 @@
 import React, { useEffect } from "react";
 import { pageTitle } from "../../helper";
-import Cta from "../Cta";
 import FunFact from "../FunFact";
-import PageHeading from "../PageHeading";
 import Div from "../Div";
 import SectionHeading from "../SectionHeading";
-import TeamSlider from "../Slider/TeamSlider";
 import Spacing from "../Spacing";
 import HomeAboutUs from "../AboutUs/HomeAboutUs";
 import AboutUsTeam from "../Team/AboutUsTeam";
 import About from "../AboutUs/About";
-import Hero41 from "../Hero/Hero41";
-import Hero42 from "../Hero/Hero42";
 import Leadership from "../AboutUs/Leadership";
 import Approach from "../AboutUs/Approach";
 import StepsComponent from "../AboutUs/StepsComponent";
-import Hero3 from "../Hero/Hero3";
+import PageHeading from "../PageHeading";
+// const funfaceData = [
+//   {
+//     title: "Work Hours",
+//     factNumber: "5796648",
+//     suffix: "",
+//   },
+//   {
+//     title: "Sq.Ft. total Buildup Area",
+//     factNumber: "5667357",
+//     suffix: "",
+//   },
+//   {
+//     title: "Cost Saved",
+//     factNumber: "27700000",
+//     suffix: "₹",
+//   },
+//   {
+//     title: "Valued Projects",
+//     factNumber: "2838",
+//     suffix: "Cr+",
+//   },
+// ];
 const funfaceData = [
   {
     title: "Work Hours",
     factNumber: "5796648",
+    // factNumber: "57",
     suffix: "",
   },
   {
-    title: "Efficiency optimizing",
-    factNumber: "53.61",
-    suffix: "%",
+    title: "Sq.Ft. total Buildup Area",
+    factNumber: "5667357",
+    // factNumber: "56",
+    suffix: "",
   },
   {
     title: "Cost Saved",
     factNumber: "27700000",
+    // factNumber: "277",
     suffix: "₹",
   },
   {
@@ -38,7 +58,6 @@ const funfaceData = [
     suffix: "Cr+",
   },
 ];
-
 export default function AboutPage() {
   pageTitle("About");
 
@@ -48,14 +67,30 @@ export default function AboutPage() {
   return (
     <>
       {/* Start Page Heading Section */}
+      <PageHeading
+        title="About Us"
+        bgSrc="images/1.jpg"
+        pageLinkText="About Us"
+        accent={true}
+      />
       <Spacing lg="90" md="90" />
-      <Hero3
+      <Spacing lg="90" md="90" />
+      <Div
+        className="container justify-content-center"
+        style={{ display: "flex" }}
+      >
+        <About />
+      </Div>
+      {/* <Div className="cs-hero_info2 justify-content-center">
+        <About />
+      </Div> */}
+      {/* <Hero3
         title={`About Us`}
         btnLink="contact"
         btnText={""}
         socialLinksHeading=" "
         bgImageUrl="./images/aboutus/bgimg.jpg"
-      />
+      /> */}
       {/* <PageHeading
         title="About Us"
         bgSrc="images/about_hero_bg.jpeg"
@@ -64,23 +99,23 @@ export default function AboutPage() {
       {/* End Page Heading Section */}
 
       {/* Start About Section */}
-      <Spacing lg="30" md="20" />
-      <Hero42
+      {/* <Spacing lg="30" md="20" /> */}
+      {/* <Hero42
         title="Course Deliverables"
         subtitle="Idealign Academy For Construction Mangement"
         scrollDownId="#service"
         socialLinksHeading=" "
         // heroSocialLinks={heroSocialLinks}
-        phoneNumber="+044 546664"
-        email="info@arino.com"
-      />
-      <Div className="approach_lap">
+        phoneNumber=""
+        email=""
+      /> */}
+      {/* <Div className="approach_lap">
         <Spacing lg="150" md="80" />
         <Div className="container">
           <StepsComponent />
         </Div>
-      </Div>
-      <Div className="approach_phone">
+      </Div> */}
+      <Div className="">
         <Spacing lg="150" md="80" />
         <Approach />
       </Div>
@@ -220,15 +255,6 @@ export default function AboutPage() {
 
       {/* Start CTA Section */}
       {/* <Spacing lg="150" md="80" /> */}
-      {/* <Div className="container">
-        <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
-        />
-      </Div> */}
-      {/* End CTA Section */}
     </>
   );
 }

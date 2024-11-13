@@ -30,13 +30,13 @@ export default function Portfolio6({
                 style={{ display: "flex", justifyContent: "center" }}
               >
                 <img
-                  style={{
-                    width: "50%",
-                    // objectFit: "cover",
-                  }}
+                  // style={{
+                  //   width: "50%",
+                  //   // objectFit: "cover",
+                  // }}
                   src={imageUrl}
                   alt="Portfolio"
-                  className="cs-w100 leadershipimg"
+                  className="cs-w100 leadershipimg1"
                 />
               </Div>
             </Div>

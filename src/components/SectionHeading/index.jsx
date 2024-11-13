@@ -20,9 +20,9 @@ export default function SectionHeading({
           : `cs-section_heading cs-style1`
       }
     >
-      {subtitle ? (
+      {/* {subtitle ? (
         <h3 className="cs-section_subtitle">{parse(subtitle)}</h3>
-      ) : null}
+      ) : null} */}
       <h2 className="cs-section_title">{parse(title)}</h2>
       {children}
       {btnText && (
